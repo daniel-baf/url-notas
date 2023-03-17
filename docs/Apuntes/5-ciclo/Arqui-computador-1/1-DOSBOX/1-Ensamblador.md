@@ -24,8 +24,8 @@
 
 
 NOTA: USAR $ como caracter de fin de cadena
-	LF	line feed	[10]
-	CR	car return	[13]
+	LF	line feed	\[10\]
+	CR	car return	\[13\]
 
 EJ para imprimir "Hola arqui II"
 	-> 13 caracteres + 1 caracter de fin de cadena
@@ -47,5 +47,4 @@ EJ para imprimir "Hola arqui II"
 		-> STDIN = entrada estandar, teclado
 
 Podemos ver ejemplos de los códigos aquí
-
 ![[CICLOS.odt]]
