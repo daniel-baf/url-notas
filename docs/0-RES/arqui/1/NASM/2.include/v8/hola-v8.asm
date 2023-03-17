@@ -36,5 +36,8 @@ _start:
     mov     eax, nombre     ; 
     call    toUpperCase     ; eax.toUppercase
     call    printStr        ; 
-
+    mov     eax, nombre
+    call    toLowerCase
+    call    printStr        ; 
+    pop eax
     call endP
