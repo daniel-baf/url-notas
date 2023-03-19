@@ -26,13 +26,16 @@ finLen:
 ; ; ------------------ IMPRESION  ------------------ ;
 ; imprime una cadena de texto con salto de linea
 printStrLn:
-    call printStr       ; imprime el texto
+    push    eax
+    call    printStr       ; imprime el texto
     push    eax         ;
     mov     eax, 0AH    ;
     push    eax         ; 
     mov     eax, esp    ; asigna a eax la direccion ESP stack pointer
-    call printStr       ; imprime el salto de linea
+    call    printStr    ; imprime el salto de linea
     pop     eax
+    pop     eax
+    ; palabra original
     pop     eax
     ret
 
@@ -40,24 +43,26 @@ printStrLn:
 ; ------------------ IMPRESION EN PANTALLA ------------------ ;
 ; void printStr(eax = cadena)
 printStr:
+    push        eax
     ; guardamos todos los datos para recuperarlos luego
-    push edx
-    push ecx
-    push ebx
-    push eax
-    call strLen ; calculamos la longitud (se guarda longitud en eax)
+    push        edx
+    push        ecx
+    push        ebx
+    push        eax
+    call        strLen ; calculamos la longitud (se guarda longitud en eax)
 
-    mov edx, eax    ; edx = lo que retorna strLen
-    pop eax         ; eax = primer registro de la pila
-    mov ecx, eax    ; movemos el valor a ecx
-    mov ebx, 1      ; salida 1 = pantalla
-    mov eax, 4      ; SYS_WRITE
-    int 80h         ;
+    mov         edx, eax    ; edx = lo que retorna strLen
+    pop         eax         ; eax = primer registro de la pila
+    mov         ecx, eax    ; movemos el valor a ecx
+    mov         ebx, 1      ; salida 1 = pantalla
+    mov         eax, 4      ; SYS_WRITE
+    int         80h         ;
 
     ; restauramos los valores del programa
-    pop ebx
-    pop ecx
-    pop edx
+    pop         ebx
+    pop         ecx
+    pop         edx
+    pop         eax
     ret
 
 ; ------------------ FIN DEL PROGRAMA ------------------ ;
