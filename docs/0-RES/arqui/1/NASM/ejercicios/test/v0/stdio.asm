@@ -1,16 +1,21 @@
-; IMPLEMENTACION de una clase que nos sirva para leer datos de consola e imprimir datos en consol
-; creadro jefe_mayoneso
-; fecha 19-03-2023
-; esta clase se encarga de leer datos del teclado y devolverlo en eax y tambien imprime el valor de
-; lo que este guardado en la direccion de memoria eax
+; Creador: @daniel_baf
+; fecha: 2023-03-19
+; Clase que se encarga de gestionar salidas y entradas en consola
 
-%include    'utils/text-utils.asm'
+section .data
 
-SECTION .data
+section .bss
+    buffer:         resb        254     ; 254 + 1 null
 
-SECTION .text
-; funcion que solicite datos
-read:
+section .text
+
+; ####################################################
+; ################### LEER DE CONSOLA ################
+; ####################################################
+
+; lee todo lo que sea ingresado en una linea, hasta detectar un salto de linea
+; maximo buffer de 254 + 1 nulo
+readline:
     ; hacemos una copia de seguridad
     push        edx
     push        ecx
@@ -21,7 +26,7 @@ read:
     mov         eax, 3          ; eax = no. de instruccion
     mov         ebx, 0          ; ebx = unsigned int
     mov         ecx, buffer     ; ecx = el buffer
-    mov         edx, 255        ; edx = tamaño del buffer
+    mov         edx, 254        ; edx = tamaño del buffer
     int         80H             ; llamada al sistema
 
     ; Busca el salto de línea en el buffer
@@ -43,9 +48,49 @@ read:
     pop         ebx
     pop         ecx
     pop         edx
+
     mov         eax, buffer
 
     ret
+
+; #########################################################
+; ################### IMPRIMIR EN PANTALLA ################
+; #########################################################
+
+printLn:
+    call        print       ; imprime la cadena
+    push        eax
+    mov         eax, 0AH    ; salto de cadena
+    push        eax         ; lo guardamos en la pila
+    mov         eax, esp    ; eax -> dir en memoria de la pila que ahora contiene "\n"
+    call        print
+    pop         eax         ; sacamos el salto de linea
+    pop         eax         ; recuperamos el valor original
+    ret
+
+print:
+    ; guardamos los datos por si se necesitan
+    push        ebx
+    push        ecx
+    push        edx
+    push        eax         ; de ultimo el texto, pues lo recuperaremos
+
+    push        eax         ; strLen sobreescribe eax
+    call        strLen      ; <- leng = eax
+
+    mov         edx, eax    ; edx = lo que retorna strLen
+    pop         eax         ; eax = primer registro de la pila
+    mov         ecx, eax    ; movemos el valor a ecx
+    mov         ebx, 1      ; salida 1 = pantalla
+    mov         eax, 4      ; SYS_WRITE
+    int         80h         ;
+
+    ; restauramos los datos
+    pop         eax
+    pop         edx
+    pop         ecx
+    pop         ebx
+    ret                 ; retorno a funcion original
 
 ; ------------------ CALCULO DE LONGITUD DE CADENA ------------------ ;
 ; strLen(eax=<CADENA>) -> eax int n = <LONGITUD>
@@ -64,51 +109,11 @@ strLen:
         pop         ebx             ; obtemos lo que sea que hay en la ultima posicion de pila
     ret             ; implementa un return porque es una funcion
 
+; #########################################################
+; ################### TERMINAR PROGRAMA ###################
+; #########################################################
 
-; ; ------------------ IMPRESION  ------------------ ;
-; imprime una cadena de texto con salto de linea
-printStrLn:
-    push        eax
-    call        printStr    ; imprime el texto
-    push        eax         ;
-    mov         eax, 0AH    ;
-    push        eax         ; 
-    mov         eax, esp    ; asigna a eax la direccion ESP stack pointer
-    call        printStr    ; imprime el salto de linea
-    pop         eax
-    pop         eax
-    ; palabra original
-    pop         eax
-    ret
-
-
-; ------------------ IMPRESION EN PANTALLA ------------------ ;
-; void printStr(eax = cadena)
-printStr:
-    push        eax
-    ; guardamos todos los datos para recuperarlos luego
-    push        edx
-    push        ecx
-    push        ebx
-    push        eax
-    call        strLen ; calculamos la longitud (se guarda longitud en eax)
-
-    mov         edx, eax    ; edx = lo que retorna strLen
-    pop         eax         ; eax = primer registro de la pila
-    mov         ecx, eax    ; movemos el valor a ecx
-    mov         ebx, 1      ; salida 1 = pantalla
-    mov         eax, 4      ; SYS_WRITE
-    int         80h         ;
-
-    ; restauramos los valores del programa
-    pop         ebx
-    pop         ecx
-    pop         edx
-    pop         eax
-    ret
-
-; ------------------ FIN DEL PROGRAMA ------------------ ;
-exit: ; C = void endP()
-    mov         ebx, 0      ; return 0
-    mov         eax, 1      ; llama a SYS_EXIT (kernel.opcode 1)
-    int 80h             ; llamada de interrupscion de kernel
+exit:
+    mov         ebx, 0      ; RETURN 0
+    mov         eax, 1      ; SYS_EXIT
+    int         80h         ; llamada a kernel

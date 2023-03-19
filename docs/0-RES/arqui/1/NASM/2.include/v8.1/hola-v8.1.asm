@@ -1,10 +1,9 @@
 ; Hola mundo con ingreso de datos por peteicion en paantalla o ingreso en teclado
-; Creador: jefe_mayoneso
+; Creadlineor: jefe_mayoneso
 ; fecha: 2023/03/15
 ; TAREA de arqui, funcines para solicitar datos e imprimir y convertir de mayusculas a minusculas y viceversa
 
-%include 'stdio32.asm'
-%include 'stdin32.asm'
+%include 'stdio.asm'
 %include 'text-utils.asm'
 
 SECTION .data
@@ -16,62 +15,62 @@ SECTION .data
 
 ; seccion para reservar entradas
 SECTION .bss
-    ; guardamos un espacio en memoria que vale 255 espacios en memoria
-    buffer:  resb    255   
-    ; resb = reservar, reservabmos 255 bytes, tamaño maximo para cadenas + 1 byte nulo
-    len      equ     $-buffer
 
 SECTION .text
     global _start
 
 _start:
     call        reqData
-    call        endP
+    call        exit
 
 
 reqData:
     ; solicitamos el nombre
-    mov         eax, msg1       ; nombre?
+    mov         eax, msg1           ; nombre?
     call        toLowerCase
-    call        printStr
-    call        read            ; <- nombre
+    call        print
+    call        readline            ; <- nombre
+    call        printLn
     push        eax
-    call        printStrLn
 
-    mov         eax, msg2       ; apellido?
+    ; recomponemos
+    mov         eax, msg2           ; apellido?
     call        toLowerCase
-    call        printStr
-    call        read            ; <- apellido
+    call        print
+    call        readline            ; <- apellido
+    call        printLn
     push        eax
-    call        printStrLn
 
-    mov         eax, msg3       ; pais?
+    mov         eax, msg3           ; pais?
     call        toLowerCase
-    call        printStr
-    call        read            ; <- pais
+    call        print
+    call        readline
+    call        printLn
     push        eax
-    call        printStrLn
 
     ; recuperamos los datos e imprimimos
     ; pila -> ESP -> | dir | apellido | nombre |
-    pop         ecx             ; dir
-    pop         ebx             ; apellido
+    ; en este punto esp -> nombre
+    pop         edx                 ; pais
+    pop         ecx                 ; apellido  
+    pop         ebx                 ; nombre
+
 
     mov         eax, msg4       ; -> hola, 
-    call        printStr
-    pop         eax
-    call        printStr        ; -> nombre |  hola, {nombre}
+    call        print
+    mov         eax, ebx
+    call        print           ; -> nombre |  hola, {nombre}
 
     mov         eax, ' '
     push        eax
     mov         eax, esp
-    call        printStr
+    call        print
     pop         eax
-    mov         eax, ebx        ; -> {APELLIDO} | hola, {nombre} {apellido}
-    call        printStr
+    mov         eax, ecx
+    call        print           ; -> {APELLIDO} | hola, {nombre} {apellido}
 
     mov         eax, msg5       ; -> en |  hola, {nombre} {apellido}\n vives en
-    call        printStr
-    mov         eax, ecx        ; ecx = direccion
-    call        printStrLn      ; -> {dir} |  hola, {nombre} {apellido} vives en {dir}
+    call        print
+    mov         eax, edx
+    call        printLn      ; -> {dir} |  hola, {nombre} {apellido} vives en {dir}
     ret

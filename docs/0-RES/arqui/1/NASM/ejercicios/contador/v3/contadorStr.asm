@@ -4,11 +4,11 @@
 ; Programa que realiza impresion de valores del 0 al 9 en pantalla, implementando las funciones intToStr y strToInt
 
 %include    'utils/stdio32.asm'
-%include    'utils/stdin32.asm'
-%include    'utils/text-utils.asm'
 
 SECTION .data
-    msg         db          '-> elemento 1 ', 0H
+    msg         dw      'esto ', 0H
+    msg1        dw      'es algo', 0H
+    num         dd      120
 
 SECTION .bss
     buffer:      resb        255
@@ -18,11 +18,27 @@ SECTION .text
 
 
 _start:
-
+    ; imprimimos los valores
+    mov         eax, msg
+    call        printStrLn
+    mov         eax, msg1
     call        printStrLn
 
-    call        printLoop
-    call        endP
+    ; pasamos los parametros
+    mov         eax, msg
+    mov         edx, msg1
+    call        concat      ; concat(eax, edx) <- eax = eax + ebx
+    call        printStrLn
+    ; convertimos un int a string
+    
+
+    ;covnertimos el valor a int
+;    call        strToInteger
+;    add         eax, 4
+;    call        printStrLn
+
+    ; call        printLoop
+    call        exit
 
 
 printLoop:
