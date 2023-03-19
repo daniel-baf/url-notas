@@ -35,28 +35,28 @@ reqData:
     call        toLowerCase
     call        printStr
     call        read            ; <- nombre
-    call        printStrLn
     push        eax
+    call        printStrLn
 
     mov         eax, msg2       ; apellido?
     call        toLowerCase
     call        printStr
     call        read            ; <- apellido
-    call        printStrLn
     push        eax
+    call        printStrLn
 
     mov         eax, msg3       ; pais?
     call        toLowerCase
     call        printStr
     call        read            ; <- pais
-    call        printStrLn
     push        eax
+    call        printStrLn
 
     ; recuperamos los datos e imprimimos
     ; pila -> ESP -> | dir | apellido | nombre |
-    pop         edx             ; dir
-    pop         ecx             ; apellido
- 
+    pop         ecx             ; dir
+    pop         ebx             ; apellido
+
     mov         eax, msg4       ; -> hola, 
     call        printStr
     pop         eax
@@ -67,11 +67,11 @@ reqData:
     mov         eax, esp
     call        printStr
     pop         eax
-    mov         eax, ecx        ; -> {APELLIDO} | hola, {nombre} {apellido}
+    mov         eax, ebx        ; -> {APELLIDO} | hola, {nombre} {apellido}
     call        printStr
 
     mov         eax, msg5       ; -> en |  hola, {nombre} {apellido}\n vives en
     call        printStr
-    mov         eax, edx        ; ecx = direccion
+    mov         eax, ecx        ; ecx = direccion
     call        printStrLn      ; -> {dir} |  hola, {nombre} {apellido} vives en {dir}
     ret

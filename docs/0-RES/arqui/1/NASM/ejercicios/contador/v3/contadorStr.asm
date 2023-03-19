@@ -11,18 +11,17 @@ SECTION .data
     msg         db          '-> elemento 1 ', 0H
 
 SECTION .bss
-    input:      resb        255
+    buffer:      resb        255
 
 SECTION .text
     global      _start
 
 
 _start:
-    mov         eax, 'a'
-    mov         eax, 'b'
+
     call        printStrLn
 
-;    call        printLoop
+    call        printLoop
     call        endP
 
 
