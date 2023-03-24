@@ -27,7 +27,7 @@ _start:
     ; pasamos los parametros
     mov         eax, msg
     mov         edx, msg1
-    call        concat      ; concat(eax, edx) <- eax = eax + ebx
+;    call        concat      ; concat(eax, edx) <- eax = eax + ebx
     call        printStrLn
     ; convertimos un int a string
     
@@ -37,7 +37,7 @@ _start:
 ;    add         eax, 4
 ;    call        printStrLn
 
-    ; call        printLoop
+    call        printLoop
     call        exit
 
 

@@ -56,18 +56,25 @@ readline:
 ; #########################################################
 ; ################### IMPRIMIR EN PANTALLA ################
 ; #########################################################
+    
+; ------------------ CALCULO DE LONGITUD DE CADENA ------------------ ;
+; strLen(eax=<CADENA>) -> eax int n = <LONGITUD>
+strLen:
+    push        ebx            ; GUARDAMOS EL DATO EN LA PILA PARA LUEGO RECUPERARLO
+    mov         ebx, eax       ; eax = ebx | ebx = direccion de memroia de msg
 
-printLn:
-    call        print       ; imprime la cadena
-    push        eax
-    mov         eax, 0AH    ; salto de cadena
-    push        eax         ; lo guardamos en la pila
-    mov         eax, esp    ; eax -> dir en memoria de la pila que ahora contiene "\n"
-    call        print
-    pop         eax         ; sacamos el salto de linea
-    pop         eax         ; recuperamos el valor original
-    ret
+    sigCharLen:                     ; yo decidi ponerle el nombre sigCharLen, puede tener cualquier nombre
+        cmp         byte[eax], 0    ; seria como decir en C msg[eax] == 0?
+        jz          finLen          ; GOTO finLen si se cumple la condicion de arriba
+        inc         eax             ; increamenta eax si no ha terminado la cadena
+        jmp         sigCharLen      ; salta a la etiqueta siguiente
 
+    finLen:
+        sub         eax, ebx        ; longitud de la cadena
+        pop         ebx             ; obtemos lo que sea que hay en la ultima posicion de pila
+    ret             ; implementa un return porque es una funcion
+
+; imprimimos texto con texto sin salto de linea
 print:
     ; guardamos los datos por si se necesitan
     push        ebx
@@ -92,26 +99,72 @@ print:
     pop         ebx
     ret                 ; retorno a funcion original
 
-; ------------------ CALCULO DE LONGITUD DE CADENA ------------------ ;
-; strLen(eax=<CADENA>) -> eax int n = <LONGITUD>
-strLen:
-    push        ebx            ; GUARDAMOS EL DATO EN LA PILA PARA LUEGO RECUPERARLO
-    mov         ebx, eax       ; eax = ebx | ebx = direccion de memroia de msg
+; imprimimos texto con salto de linea
+printLn:
+    call        print       ; imprime la cadena
+    push        eax
+    mov         eax, 0AH    ; salto de cadena
+    push        eax         ; lo guardamos en la pila
+    mov         eax, esp    ; eax -> dir en memoria de la pila que ahora contiene "\n"
+    call        print
+    pop         eax         ; sacamos el salto de linea
+    pop         eax         ; recuperamos el valor original
+    ret
 
-    sigCharLen: ; yo decidi ponerle el nombre sigCharLen, puede tener cualquier nombre
-        cmp         byte[eax], 0    ; seria como decir en C msg[eax] == 0?
-        jz          finLen          ; GOTO finLen si se cumple la condicion de arriba
-        inc         eax             ; increamenta eax si no ha terminado la cadena
-        jmp         sigCharLen      ; salta a la etiqueta siguiente
-
-    finLen:
-        sub         eax, ebx        ; longitud de la cadena
-        pop         ebx             ; obtemos lo que sea que hay en la ultima posicion de pila
-    ret             ; implementa un return porque es una funcion
 
 ; #########################################################
 ; ################### TERMINAR PROGRAMA ###################
 ; #########################################################
+
+; imprimimos un numero entero con salto de linea
+iPrintLn:
+    call        iPrint      ; imprimimos el numero
+    ; imprimimos el salto de linea
+    push        eax
+
+    mov         eax, 0AH    ;
+    push        eax
+    mov         eax, esp
+    call        print
+    pop         eax
+
+    pop         eax
+    ret                     ; regresamos a la funcion origen
+
+; imprime un numero entero que este en eax
+iPrint:
+    ; backup de los registros
+    push        eax
+    push        ecx
+    push        edx
+    push        esi
+
+    mov         ecx, 0      ; iniciamos el contador en 0
+    div_loop:
+        inc         ecx         ; conteo de digitos
+        mov         edx, 0      ; limpiar hsb de la division
+        mov         esi, 10     ; esi [divisor] = 10
+        idiv        esi         ; <edx:eax>/ esi
+        add         edx, 48     ; + 0 int incial
+        push        edx         ; residuo -> stack
+        cmp         eax, 0      
+        jnz         div_loop
+
+    ; fin div_loop
+    print_loop:
+        dec         ecx         ; decrementamos en la pila
+        mov         eax, esp    ;
+        call        print
+        pop         eax         ; residuo ecx = eax
+        cmp         ecx, 0      ; aun hay datos
+        jnz         print_loop  ; saltamos
+
+    ; restauramos valores
+    pop         esi
+    pop         edx
+    pop         ecx
+    pop         eax         ; 
+    ret                     ; regresamos
 
 exit:
     mov         ebx, 0      ; RETURN 0
