@@ -1,53 +1,74 @@
-; Operaciones aritmetica entre dos valores enteros
-; creador @daniel-baf
-; fecha 24/03/2023
+; Operaciones aritmeticas entre dos valores enteros
+; creador: Josue Maldonado
+; fecha: 24/03/2023
 
-%include        'utils/stdio.asm'
+%include 'utils/stdio.asm'
 
-SECTION .data
-    add_msg            db      'Suma de 90 + 9: ', 0H
-    less_msg           db      'Resta de 99 - 81: ', 0H
-    mult_msg           db      'Multiplicacion: ', 0H
-    div_msg            db      'División: ', 0H
+SECTIOn .data
+	suma	db	'Suma: 90 + 9: ',0h
+	resta	db	'Resta: 99 - 81: ',0h
+	multi	db	'Multiplicacion 18 * 4: ',0h
+	divi	db	'Division 72 / 5: ', 0h
+	resi	db	' residuo: ',0h
+
 
 SECTION .text
-    global      _start
+	global	_start
 
 _start:
-        ; suma
-    mov         eax, 9
-    mov         ebx, 90
-    call        sum
+;-------------Suma-----------------------
+	mov	eax, suma
+	call	print
 
-    ; resta
-    mov         ebx, 81
-    call        subst
-    call        exit
+	mov	eax, 90
+	mov	ebx, 9
+	add	eax, ebx
+	call	iPrintLn
+
+;-----------Resta-----------------------
+	push 	eax
+
+	mov	eax, resta
+	call	print
+
+	pop 	eax
+	mov 	ebx, 81
+	sub	eax, ebx
+	call	iPrintLn
+
+;------------Multiplicacion---------------
+	push	eax
+
+	mov	eax, multi
+	call	print
+
+	pop	eax
+	mov	ebx, 4
+	mul	ebx
+	call	iPrintLn
 
 
-; suma el valor de eax con ebx y devuelve el valor en eax
-sum:
-    push        eax             ; backup
-    mov         eax, add_msg    ; mensaje
-    call        print
-    pop         eax
-    add         eax, ebx
-    call        iPrintLn
-    ret
+;-------------Division-------------------
+	push	eax
+	
+	mov	eax, divi
+	call	print
+	
+	pop	eax
+	push	edx
+	mov	edx, 0
+	mov	ebx, 5
+	div	ebx
+	call iPrintLn
+
+	push	edx		;Guarda edx en pila, edx = residuo
+	mov	eax, resi
+	call	print
+	pop	eax
+	call	iPrintLn
+	
+	pop	edx
+
+	call	exit
 
 
-subst:
-    push        eax             ; backup
-    mov         eax, less_msg   ; mensaje
-    call        print
-    pop         eax
-    sub         eax, ebx
-    call        iPrintLn
-    ret
-
-mult:
-    push        eax
-    mov         eax, mult_msg
-    call        print
-    pop         eax
-    mul         eax, ebx
