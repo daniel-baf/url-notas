@@ -56,3 +56,10 @@ Las lecturas fantasmas (Phantom Reads) son un problema que puede ocurrir en sist
 Las lecturas no repetibles (Non-Repeatable Reads) son un problema que puede ocurrir en sistemas de bases de datos cuando una transacción realiza dos lecturas consecutivas de los mismos datos y encuentra que los datos han cambiado entre las dos lecturas debido a las modificaciones realizadas por otra transacción.
 
 # EJEMPLIFICACIÓN
+
+[EJEMPLO EN BARD](https://g.co/bard/share/6a2de3c815a2)
+
+### Trabajo grupal 
+- Daniel Bautista 2121323
+- Juan Marroquín 1689821
+- Pablo Cotí 1653221
