@@ -1,14 +1,14 @@
-# Von Neumann
+## Von Neumann
 
-**1. ¿Cuáles son las cinco partes que forman la computadora Von Neumann?  **
+**1. ¿Cuáles son las cinco partes que forman la computadora Von Neumann?**
 
- -  ALU
+- ALU
 - Unidad de control  
 - Memoria  
 - Dispositivo de entrada y salida  
 - Bus de datos  
 
-**2. ¿Qué pasos emula una computadora con la arquitectura Von Neumann? **
+**2. ¿Qué pasos emula una computadora con la arquitectura Von Neumann?**
 
 - paso 1
 	- Enciende la computadora  
