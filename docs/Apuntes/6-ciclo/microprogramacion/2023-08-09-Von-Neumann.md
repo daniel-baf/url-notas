@@ -10,10 +10,11 @@ En 1949 encontró y desarrolló la solución a este problema, que se basaba en p
 Una computadora con esta arquitectura, consta de cinco partes
 - Unidad aritmético lógico (ALU)
 	- Circuito digital que realiza operaciones aritméticas (suma, resta) y operaciones lógicas (SI y NO)
-	- Estos circuitos electricos por lo general están construidos dentro de los chips del microprocesador modernos.
+	- Estos circuitos eléctricos por lo general están construidos dentro de los chips del microprocesador modernos.
 	- ![Alu img](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/ALU_symbol.svg/1024px-ALU_symbol.svg.png)
 - Unidad de control
-	- Una de las principlaes unidades en las que se divide el CPU, su función es buscar las instrucciones en la memoria principal, decodificarlas (interpretarlas) y ejecutarlas, emplenado para ello la unidad de proceso.
+	- Una de las principales unidades en las que se divide el CPU, su función es buscar las instrucciones en la memoria principal, decodificarlas (interpretarlas) y ejecutarlas, empleando para ello la unidad de proceso.
+	- Trae datos desde la memoria principal y es bidireccional
 	- ![img CU](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhardysoftwareg2sr.blogia.com%2Fupload%2F20110203023550-unidad-de-control.jpg&f=1&nofb=1&ipt=8d50da6ccb3d046eb17de757c42a47f3b59de764daca773713883602368fefdf&ipo=images)
 - Memoria
 	- Dispositivo que retiene, memoriza y almacena datos informáticos durante algún periodo de tiempo
@@ -41,4 +42,6 @@ Una de las cosa malas con la arquitectura Von N. es que el mal funcionamiento de
 
 ## Cuello de botella de Von Neumann
 
-El canal entre el CPU y memoria genera un cuello de botella para el rendimiento del procesador. Cuando se quieren manejar grandes cantidades de datos, el CPU se ve obligado a esperar operaciones, la velocidad del procesamiento y cantidad d ememoria han aumentado más rápdio que el rendimiento en la transferencia entre ellos, así que continuamos agravando el problema.
+El canal entre el CPU y memoria genera un cuello de botella para el rendimiento del procesador. Cuando se quieren manejar grandes cantidades de datos, el CPU se ve obligado a esperar operaciones, la velocidad del procesamiento y cantidad de memoria han aumentado más rápido que el rendimiento en la transferencia entre ellos, así que continuamos agravando el problema.
+
+Los registros almacenan datos según el procesador, si es de 32 bits, almacena 32 bits, si es de 64, almacena 64 bits.

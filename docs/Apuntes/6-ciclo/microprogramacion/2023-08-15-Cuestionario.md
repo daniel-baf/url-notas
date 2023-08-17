@@ -28,7 +28,12 @@
 El concepto de programas almacenados.    
 
 **4. ¿Qué es un programa almacenado?**  
-Un programa almacenado es un set de instrucciones almacenadas en la memoria que se comunican con el sistema a través de instrucciones que los programas pueden invocar.  
+
+Un programa almacenado es un set de instrucciones almacenadas en la memoria que se comunican con el sistema a través de instrucciones que los programas pueden invocar. 
+	Anteriormente, las computadoras eran fabricadas a medidas, pensando únicamente en una tarea. Y NO se podía hacer una tarea para la que no fue pensada la máquina.
+	Así que se buscó un enfoque en el que no se pensara en un programa almacenado, sino en una estructura con hardware genérico que permita que al cargarse un programa en memoria, se pueda llevar cualquier tarea.
+	Así fue como llegamos al día de hoy, podemos usar un mismo chip para editar videos, escuchar música...
+		Así que el programa almacenado era el conjunto de instrucciones que ya forman parte del software. Se carga el programa y se modifica según se necesite.
    
 **5. ¿Cuál es la ventaja de tener un programa almacenado?**  
 
@@ -38,7 +43,7 @@ Una unidad de memoria que evita tener que reestructurar la computadora para cada
 
 La necesidad de un programa que incrementa o modifica las direcciones de memoria de algunas instrucciones que debían ser hechas manualmente en los primeros diseños.  
 
-**7. ¿Cuál es el inconveniente con el diseño de Von Neumann?** 
+**7. ¿Cuál es el inconveniente con el diseño de Von Neumann?**
 
 Un mal funcionamiento del programa puede dañar parcial o completamente el computador y se podían generar modificaciones accidentales o maliciosas de programas.  
 
@@ -51,18 +56,27 @@ Situación en la que un componente limita el rendimiento general del sistema o l
 - Limitación entre del rendimiento del procesador debido a la limitación entre la comunicación de la memoria y el procesador.
 
 **10. ¿Cómo se redujo el problema de las altas latencias?**  
-Introduciendo la memoria caché entre el CPU y la memoria principal.  
+- Introduciendo la memoria caché entre el CPU y la memoria principal.  
+- Agregando una mejora de algoritmos de saltos (algoritmos predictivos).
+- Disponer de la operación y los datos en la misma instrucción.
+
+**11.  ¿Cuál fue la computadora teórica con memoria infinita?** *\[no tan relevante\]*
+
+Máquina de Turing
+
+`NOTA: La memoria caché es más rápida, pero también más cara de construir.`
 # ALU
 
 **1. ¿qué significa las letras A, B, F, D y R en un ALU?**
 
-A y B son operandos
-R es salida
-F es la entrada de la unidad de control
-D es un estado de salida
+A y B son operandos | datos de entrada
+R es salida | resultado de operando A y B
+F es la entrada de la unidad de control | señal que la unidad de control le envía a la ALU para saber cómo operar A y B
+D es un estado de salida | indica si el resultado es negativo, positivo o cero
 
-**2. ¿Cuál es la función de la ALU?**
+**2. ¿Cuál es la función de la ALU? y ¿Qué es la ALU?**
 
+Es un circuito que calcula operaciones aritméticas y lógicas.
 Calcular operaciones aritméticas como suma, resta, multiplicación y división, asimismo como operaciones lógicas como "si, y, o, no"
 
 **3. ¿De qué se compone un ALU?**
@@ -71,6 +85,8 @@ Calcular operaciones aritméticas como suma, resta, multiplicación y división,
 - Registro de entrada
 - Registro acumulador
 - Registro de estados
+
+A y B se encuentran uno en el registro de entrada y otro en el registro acumulador. D es el registro de estados.
 
 **3. ¿Cuáles son las operaciones que un ALU básico puede realizar?**
 
@@ -92,7 +108,19 @@ Una unidad de coma flotante, es básicamente lo mismo que un ALU pero que usa de
 
 **7. ¿Qué es un cálculo interactivo en una ALU?**
 
-Es un ALU complejo que realiza los cálculos de raíces cuadradas en cualquier número de un solo paso.
+Es un ALU complejo que realiza los cálculos de raíces cuadradas en cualquier número de un solo paso (ciclo de reloj).
+
+**7.1. ¿Qué es un cálculo interactivo?**
+
+El cálculo de la raíz cuadrada se puede realizar siguiendo varios enfoques:
+- Usando la descomposición matemática
+- Haciendo uso de librerías de software, pedirle al programador que resuelva el cálculo de raíces para calcular resultados a partir de librerías.
+- Cálculo interactivo
+- Emulación de software, se utiliza un software que imita la presencia de un procesador
+
+Podemos tener un ALU que se encargue puramente de calcular raíces, pero este es más caro.
+
+
 
 **8. ¿Qué son las entradas en un ALU?**
 
@@ -109,3 +137,28 @@ No implementarlo a nivel hardware y hacer que los programadores implementen _lib
 - Que sea simple en el procesador y que tenga un coprocesador
 - Emular la existencia del coprocesador, que siempre un programa intente hacer el cálculo por medio del sistema operativo
 - Dar feedback del estado del coprocesador para el posible uso de bibliotecas de software
+
+ **11. ¿Cuál es la función de "OP" en la ALU?**
+ 
+Seleccionan qué operación se llevará a cabo.
+
+ **12. ¿En qué parte de la computadora se encuentra la ALU?**
+
+En el procesador, así que esto implica que puede estar en un CPU, GPU (aunque es discutible si las GPU usan ALU o FPU)
+
+**13.  ¿En qué sistema numérico opera la ALU?**
+
+Binario, complemento A2, ya que permite hacer un uso más eficiente de la computadora al reutilizar el circuito de suma para realizar las restas.
+
+**14.  ¿Qué son las operaciones de desplazamiento de BIT?**
+
+Desplazar o rotar una palabra en un numero específico de bits a la izquierda o derecha.
+
+|1| 1| 0| 1| 0|
+| -| -| -| -| -|
+
+desplazamiento a la izquierda
+
+|1| 0| 1| 0| 1|
+| -| -| -| -| -|
+
