@@ -3,10 +3,10 @@
 **1. ¿Cuáles son las cinco partes que forman la computadora Von Neumann?**
 
 - ALU
-- Unidad de control  
-- Memoria  
-- Dispositivo de entrada y salida  
-- Bus de datos  
+- Unidad de control  (Ordena, le dice a la ALU qué tipo de operaciones realizar, codifica y decodifica instrucciones. Coordina el resto de unidades)
+- Memoria  (Almacena datos e instrucciones)
+- Dispositivo de entrada y salida  (Son los puertos donde se intercambia información con el exterior, ya sea enviando o recibiendo datos)
+- Bus de datos  (vías en las que se transmiten los datos y trasladan la información)
 
 **2. ¿Qué pasos emula una computadora con la arquitectura Von Neumann?**
 
@@ -47,7 +47,8 @@ Situación en la que un componente limita el rendimiento general del sistema o l
 
 **9. ¿Qué caracteriza el cuello de botella de Von Neumann?**  
 
-Que los cambios en la memoria eran por medio de empujar la información en la memoria a un lado y trabajando un proceso a la vez en vez de trabajar varios procesos en simultáneo.  
+- Que los cambios en la memoria eran por medio de empujar la información en la memoria a un lado y trabajando un proceso a la vez en vez de trabajar varios procesos en simultáneo.  
+- Limitación entre del rendimiento del procesador debido a la limitación entre la comunicación de la memoria y el procesador.
 
 **10. ¿Cómo se redujo el problema de las altas latencias?**  
 Introduciendo la memoria caché entre el CPU y la memoria principal.  
@@ -101,4 +102,10 @@ Son los operandos
 
 No implementarlo a nivel hardware y hacer que los programadores implementen _librerías_(bibliotecas de software) para cumplir con esta acción 
 
-**10. ¿?**
+**10. ¿Cuáles son las cuatro características que toda ALU debe tener?**
+
+- Que la ALU sea capaz de calcular cualquier operación entre cualquier tipo de números enteros.
+- Que calcule con varios pasos, cálculo interactivo.
+- Que sea simple en el procesador y que tenga un coprocesador
+- Emular la existencia del coprocesador, que siempre un programa intente hacer el cálculo por medio del sistema operativo
+- Dar feedback del estado del coprocesador para el posible uso de bibliotecas de software
