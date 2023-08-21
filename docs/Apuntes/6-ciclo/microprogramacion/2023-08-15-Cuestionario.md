@@ -1,5 +1,9 @@
 ## Von Neumann
 
+URL 
+Daniel Bautista 2121323
+Pabo Coti 1653221
+
 **1. ¿Cuáles son las cinco partes que forman la computadora Von Neumann?**
 
 - ALU
