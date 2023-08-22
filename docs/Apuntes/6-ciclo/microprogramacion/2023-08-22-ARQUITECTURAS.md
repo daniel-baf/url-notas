@@ -35,5 +35,60 @@ CISC sería como comprar una maquina para hacerlo todo, al ser algo tan complejo
 RISC sería como la opción 2, al dividir en varias tareas, podemos ejecutar varias tareas de manera simultanea.
 ```
 
+```
+
+----- PROCESO | EJEMPLO PARA SUBDIVIDIR -----
+
+-> MOJAR EL CARRO
+-> APLICAR JABÓN
+-> DESINFECTAR
+-> SECAR
+
+IF:   INSTRUCTION FETCHING  |  RECONOCER EL TIPO DE INSTRUCCION
+ID:   INSTRUCTION DECODING  |  LA CU LE MANDA INFORMACIÓN A LA ALU PARA QUE CUMPLA SU TAREA 
+EXE:  EXECUTION             |  SE GUARDAN LOS RESULTADOS
+MEM:  MEMORY ACCESS         |  SE ACCEDE A LA MEMORIA
+WB:   WRITE BACK            |  SE ESCRIBEN LOS RESULTADOS
+
+Estas son las 5 operaciones para cualquier tarea que se ejecute.
+
+---------------------------------------------
+
+```
+
 # Paralelismo
 
+Se plantan 3 posibilidades
+- ***Sub-escalar***: Es aquel que le va llevar más de un ciclo de reloj ejecutar una instrucción. Ejecuta menos de una instrucción por ciclo de reloj.
+	- OP 1 -> OP 2 -> OP 3.
+	- Hasta que no termine con una instrucción, no continua con la otra.
+
+|IF|ID|EXE|MEM|WB| | | | | | 
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| | | | | |IF | ID| EXE|MEM | WB| | |
+| | | | | || | | | | IF|ID |MEM | WB|
+
+
+- ***Escalar***: Es aquel que le va llevar exactamente un ciclo de reloj ejecutar una instrucción. Ejecuta una instrucción por ciclo de reloj.
+
+|IF|ID|EXE|MEM|WB| 
+|-|-|-|-|-|-| - |
+| |IF | ID| EXE| MEM|WB |
+| | |IF | ID| EXE| MEM| WB|
+
+- ***Super-escalar*** : Son aquellos que tienen dos o más núcleos. Atiende dos o más instrucciones en un mismo ciclo de reloj. 
+
+|IF|ID|EXE|MEM|WB||
+|-|-|-|-|-|-|-|-|
+|IF|ID|EXE|MEM|WB|
+||IF|ID|EXE|MEM|WB||
+||IF|ID|EXE|MEM|WB||
+|||IF|ID|EXE|MEM|WB|
+|||IF|ID|EXE|MEM|WB|
+||||IF|ID|EXE|MEM|WB|
+||||IF|ID|EXE|MEM|WB|
+
+
+Todas las instrucciones se ejecutan en un ciclo de reloj, todo procesador es vendido con una velocidad de procesador. `JE: 2Ghz serian 2,000,000,000,000 de ciclos por segundo` y en esa vuelta se ejecuta una porción de instrucción, a cada instrucción le toma 5 ciclos de reloj
+
+No podemos comparar un procesador únicamente por su velocidad, también tendemos qué ver si soporta o no multi tasking, en su enfoque de ejecuciones de instrucción. Comparamos procesadores en que tengan como mínimo características similares.  La caché también es importante.
