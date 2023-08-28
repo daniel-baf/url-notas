@@ -19,6 +19,9 @@ Las personas que observan las debilidades de Von Neumann plantean problemas con 
 |CISC emula multitasking|RISC permite multitasking|
 
 ##### `NOTA: CISC se usa en paralelismo con con Harvard en los microcontroladores`
+
+En algún punto del procesamiento de CISC las operaciones se convierten en mini aplicaciones RISC.
+
 # Segmentación de instrucciones
 
 Para que el paralelismo sea posible, las instrucciones tienen que poder segmentarse (dividirse). CISC es dificil de segmentar por las instrucciones son complejas. Como en RISC la filosofía es _instrucciones simples_ la segmentación es más fácil.

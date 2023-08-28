@@ -12,7 +12,7 @@ PROCESSOR 18F4550
 	
     psect inicio, global, reloc=2, class=CODE, delta=1
     inicio:
-	// Conffiguracion de puerto B para funcioanmiento digital
+	// configuracion de puerto B para funcioanmiento digital
 	setf	ADCON1	    // TRISD = 00000000 -> Conf. salida
 	bsf	TRISB, 0    // TRISB[0] = 1
 	clrf	PORTB
