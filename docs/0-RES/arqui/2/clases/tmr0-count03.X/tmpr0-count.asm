@@ -1,6 +1,5 @@
 PROCESSOR 18F4550
-
-    #INCLUDE <xc.inc>
+#include <xc.inc>
     
     CONFIG  PBADEN = OFF
     CONFIG  WDT = OFF
