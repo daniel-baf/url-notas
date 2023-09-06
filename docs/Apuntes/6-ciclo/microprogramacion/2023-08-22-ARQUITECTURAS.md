@@ -81,7 +81,7 @@ Se plantan 3 posibilidades
 
 - ***Super-escalar*** : Son aquellos que tienen dos o más núcleos. Atiende dos o más instrucciones en un mismo ciclo de reloj. 
 
-|IF|ID|EXE|MEM|WB||
+| IF | ID | EXE | MEM | WB |
 |-|-|-|-|-|-|-|-|
 |IF|ID|EXE|MEM|WB|
 ||IF|ID|EXE|MEM|WB||
