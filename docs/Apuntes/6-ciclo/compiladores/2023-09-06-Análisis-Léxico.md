@@ -71,5 +71,5 @@ b(a|b)*a
 
 # El lenguaje E sobre todas las cadenas que contiene un número par de 0 sobre {1,0}
 
-x`(1*01*0)*1*
+(1*01*0)*1*
 ```
