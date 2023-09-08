@@ -72,4 +72,16 @@ b(a|b)*a
 # El lenguaje E sobre todas las cadenas que contiene un número par de 0 sobre {1,0}
 
 (1*01*0)*1*
+
+
+# Acepte numeros decimales
+
+N = 
+(-|λ)(0|[1-9][0-9]*)"."[0-9]+
+(-|λ)(0|[1-9][0-9]*)("."[0-9]+)?
 ```
+
+
+![[Pasted image 20230908132729.png]]
+
+propuesta de usuarios en linux
