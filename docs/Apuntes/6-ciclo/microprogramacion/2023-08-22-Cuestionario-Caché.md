@@ -17,3 +17,5 @@ Además, existirá un caché L3 compartido entre los núcleos.
 
 El procesador busca datos en la L1, si no encuentra ahi, busca en la L2, y sino en la L3, y en caso de no encontrar, se aboca a la RAM.
 Los HDD son lentos por su infraestructura, así que se guardan los datos e instrucciones en otro disco para enviarlos rápidamente por el bus de datos.
+
+
