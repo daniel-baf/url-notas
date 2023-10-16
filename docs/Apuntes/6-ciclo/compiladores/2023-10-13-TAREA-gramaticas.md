@@ -267,37 +267,101 @@ statement      -> ... cualquier sentencia incluido el mismo for
 
 ### Go
 
-```
+```Go
+if condition
 
+{
+
+ // statements...
+
+}
 ```
 
 PROPUESTA DE GRAMÁTICA
 
 ```flex
+id    : identifier
+digit : cualquier tipo de número
+e     : epsilon
+ 
 
+if           -> if condition "{" statements "}"
+condition    -> exp cmp_operator exp
+cmp_operator ->   "=="
+                | "!="
+                | ">"
+                | "<"
+                | ">="
+                | "<="
+exp          ->   id
+                | digit
+statements   ->   if_tatement
+                | while_statement
+                | ... cualquier otra sentencia de código
+                | e
 ```
 
 ### Java
 
-```
+```Java
 
+if (condition) {
+    // statements...
+}
 ```
 
 PROPUESTA DE GRAMÁTICA
 
 ```flex
+id    : identifier
+digit : cualquier tipo de número
+e     : epsilon
 
+if           -> if "(" condition ")" "{" statements "}"
+condition    -> exp cmp_operator exp
+cmp_operator ->   "=="
+                | "!="
+                | ">"
+                | "<"
+                | ">="
+                | "<="
+exp          ->   id
+                | digit
+statements   ->   if_tatement
+                | while_statement
+                | ... cualquier otra sentencia de código
+                | e
 ```
 
 ### Python
 
 
-```
+```Python
+if condition:
 
+    # statements...
 ```
 
 PROPUESTA DE GRAMÁTICA
 
 ```flex
 
+id    : identifier
+digit : cualquier tipo de número
+e     : epsilon
+  
+if           -> if condition: statements
+condition    -> exp cmp_operator exp
+cmp_operator ->   "=="
+                | "!="
+                | ">"
+                | "<"
+                | ">="
+                | "<="
+exp          ->   id
+                | digit
+statements   ->   if_tatement
+                | while_statement
+                | ... cualquier otra sentencia de código
+                | e
 ```
