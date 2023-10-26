@@ -1,8 +1,8 @@
-La arquitectura Von Neumann es la base de la actualidad, la mayoria de las computadoras modernas están basadas en esta arquitectura, obviamente, no son iguales, solo lo usan de base.
+La arquitectura Von Neumann es la base de la actualidad, la mayoría de las computadoras modernas están basadas en esta arquitectura, obviamente, no son iguales, solo lo usan de base.
 
 ## Origen
 
-Antes, por ahí de los 1945, era muy común tener que recablear toda una computadora para poder hacer una tarea diferente, era tedioso y repetitivo.
+Antes, por ahí de los 1945, era muy común tener que Re cablear toda una computadora para poder hacer una tarea diferente, era tedioso y repetitivo.
 En 1949 encontró y desarrolló la solución a este problema, que se basaba en poner la información sobre las operaciones a realizar en la misma memoria utilizada para los datos escribiéndola de la misma forma (código binario).
 
 ## Organización
