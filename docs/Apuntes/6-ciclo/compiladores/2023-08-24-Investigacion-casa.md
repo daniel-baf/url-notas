@@ -1,4 +1,5 @@
 
+En este archivo exploreremos la serie de fibonacci
 # FIBONACCII
 
 LENGUAJES DE PROGRAMACIÓN DE DISTINTOS PARADIGMAS PARA PROGRAMAR FIBONACCI
