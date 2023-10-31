@@ -1,4 +1,3 @@
-
 # Ejercicio 1
 
 ARCHIVO: EJER21
