@@ -1,4 +1,3 @@
-
 # QUÉ PASA SI
 
 ## Aumenta 10% la función objetivo
