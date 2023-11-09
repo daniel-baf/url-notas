@@ -37,7 +37,10 @@ begin
          yyval := yyv[yysp-1];
        end;
    3 : begin
-         writeLn('OK   | div rounds to integers'); writeLn('Result: ', yyv[yysp-1]); 
+         
+         writeLn('OK   | div rounds to integers'); 
+         writeLn('Result: ', yyv[yysp-1]); 
+         
        end;
    4 : begin
          writeLn('invalid'); 

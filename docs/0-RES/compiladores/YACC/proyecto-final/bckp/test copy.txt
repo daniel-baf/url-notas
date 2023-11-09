@@ -1,0 +1,15 @@
+/* UN COMENTARIO DE UNA LINEA */
+Main {
+    /* Este es un comentario de muchas lineas
+        que deberia ser ignorado
+        y salir en una sola linea
+    */
+
+    // lexemas cortos
+    INTEGER a, b, z;
+    Read a;
+    /* esto no debe traducirse */
+    Read a, b;
+    z = a + b - 2;
+    if z > 10 Then Write z                                                
+}

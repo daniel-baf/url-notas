@@ -10,4 +10,7 @@ pyacc   VYSEyac.y
 echo    "-------- GENERANDO EXE --------"
 fpc     -oVYSEyac.e VYSEyac.pas
 echo    "-------- CORRIENDO EXE --------"
-./VYSEyac.e
+./VYSEyac.e < bckp/test.txt
+
+# fpc -oVYSElex.e VYSElex.pas
+# ./VYSElex.e < test.txt
