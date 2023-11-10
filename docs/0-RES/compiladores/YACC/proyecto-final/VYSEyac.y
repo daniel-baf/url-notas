@@ -13,7 +13,7 @@ file            :       MAIN O_BRACES C_BRACES                  { writeLn('OK | 
                 |       MAIN O_BRACES code_section C_BRACES     { writeLn('OK | CODED MAIN'); }
                 ;
 
-code_section    :       error   C_EndL
+code_section    :       error   C_EndL                          { writeLn('ERROR EN LINEA: ', yylineno, ' COLUMNA: '); }
                 |       code_line
                 |       code_section code_line
                 ;
