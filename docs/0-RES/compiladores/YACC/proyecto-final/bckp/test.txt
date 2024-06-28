@@ -20,9 +20,16 @@ Main {
     If h < 12 Then Read a, b ;
     if z >= a Then Write h;
 
+    j;
+
+
+
     j := 12;
 
     j := 12 + 2;
+
+    a := .;
+
     j := (12 + 2)/5 - (h + 1)^(2-1);
 
 }
