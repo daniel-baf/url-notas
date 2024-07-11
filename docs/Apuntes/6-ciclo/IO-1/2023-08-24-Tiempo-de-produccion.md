@@ -13,17 +13,14 @@ TERM     |  x1 + 0.67x2     <= 708
 INSP. E   | 0.1x1 + 0.25x2 <= 135
 x1, x2 >= 0
 
-
-
-![[Pasted image 20230824123541.png]]
-
+![[Pasted image 20230824123425.png]]
 
 a) 
 xi = ?
 x2 = ?
 
 
-x1 = 538.42 bolsas estandar 
+x1 = 538.42 bolsas estándar 
 x2 = 253.11 bolsas de lujo
 
 b)
