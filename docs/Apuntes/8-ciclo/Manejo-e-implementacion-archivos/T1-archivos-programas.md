@@ -1,4 +1,5 @@
 
+
 1. La ruta donde se guardan todas las extensiones y los programas con que pueden abrirse (con una captura de pantalla mostrando dicha ruta)
 2. Captura de pantalla de los programas con que se pueden abrir los siguientes tipos de archivo (siempre desde la ruta del inciso 1):
 
