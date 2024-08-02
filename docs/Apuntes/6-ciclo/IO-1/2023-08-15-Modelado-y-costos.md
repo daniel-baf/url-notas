@@ -53,7 +53,7 @@ Costeo directo: incluye todo aqueo que es indispensable y necesario para la prod
 		MIF: materiales indirectos de fabricación, son aquellos productos que se utilizan para la fabricación de un producto que no se consideran directamente, pero son necesarios para la fabricación de un producto
 			EJ: wipe, tíner para diluír pintura...
 
-	COSTO PRIMO: MOD + MDF
+COSTO PRIMO: MOD + MDF
 
 Costeo absorbente:
 	Este es un modelo en el que el costeo absorbe el precio de los productos y aparte los suplementarios o complementarios
@@ -161,10 +161,10 @@ p = $20
 **a) punto d equilibrio**
 
 CT = CF + CVx
-CT = 80000 \* 3x
+CT = 80000 \+ 3x
 
 U = I - E
-U = 20x - (80000 \* 3x)
+U = 20x - (80000 \+ 3x)
 U = 20x - 80000 - 3x
 U = 17x - 80000
 

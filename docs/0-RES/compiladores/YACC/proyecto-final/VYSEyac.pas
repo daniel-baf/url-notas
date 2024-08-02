@@ -54,7 +54,7 @@ begin
          writeLn('OK | CODED MAIN'); 
        end;
    3 : begin
-         yyval := yyv[yysp-0];
+         writeLn('ERROR EN LINEA: ', yylineno, ' COLUMNA: '); 
        end;
    4 : begin
          yyval := yyv[yysp-1];

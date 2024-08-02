@@ -1,15 +1,28 @@
 /* UN COMENTARIO DE UNA LINEA */
 Main {
-    /* Este es un comentario de muchas lineas
-        que deberia ser ignorado
-        y salir en una sola linea
+    // ignorar esta linea
+
+        /*esto tambien debe ser ignorado*/        
+    
+    INTEGER a;
+    Read a;
+    INTEGER b := 2;
+
+    Read a, b;
+
+    /*
+        Creo que el problema es la 
+        multilinea
+        Pero esto no debe
+        causar efectos
     */
 
-    // lexemas cortos
-    INTEGER a, b, z;
-    Read a;
-    /* esto no debe traducirse */
-    Read a, b;
-    z = a + b - 2;
-    if z > 10 Then Write z                                                
+    If h < 12 Then Read a, b ;
+    if z >= a Then Write h;
+
+    j := 12;
+
+    j := 12 + 2;
+    j := (12 + 2)/5 - (h + 1)^(2-1);
+
 }

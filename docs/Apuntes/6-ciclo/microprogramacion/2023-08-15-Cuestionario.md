@@ -123,8 +123,7 @@ El cálculo de la raíz cuadrada se puede realizar siguiendo varios enfoques:
 - Emulación de software, se utiliza un software que imita la presencia de un procesador
 
 Podemos tener un ALU que se encargue puramente de calcular raíces, pero este es más caro.
-
-
+ 
 
 **8. ¿Qué son las entradas en un ALU?**
 
