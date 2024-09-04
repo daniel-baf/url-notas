@@ -6,7 +6,7 @@ Para entender los archivos debemos manejar los conceptos de
 - Datos
 - Memoria
 - Binarios
-Las computadoras manejan espacios usando escalares de Bytes. Estos bites etan formdos por 2 nibbles.
+Las computadoras manejan espacios usando escalares de Bytes. Estos bit están formados por 2 nibbles.
 
 las operaciones básicas que podemos hacer en un archivo son, LEER, GUARDAR, BORRAR Y CREAR.
 
@@ -23,3 +23,9 @@ los elementos importantes de un archivo son
 - Permisos
 	- Lectura, escritura, modificación, ejecución
 - Grupos
+
+
+$$
+LOG_2(MAX) = No. Bytes
+$$
+

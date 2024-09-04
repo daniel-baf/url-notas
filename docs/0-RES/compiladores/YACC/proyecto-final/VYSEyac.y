@@ -11,6 +11,7 @@ Uses Lexlib, Yacclib;
 
 file            :       MAIN O_BRACES C_BRACES                  { writeLn('OK | EMPTY MAIN'); }
                 |       MAIN O_BRACES code_section C_BRACES     { writeLn('OK | CODED MAIN'); }
+                |       error
                 ;
 
 code_section    :       error   C_EndL                          { writeLn('ERROR EN LINEA: ', yylineno, ' COLUMNA: '); }
