@@ -1,6 +1,6 @@
-Cuando manejamos cuentas de ahorro, en cualquier momento podemos retirar. En cambio en un plazo fijo, no.
+45Cuando manejamos cuentas de ahorro, en cualquier momento podemos retirar. En cambio en un plazo fijo, no.
 
-El banco Azteka da mas intereses porque no es un banco de Guatemala, sus inversiones serán en el extranjero.
+El banco Azteca da mas intereses porque no es un banco de Guatemala, sus inversiones serán en el extranjero.
 
 # Factores para series uniformes
 
@@ -8,8 +8,8 @@ El banco Azteka da mas intereses porque no es un banco de Guatemala, sus inversi
 ***SERIES UNIFORMES ES PARA PAGOS O RETIROS CONSTANTES***
 
 Son tipos de pagos anticipados, se pagan al inicio del  periodo
-- Pago **anticipado**: antes del termino del periodo
-- Pago **vencidos**: después del termino de periodo
+- Pago **anticipado**: antes del termino del periodo.
+- Pago **vencidos**: después del termino de periodo.
 
 
 F = Cuota vencida
@@ -36,7 +36,6 @@ $$
 $$
 F = 1020.10 + 1010 + 1000
 $$
-
 $$
 F = R*\left[ \frac{(1+i)^{n}-1}{i} \right]
 $$
@@ -54,7 +53,7 @@ P = R*\left[ \frac{(1+i)^{n}-1}{i*(1+i)^{n}} \right]
 $$
 
 
-Ejemplo: Se retira una institución una mensualidad de Q1000.00 al final de cada mes durante 3 meses, se paga un interés de 1% por cada deposito.
+Ejemplo: Se retira una institución una mensualidad de Q 1000.00 al final de cada mes durante 3 meses, se paga un interés de 1% por cada deposito.
 
 
 $$
@@ -67,7 +66,11 @@ $$
 $$
 P = 2940.99
 $$
+FIDEICOMISO bienes para administrar bienes.
+plazo fijo
 
+Planes de inversión.
+Fideicomiso, CHN Y BI.
 
 ## Análisis de resultado
 
@@ -76,3 +79,5 @@ $$
 | 1   | 2940   | 1 + 0.01 |     | 2970.40 | 1000  |     | 1970.40 |
 | 2   | 1970   | 1 + 0.01 |     | 1990.10 | 1000  |     | 990.10  |
 | 3   | 990.10 | 1 + 0.01 |     | 1000    | 1000  |     | 0       |
+
+Leasing financiero bancos ya no lo hacen.

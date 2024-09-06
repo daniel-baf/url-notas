@@ -1,0 +1,1 @@
+La tabla de particiones almacena particiones.

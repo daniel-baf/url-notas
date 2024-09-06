@@ -1,4 +1,4 @@
-
+¿
 En la siguiente formula, C es el capital actual, no hay valor futuro.
 
 $$
