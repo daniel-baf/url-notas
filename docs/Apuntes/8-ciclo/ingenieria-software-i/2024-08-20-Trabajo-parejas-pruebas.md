@@ -10,6 +10,7 @@
 
 - **Revisión de Requisitos**: Verificación de que los requisitos son completos, consistentes y comprensibles.
 - **Prototipos**: Simulaciones tempranas para validar la comprensión de los requisitos con el cliente.
+- **Prueba de aceptación**: mostrando diagrama de casos de uso
 
 ## Planificación
 
