@@ -1,115 +1,134 @@
-import struct  # manejo de binarios
 import os
-import pickle  # serializar objetos en python
+from archivo_indexado import ArchivoIndexado, Usuario
 
-# Estructura de un registro (clave, objeto serializado)
-REGISTRO_FORMAT = "I"  # 'I' para clave (int), el objeto se almacena como binario
-REGISTRO_SIZE = struct.calcsize(REGISTRO_FORMAT)
+"""
+    PROGRAMA REALIZADO POR: DANIEL EDUARDO BAUTISTA FUENTES
+    CARNET: 2121323
 
+    PROGRAMA QUE INTENTA REPRESENTAR UNA BASE DE DATOS FUNCIONANDO COMO ARCHIVO INDEXADO
 
-# Clase para manejar el archivo de datos y el archivo de índice
-class Usuario:
-    def __init__(self, nombre: str, telefono: str) -> None:
-        self.nombre = nombre
-        self.telefono = telefono
-
-    def __str__(self) -> str:
-        return f"Nombre: {self.nombre}, Teléfono: {self.telefono}"
-
-    def __repr__(self) -> None:
-        return f"Usuario(nombre={self.nombre}, telefono={self.telefono})"
-
-
-# vamos a estar almacenando los objetos serializados en el archivo de datos
-class ArchivoIndexado:
-    def __init__(self, datos_file="datos.dat", index_file="index.idx"):
-        self.datos_file = datos_file
-        self.index_file = index_file
-
-        # Inicializar archivos
-        self._initialize_files()
-
-    def _initialize_files(self):  # crea los archivos si no existen
-        for file in [self.datos_file, self.index_file]:
-            if os.path.exists(file):
-                with open(file, "wb"):
-                    pass
-
-    def agregar_registro(self, clave, objeto: Usuario):
-        # Serializar el objeto
-        objeto_serializado = pickle.dumps(objeto)
-
-        with open(self.datos_file, "ab") as archivo_datos:
-            archivo_datos.write(struct.pack(REGISTRO_FORMAT, clave))
-            archivo_datos.write(objeto_serializado)
-            pos = archivo_datos.tell() - (REGISTRO_SIZE + len(objeto_serializado))
-            self._agregar_a_indice(clave, pos)
-
-    def _agregar_a_indice(self, clave, pos):
-        with open(self.index_file, "ab") as archivo_indice:
-            archivo_indice.write(struct.pack("I", clave))
-            archivo_indice.write(struct.pack("I", pos))
-
-    def buscar_registro(self, clave):
-        pos = self._buscar_en_indice(clave)
-        if pos is not None:
-            return self._leer_registro(pos)
-        else:
-            print("Registro no encontrado.")
-            return None
-
-    def _buscar_en_indice(self, clave):
-        with open(self.index_file, "rb") as f_index:
-            while True:
-                bytes_leidos = f_index.read(8)  # 4 bytes para clave y 4 para pos
-                if not bytes_leidos:
-                    break
-                c, p = struct.unpack("II", bytes_leidos)
-                if c == clave:
-                    return p
-        return None
-
-    def _leer_registro(self, pos):
-        with open(self.datos_file, "rb") as archivo_datos:
-            archivo_datos.seek(pos)
-            clave = struct.unpack(REGISTRO_FORMAT, archivo_datos.read(REGISTRO_SIZE))[0]
-            objeto_serializado = archivo_datos.read()  # Leer el objeto serializado
-            objeto = pickle.loads(objeto_serializado)  # Deserializar el objeto
-            return clave, objeto
+    FECHA DE CREACION: 10-09-2024
+    ULTIMA MODIFICACION: 10-09-2024
+"""
 
 
 class App:
+    """
+    Clase principal que gestiona la interfaz de usuario y las operaciones
+    sobre los registros de usuarios utilizando ArchivoIndexado.
+    """
+
     def __init__(self):
-        self.app = ArchivoIndexado()
+        """Inicializa la aplicación creando una instancia de ArchivoIndexado."""
+        self.arch_indexado = ArchivoIndexado()
 
-    def agregar_registro(self, clave, objeto):
-        self.app.agregar_registro(clave, objeto)
+    def clear_screen(self):
+        """Limpia la pantalla de la consola."""
+        os.system("cls" if os.name == "nt" else "clear")
 
-    def buscar_registro(self, clave):
-        return self.app.buscar_registro(clave)
+    def enter_to_continue(self, message=""):
+        """
+        Espera a que el usuario presione una tecla para continuar.
+
+        :param message: Mensaje opcional para mostrar antes de esperar.
+        """
+        input(f"{message}\nPresione cualquier tecla para continuar...")
+
+    def agregar_registro(self) -> None:
+        """
+        Solicita al usuario los datos para agregar un nuevo registro
+        y lo almacena en el archivo de datos.
+        """
+        clave = int(input("Ingrese el no. de control: "))
+        nombre = input("Ingrese el nombre: ")
+        telefono = input("Ingrese el teléfono: ")
+
+        self.arch_indexado.agregar_registro(clave, Usuario(nombre, telefono))
+        self.enter_to_continue("Registro agregado con éxito.")
+
+    def buscar_registro(self) -> None:
+        """
+        Solicita al usuario una clave y busca el registro correspondiente.
+        Muestra un mensaje si el registro se encuentra o no.
+        """
+        clave = int(input("Ingrese la clave: "))
+        registro = self.arch_indexado.buscar_registro(clave)
+
+        message = (
+            "No se ha encontrado un registro"
+            if registro is None
+            else f"Registro encontrado: {registro}"
+        )
+
+        self.enter_to_continue(message=message)
+
+    def listar_registros(self) -> None:
+        """
+        Lista todos los registros almacenados en el archivo de datos.
+        """
+        self.arch_indexado.listar_registros()
+        self.enter_to_continue()
+
+    def borrar_registro(self) -> None:
+        """
+        Solicita al usuario una clave y borra el registro correspondiente
+        del archivo de datos.
+        """
+        clave = int(input("Ingrese la clave del registro a eliminar: "))
+        self.arch_indexado.borrar_registro(clave)
+        self.enter_to_continue()
+
+    def editar_registro(self) -> None:
+        """
+        Solicita al usuario la clave de un registro existente y los
+        nuevos datos, y actualiza el registro en el archivo de datos.
+        """
+        clave = int(input("Ingrese la clave del registro a editar: "))
+        nombre = input("Ingrese el nuevo nombre: ")
+        telefono = input("Ingrese el nuevo teléfono: ")
+
+        self.arch_indexado.editar_registro(clave, Usuario(nombre, telefono))
+        self.enter_to_continue("Registro editado con éxito.")
 
     def mostrar_menu(self):
-        print("1. Agregar registro")
-        print("2. Buscar registro")
-        print("3. Salir")
-        return input("Opción: ")
+        """
+        Muestra el menú de opciones al usuario y maneja la selección
+        de la opción.
+        """
+        len_menu = 50
+        print(
+            f"{'Menú':^{len_menu}}\n{'-' * len_menu}\n\t1. Agregar registro\n\t2. Buscar registro\n\t3. Listar registros\n\t4. Borrar registro\n\t5. Editar registro\n\t6. Borrar archivos cnf\n\t0. Salir\n{'-' * len_menu}"
+        )
+
+        opcion = input("Opción: ")
+
+        if opcion == "1":
+            self.agregar_registro()
+        elif opcion == "2":
+            self.buscar_registro()
+        elif opcion == "3":
+            self.listar_registros()
+        elif opcion == "4":
+            self.borrar_registro()
+        elif opcion == "5":
+            self.editar_registro()
+        elif opcion == "6":
+            self.arch_indexado.borrar_archivos_cnf()
+            self.enter_to_continue("Archivos cnf borrados")
+        elif opcion == "0":
+            exit()
+        else:
+            self.enter_to_continue("Opción inválida.")
 
     def run(self):
+        """
+        Inicia el bucle principal de la aplicación, donde se manejan
+        las interacciones del usuario.
+        """
         while True:
             try:
-                opcion = self.mostrar_menu()
-                if opcion == "1":
-                    clave = int(input("Ingrese el no. de control: "))
-                    nombre = input("Ingrese el nombre: ")
-                    telefono = input("Ingrese el teléfono: ")
-                    self.agregar_registro(clave, Usuario(nombre, telefono))
-                elif opcion == "2":
-                    clave = int(input("Ingrese la clave: "))
-                    print(self.buscar_registro(clave))
-                elif opcion == "3":
-                    exit()
-                else:
-                    print("Opción inválida.")
+                self.clear_screen()
+                self.mostrar_menu()
             except Exception as e:
                 print(f"Error: {e}")
 
