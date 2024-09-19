@@ -6,7 +6,7 @@ Para administrator la calidad en un software, establecemos 3 etapas
 - Conceptos
 - Técnicas
 
-Según Garvin, hay que abordar la calidad desde 7 perspectivas.
+Según Garvin, hay que abordar la calidad desde 5 perspectivas.
 
 | Conecpto                          | Definicion                                                                                                                 |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
