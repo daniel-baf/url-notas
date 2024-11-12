@@ -104,7 +104,7 @@ La posición de un elemento en una secuencia afecta a la precisión de su recuer
 
 Los movimientos más rápidos hacia objetivos más pequeños dan mayor tasa de error.
 Es importante hacer que el usuario tenga acceso rápido a los botones, si es algo con lo que se interactúe, no debe estar tan lejos ni ser pequeño ni grande, reducir recorridos y ser accesibles y visibles.
-
+	
 #### Ley 7: Ley de Parkinson
 
 Cuanto más tiempo tiene un usuario para realizar una tarea, más tiempo va tardar en realizarlo. No debemos dar mucho tiempo, que las tareas las hagan rápido.

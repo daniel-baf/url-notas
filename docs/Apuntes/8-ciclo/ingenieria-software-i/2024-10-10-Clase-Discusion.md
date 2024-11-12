@@ -1,4 +1,4 @@
-Estrategias de pruebas
+                                                                                                    Estrategias de pruebas
 
 - PARA SOFTWARE CONVENCIONAL
 	- UNIDAD O UNITARIAS
