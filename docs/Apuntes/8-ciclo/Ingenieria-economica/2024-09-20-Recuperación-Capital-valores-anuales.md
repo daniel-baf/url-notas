@@ -8,8 +8,6 @@ $$
 Ejemplo. Una empresa fabrica juguetes y debe pagar anualmente Q700.00 al final de cada año durante 5 años, y la empresa requiere que la anualidad brinde un rendimiento minimo de 8%
 
 ```
-
-
 ## Método largo
 
 Hacer una tabla
