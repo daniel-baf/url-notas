@@ -1,0 +1,19 @@
+{
+  "name": "integracion",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0"
+  }
+}
