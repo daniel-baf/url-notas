@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "5a6b60ff8680377b",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c76c9a5fa9a28b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "955856207badfb96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-14-Introduccion.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-01-14-Introduccion"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "413f41555196ee13",
+    "type": "split",
+    "children": [
+      {
+        "id": "b39b311293d76d41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2b6ffd657edd9a3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "87c2acd478ba89d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3a579dd07b63429b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2cefc28ee41085c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "abd11c53aa9f8b7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce2285e00e4f90d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-09-19-Pruebas"
+            }
+          },
+          {
+            "id": "ce3ffb722e3bc499",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-09-19-Pruebas"
+            }
+          },
+          {
+            "id": "4d5bc0c457dd421a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e6cca978c04cf632",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-09-19-Pruebas"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false
+    }
+  },
+  "active": "955856207badfb96",
+  "lastOpenFiles": [
+    "Apuntes/9-ciclo/gestion-negocios/2025-01-14-Introduccion.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-14-Introduccion.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional",
+    "Apuntes/9-ciclo/sistemas-operativos/2025-01-14-Sistema-operativo.md",
+    "Apuntes/9-ciclo/gestion-negocios",
+    "Apuntes/9-ciclo/sistemas-operativos/Untitled.md",
+    "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md",
+    "Apuntes/9-ciclo/inteligencia-artificial",
+    "Apuntes/9-ciclo/software-ii",
+    "Apuntes/9-ciclo/sistemas-operativos",
+    "Apuntes/9-ciclo"
+  ]
+}
