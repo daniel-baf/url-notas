@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9c76c9a5fa9a28b9",
+        "id": "06233b583c543a74",
         "type": "tabs",
         "children": [
           {
-            "id": "955856207badfb96",
+            "id": "6cc3d86218d18092",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-14-Introduccion.md",
+                "file": "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-17-Habilidades.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-14-Introduccion"
+              "title": "2025-01-17-Habilidades"
             }
           }
         ]
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 280.5
   },
   "right": {
     "id": "2cefc28ee41085c3",
@@ -93,17 +93,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md",
+                "file": "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-17-Habilidades.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-09-19-Pruebas"
+              "title": "Backlinks for 2025-01-17-Habilidades"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-17-Habilidades.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2024-09-19-Pruebas"
+              "title": "Outgoing links from 2025-01-17-Habilidades"
             }
           },
           {
@@ -145,7 +145,8 @@
               "title": "Outline of 2024-09-19-Pruebas"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -163,14 +164,23 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "955856207badfb96",
+  "active": "6cc3d86218d18092",
   "lastOpenFiles": [
-    "Apuntes/9-ciclo/gestion-negocios/2025-01-14-Introduccion.md",
     "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-14-Introduccion.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-17-Habilidades.md",
+    "Apuntes/9-ciclo/gestion-negocios/2025-01-14-Tarea.md",
+    "Apuntes/9-ciclo/gestion-negocios/2025-01-16-Clase.md",
+    "Apuntes/9-ciclo/gestion-negocios/Untitled.canvas",
+    "Apuntes/9-ciclo/sistemas-operativos/2025-01-16-Historia-SO.md",
+    "Apuntes/9-ciclo/tecnologias-emergentes/2025-01-16-Clase-2.md",
+    "Apuntes/9-ciclo/administracion-financiera/2025-01-15-Introduccion.md",
+    "Apuntes/9-ciclo/software-ii/2025-01-15-Pruebas.md",
+    "Apuntes/9-ciclo/tecnologias-emergentes",
+    "0-RES/software-ii/pruebas/integracion/node_modules/fsevents",
+    "Apuntes/9-ciclo/gestion-negocios/2025-01-14-Introduccion.md",
     "Apuntes/9-ciclo/comportamiento-organizacional",
     "Apuntes/9-ciclo/sistemas-operativos/2025-01-14-Sistema-operativo.md",
     "Apuntes/9-ciclo/gestion-negocios",
-    "Apuntes/9-ciclo/sistemas-operativos/Untitled.md",
     "Apuntes/8-ciclo/ingenieria-software-i/2024-09-19-Pruebas.md",
     "Apuntes/9-ciclo/inteligencia-artificial",
     "Apuntes/9-ciclo/software-ii",

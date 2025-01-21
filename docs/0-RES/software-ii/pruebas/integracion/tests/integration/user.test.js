@@ -16,7 +16,7 @@ afterAll(async () => {
 
 describe("Pruebas de integración para el API de usuarios", () => {
   it("Debe devolver una lista de usuarios", async () => {
-    const response = await request(app).get("/api/users");
+    const response = await request(app).get("/api/usersk");
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual(
       expect.arrayContaining([
@@ -41,6 +41,7 @@ describe("Pruebas de integración para el API de usuarios", () => {
     ]);
     expect(users.length).toBe(1);
     expect(users[0]).toMatchObject(newUser);
+    
   });
 
   it("Debe retornar error si faltan datos al crear un usuario", async () => {
@@ -54,3 +55,5 @@ describe("Pruebas de integración para el API de usuarios", () => {
     );
   });
 });
+
+

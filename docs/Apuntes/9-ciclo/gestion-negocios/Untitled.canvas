@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"cc98415ee4eb8532","x":-120,"y":-160,"width":250,"height":60,"type":"text","text":"Administracion"},
+		{"id":"67f5c22f9a3c9771","x":-120,"y":0,"width":250,"height":60,"color":"3","type":"text","text":""}
+	],
+	"edges":[
+		{"id":"70c0f28d0ec8f02a","fromNode":"cc98415ee4eb8532","fromSide":"bottom","toNode":"67f5c22f9a3c9771","toSide":"top"}
+	]
+}
