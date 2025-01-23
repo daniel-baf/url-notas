@@ -2,6 +2,7 @@
 .obsidian/*
 
 venv/
+venv/lib64
 .venv/
 .venv/*
 jupytervenv/
