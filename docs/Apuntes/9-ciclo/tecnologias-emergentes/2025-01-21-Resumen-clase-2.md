@@ -22,7 +22,7 @@ El video menciona las siguientes tecnologías emergentes:
 Estas tecnologías están transformando las industrias al:
 
 - **Automatizar procesos:** La IA y la robótica permiten automatizar tareas repetitivas y peligrosas, aumentando la eficiencia y la productividad.
-- **Crear nuevos productos y servicios:** La carne de laboratorio, la ropa inteligente y los materiales autorreparables son ejemplos de nuevos productos innovadores.
+- **Crear nuevos productos y servicios:** La carne de laboratorio, la ropa inteligente y los materiales auto reparables son ejemplos de nuevos productos innovadores.
 - **Mejorar la atención médica:** Los úteros artificiales, la BCI y la IA tienen el potencial de revolucionar la atención médica.
 - **Abordar el cambio climático:** La energía de fusión ofrece una fuente de energía limpia e ilimitada.
 - **Mejorar la comunicación:** El Internet cuántico promete comunicaciones más rápidas y seguras.
