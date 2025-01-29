@@ -5,3 +5,12 @@ seaborn
 openpyxl
 ipykernel
 faker
+lxml
+
+# CLASE 3
+scipy
+statsmodels
+
+# CLASE 4
+bs4
+requests

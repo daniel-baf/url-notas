@@ -1,3 +1,8 @@
+DANIEL EDUARDO BAUTISTA FUENTES
+
+2121323
+
+
 El IRTRA se enfoca en brindar un servicio de calidad, manteniendo las áreas limpias y brindando atención y recreación a los trabajadores de la empresa privada.
 
 Además del servicio, el IRTRA promueve una cultura basada en el respeto, la felicidad y el trabajo en equipo. También se enfocan en la capacitación continua de sus empleados en áreas como relaciones interpersonales, normas de seguridad y cultura.
@@ -8,7 +13,7 @@ El IRTRA tiene como objetivo dar felicidad a los demás y busca ser un referente
 
 ## Introducción
 
-El Instituto de Recreación de los Trabajadores de la Empresa Privada de Guatemala (IRTRA) es mucho más que un conjunto de parques de diversiones. Es una institución emblemática que ha tejido una profunda conexión con la sociedad guatemalteca a lo largo de décadas. En el corazón de su éxito reside la "cultura IRTRA", un conjunto de valores, principios y prácticas que definen su identidad y la experiencia que ofrece a sus visitantes. En 2024 alone, IRTRA introduced a range of new attractions designed to enhance visitor enjoyment, demonstrating its ongoing dedication to innovation and guest satisfaction . Este artículo explora el corazón de la cultura IRTRA, explorando sus orígenes, cómo se fomenta, cómo se vive en sus parques y el impacto que ha tenido en Guatemala.  
+El Instituto de Recreación de los Trabajadores de la Empresa Privada de Guatemala (IRTRA) es mucho más que un conjunto de parques de diversiones. Es una institución emblemática que ha tejido una profunda conexión con la sociedad guatemalteca a lo largo de décadas. En el corazón de su éxito reside la "cultura IRTRA", un conjunto de valores, principios y prácticas que definen su identidad y la experiencia que ofrece a sus visitantes.  Este artículo explora el corazón de la cultura IRTRA, explorando sus orígenes, cómo se fomenta, cómo se vive en sus parques y el impacto que ha tenido en Guatemala.  
 
 ## Valores, Principios y Filosofía de la Cultura IRTRA
 
