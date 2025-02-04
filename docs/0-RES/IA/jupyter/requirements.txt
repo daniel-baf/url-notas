@@ -14,3 +14,8 @@ statsmodels
 # CLASE 4
 bs4
 requests
+
+# CLASE 5
+# sudo apt-get install ghostscript
+camelot-py
+PyPDF2<3.0

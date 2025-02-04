@@ -31,7 +31,6 @@ Los usuarios pueden ser invalidados.
 
 **DEBE SER PROGRAMA WEB**
 
-
 # ROBOS
 
 Si el inventario no coincide: 

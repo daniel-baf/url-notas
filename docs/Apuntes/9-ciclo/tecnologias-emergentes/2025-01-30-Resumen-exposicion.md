@@ -22,17 +22,47 @@ Un gemelo digital es una representación virtual de un objeto o sistema físico,
 
 Por ejemplo, un gemelo digital de un paciente con diabetes podría utilizarse para simular el efecto de diferentes dosis de insulina y planes de alimentación, lo que permitiría al médico y al paciente encontrar el tratamiento más adecuado para controlar la enfermedad. Los gemelos digitales también pueden utilizarse para predecir el riesgo de desarrollar ciertas enfermedades y para personalizar los programas de prevención y promoción de la salud.
 
-## Osos artificiales
+## Ojos artificiales
 
-Los osos artificiales, también conocidos como osos robóticos o osos animatrónicos, son réplicas de osos diseñadas para imitar el comportamiento y la apariencia de un oso real. Estos dispositivos se utilizan en una variedad de campos, como el entretenimiento, la investigación y la terapia.
+Los ojos artificiales, también conocidos como prótesis oculares, son reemplazos protésicos para el ojo natural ausente debido a una lesión, cirugía o condición congénita. A diferencia de los ojos biónicos, que buscan restaurar la visión, los ojos artificiales se centran en la estética y la comodidad del paciente.
 
-En el entretenimiento, los osos artificiales se utilizan en parques temáticos, museos y espectáculos para crear experiencias inmersivas y realistas. Estos osos pueden moverse, emitir sonidos e interactuar con el público, lo que los convierte en una atracción popular para personas de todas las edades.
+**¿Cómo funcionan?**
 
-En la investigación, los osos artificiales se utilizan para estudiar el comportamiento de los osos reales en su hábitat natural. Al observar cómo reaccionan los osos a los osos artificiales, los investigadores pueden obtener información valiosa sobre su comunicación, su comportamiento social y su respuesta al estrés.
+Un ojo artificial típico consta de dos partes principales:
 
-En la terapia, los osos artificiales se utilizan para ayudar a personas con discapacidades o problemas emocionales. Estos osos pueden proporcionar compañía, consuelo y estimulación sensorial, lo que puede mejorar el bienestar y la calidad de vida de las personas.
+1. **El implante ocular:** Esta es una esfera que se coloca quirúrgicamente en la órbita ocular después de la extirpación del ojo. El implante está hecho de materiales biocompatibles como hidroxipatita o polimetilmetacrilato (PMMA) y proporciona soporte para el ojo artificial.
+    
+2. **La prótesis ocular:** Esta es la parte visible que se asemeja a un ojo natural. Se fabrica a medida para que coincida con el color, tamaño y forma del ojo natural del paciente. La prótesis se ajusta sobre el implante y se puede quitar y limpiar.
+    
 
-Existen diferentes tipos de osos artificiales, desde modelos estáticos y realistas hasta robots sofisticados con inteligencia artificial. Algunos osos artificiales pueden incluso interactuar con el público a través del tacto y el habla, lo que los convierte en compañeros interactivos.
+**¿Quiénes los necesita?**
+
+Los ojos artificiales son necesarios para personas que han perdido un ojo debido a:
+
+- **Enucleación:** Extirpación quirúrgica del globo ocular debido a lesiones graves, enfermedades como el cáncer de ojo o dolor intenso.
+- **Evisceración:** Extirpación del contenido del globo ocular, dejando la esclerótica (parte blanca del ojo) y los músculos oculares intactos.
+- **Microftalmía:** Condición congénita en la que el ojo no se desarrolla completamente.
+
+**Beneficios:**
+
+- **Mejora la apariencia estética:** Un ojo artificial restaura la apariencia natural del rostro, lo que puede mejorar la autoestima y la confianza del paciente.
+- **Brinda comodidad:** Un ojo artificial bien ajustado puede ser cómodo de usar y no causa dolor.
+- **Protege la órbita ocular:** El ojo artificial ayuda a mantener la forma de la órbita y previene el hundimiento de los tejidos blandos alrededor del ojo.
+
+**Tipos de ojos artificiales:**
+
+- **Ojos artificiales estándar:** Se fabrican en tamaños y formas predefinidas y se pueden adaptar ligeramente para que coincidan con el ojo natural del paciente.
+- **Ojos artificiales personalizados:** Se fabrican a medida utilizando un molde de la órbita del paciente para lograr un ajuste y apariencia más precisos.
+
+**Cuidado de los ojos artificiales:**
+
+- **Limpieza regular:** La prótesis ocular debe limpiarse diariamente con agua tibia y un jabón suave.
+- **Lubricación:** Se pueden usar gotas oftálmicas para mantener la prótesis húmeda y cómoda.
+- **Revisiones periódicas:** Es importante visitar a un oculista u ocularista regularmente para检查 el estado de la prótesis y la órbita ocular.
+
+**Avances en ojos artificiales:**
+
+Se están desarrollando nuevas tecnologías para mejorar la funcionalidad y la apariencia de los ojos artificiales. Esto incluye el uso de materiales más avanzados, técnicas de fabricación más precisas y la integración de componentes electrónicos para crear ojos artificiales más realistas e incluso biónicos en el futuro.
 
 ## Lentes de contacto inteligentes
 
