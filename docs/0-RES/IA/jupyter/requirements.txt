@@ -19,3 +19,7 @@ requests
 # sudo apt-get install ghostscript
 camelot-py
 PyPDF2<3.0
+
+
+# CLASE 6: CLASIFICADORES
+scikit-learn
