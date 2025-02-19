@@ -36,3 +36,14 @@ Hay 3 tipos de control
 - Concurrente
 - Posterior
 
+
+
+**PLANIFICACION**
+
+- Procedimiento
+	- Actividades  / Pasos                     ->  FLUJO GRAMA
+	- Orden lógico                                  ->  BLOQUES
+- Programa
+	- Tiempo                                           -> Grafica GANTT    -> PLANIFICACION
+- Presupuesto                                                                            -> Y
+	- Recurso monetario                         ->                             ->  CONTROL
