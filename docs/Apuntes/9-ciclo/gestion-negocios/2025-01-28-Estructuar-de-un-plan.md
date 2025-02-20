@@ -18,8 +18,14 @@ Para lograr una planificación, debo cumplir con 4 cosas
 
 # GANTT
 
-**ACTIVIDAD PRESEDENTE**, que debo acabar antes de que se pueda iniciar la tarea actual
+**ACTIVIDAD PRECEDENTE**, que debo acabar antes de que se pueda iniciar la tarea actual
 
-Puedo usar escala corrida o escala calendario, para sbaer cuanto tiempo me va llevar y cuando voy a empezar.
-20 dias pero en calendario, luego responde a la pregunta cuando lo voy a hacer.
+Puedo usar escala corrida o escala calendario, para saber cuanto tiempo me va llevar y cuando voy a empezar.
+20 días pero en calendario, luego responde a la pregunta cuando lo voy a hacer.
+
+
+
+**HAY 2 TIPOS DE PLANES, ESTRATÉGICO Y FUNCIONAL**
+
+El estratégico es el que tiene la misión, vision, estrategias, valores... mientras que los funcionales son los que definen  objetivos y son operativos.
 
