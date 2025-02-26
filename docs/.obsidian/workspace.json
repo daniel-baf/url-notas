@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "592e9bcd75aaeae1",
+        "id": "edd6771ad663acac",
         "type": "tabs",
         "children": [
           {
-            "id": "c253fee25c4a0550",
+            "id": "16545c16f13ae2f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes/9-ciclo/sistemas-operativos/2025-02-13-redes.md",
+                "file": "Apuntes/9-ciclo/comportamiento-organizacional/2025-02-18-Resumen-examen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-13-redes"
-            }
-          },
-          {
-            "id": "8bafffd501d70c1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Apuntes/9-ciclo/gestion-negocios/2025-01-28-Estructuar-de-un-plan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-01-28-Estructuar-de-un-plan"
+              "title": "2025-02-18-Resumen-examen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,8 +165,14 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "8bafffd501d70c1b",
+  "active": "16545c16f13ae2f4",
   "lastOpenFiles": [
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-22-Cultura-irtra-investigacion.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-20-Tarea.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-17-Habilidades.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-14-Introduccion.md",
+    "Apuntes/9-ciclo/comportamiento-organizacional/2025-02-18-Resumen-examen.md",
+    "Apuntes/9-ciclo/gestion-negocios/2025-01-28-Estructuar-de-un-plan.md",
     "Apuntes/9-ciclo/gestion-negocios/2025-02-18-Planifiacion.md",
     "0-RES/IA/jupyter/public/csv/FLUJOGRAMA DE BLOQUES MATERIAL DE APOYO.docx",
     "0-RES/IA/jupyter/public/csv/Unconfirmed 559743.crdownload",
@@ -196,7 +187,6 @@
     "Apuntes/9-ciclo/sistemas-operativos/2025-01-21-Clase.md",
     "Apuntes/9-ciclo/sistemas-operativos/2025-01-14-Sistema-operativo.md",
     "Apuntes/9-ciclo/comportamiento-organizacional/2025-02-12-Factores-satisfaccion.md",
-    "Apuntes/9-ciclo/gestion-negocios/2025-01-28-Estructuar-de-un-plan.md",
     "Apuntes/9-ciclo/gestion-negocios/2025-01-21-Emprendimiento.md",
     "Apuntes/9-ciclo/gestion-negocios/2025-01-16-Clase.md",
     "Apuntes/9-ciclo/gestion-negocios/2025-01-14-Tarea.md",
@@ -207,7 +197,6 @@
     "Apuntes/9-ciclo/comportamiento-organizacional/2025-02-09-Guia-Inclusion.md",
     "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-31-Estres-laboral.md",
     "Apuntes/9-ciclo/comportamiento-organizacional/2025-02-07-Tarea.md",
-    "Apuntes/9-ciclo/comportamiento-organizacional/2025-02-05-EL-INDIVIDUO.md",
     "0-RES/comportamiento-organizacional/generaciones.docx",
     "0-RES/comportamiento-organizacional/Pasted image 20250205123526.png",
     "0-RES/comportamiento-organizacional",
@@ -215,9 +204,6 @@
     "0-RES/archivos/proyecto-metadatos/venv",
     "0-RES/IA/jupyter/07-arbol-de-decisiones.ipynb",
     "0-RES/IA/jupyter/06-inteligencia-artificial-python:analisis-exploratorio.ipynb",
-    "Apuntes/9-ciclo/tecnologias-emergentes/2025-02-04-IA.md",
-    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-29-Modelo-tarea.md",
-    "Apuntes/9-ciclo/comportamiento-organizacional/2025-01-29-Informe-irtra.md",
     "Apuntes/9-ciclo/gestion-negocios/Untitled.canvas"
   ]
 }
