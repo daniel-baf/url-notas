@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet, Image } from "react-native";
 import * as ImagePicker from "expo-image-picker";
+import { handleClassification as fetchAPI } from "../services/ImageClassifier";
 
 // Definir tipos para los estados
 interface ImageResult {
@@ -31,11 +32,14 @@ const Summary: React.FC = () => {
 
   const handleClassification = async (imagePath: string) => {
     // Aquí iría la lógica de clasificación de la imagen
-    try {
-      setPrediction("Objeto clasificado"); // Cambia esto con la lógica real
-    } catch (error) {
-      alert("Error en la clasificación de la imagen.");
-    }
+    fetchAPI(imagePath)
+      .then((response) => {
+        console.log(response);
+        setPrediction(response); // Assuming response has a prediction field
+      })
+      .catch((error) => {
+        alert("Error en la clasificación de la imagen. " + error.message);
+      });
   };
 
   return (
@@ -54,8 +58,15 @@ const Summary: React.FC = () => {
             <Text style={styles.placeholder}>Acá se verá tu imagen</Text>
           )}
         </View>
-        {prediction ? (
-          <Text style={styles.objectType}>{prediction}</Text>
+
+        {prediction && Array.isArray(prediction) ? (
+          <View style={styles.predictionContainer}>
+            {prediction.map((item) => (
+              <Text key={item.id} style={styles.objectType}>
+                {item.nombre}: {item.porcentaje}%
+              </Text>
+            ))}
+          </View>
         ) : (
           <Text style={styles.placeholder}>Objeto clasificado</Text>
         )}
@@ -109,13 +120,23 @@ const styles = StyleSheet.create({
   placeholder: {
     color: "gray",
   },
-  objectType: {
-    fontSize: 16,
-    color: "black",
-  },
+
   footer: {
     alignItems: "center",
     marginTop: 20,
+  },
+
+  predictionContainer: {
+    marginTop: 10,
+    padding: 10,
+    backgroundColor: "#f8f9fa",
+    borderRadius: 8,
+  },
+  objectType: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#333",
+    marginBottom: 5,
   },
 });
 
