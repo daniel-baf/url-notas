@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet, Image } from "react-native";
 import * as ImagePicker from "expo-image-picker";
-import useModel from "../hooks/useModelHook";
-import { ImageClassifierService } from "../services/ImageClassifier.service";
-import TeachableMachineWebView from "./WebView";
 
 // Definir tipos para los estados
 interface ImageResult {
@@ -13,7 +10,6 @@ interface ImageResult {
 const Summary: React.FC = () => {
   const [image, setImage] = useState<string | null>(null); // El estado puede ser una URI o null
   const [prediction, setPrediction] = useState<string | null>(null); // El estado de predicción puede ser un string o null
-  const { model, loading, error } = useModel();
 
   const pickImage = async () => {
     try {
@@ -36,17 +32,7 @@ const Summary: React.FC = () => {
   const handleClassification = async (imagePath: string) => {
     // Aquí iría la lógica de clasificación de la imagen
     try {
-      // Simulación de predicción
-      if (!model) {
-        alert("Modelo no cargado.");
-        return;
-      }
-
-      const prediction = await new ImageClassifierService(model).classifyImage(
-        imagePath
-      );
       setPrediction("Objeto clasificado"); // Cambia esto con la lógica real
-      console.log(prediction);
     } catch (error) {
       alert("Error en la clasificación de la imagen.");
     }
@@ -61,26 +47,23 @@ const Summary: React.FC = () => {
 
       {/* Content */}
       <View style={styles.content}>
-        {/* <View style={styles.imageContainer}>
+        <View style={styles.imageContainer}>
           {image ? (
             <Image source={{ uri: image }} style={styles.image} />
           ) : (
             <Text style={styles.placeholder}>Acá se verá tu imagen</Text>
           )}
         </View>
-        <Text style={styles.objectType}>
-          {loading
-            ? "Cargando modelo..."
-            : prediction
-            ? prediction
-            : "Acá se verán las predicciones"}
-        </Text> */}
-        <TeachableMachineWebView />
+        {prediction ? (
+          <Text style={styles.objectType}>{prediction}</Text>
+        ) : (
+          <Text style={styles.placeholder}>Objeto clasificado</Text>
+        )}
       </View>
 
       {/* Footer */}
       <View style={styles.footer}>
-        <Button title="Cargar Imagen" onPress={pickImage} disabled={loading} />
+        <Button title="Cargar Imagen" onPress={pickImage} />
       </View>
     </View>
   );
