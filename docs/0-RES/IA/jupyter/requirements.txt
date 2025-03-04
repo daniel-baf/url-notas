@@ -24,3 +24,8 @@ PyPDF2<3.0
 # CLASE 6: CLASIFICADORES
 scikit-learn
 ipympl
+
+
+# CLASE 10: VISION ARTIFICIAL
+imageio
+scikit-image
