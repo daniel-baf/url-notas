@@ -1,10 +1,14 @@
 const express = require("express");
+const cors = require("cors"); // Importa cors
 const multer = require("multer");
 const tf = require("@tensorflow/tfjs-node");
 const fs = require("fs");
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors()); // Habilita CORS
+app.use(express.json());
 
 // Configurar Multer para subir imágenes
 const upload = multer({ dest: "uploads/" });
@@ -71,6 +75,10 @@ app.post("/clasificar", upload.single("imagen"), async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Error al procesar la imagen." });
   }
+});
+
+app.get("/", (req, res) => {
+  return res.json({ message: "API de clasificación de imágenes" });
 });
 
 // Iniciar el servidor
