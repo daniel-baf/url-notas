@@ -29,3 +29,6 @@ ipympl
 # CLASE 10: VISION ARTIFICIAL
 imageio
 scikit-image
+
+# CLASE 11
+common
