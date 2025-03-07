@@ -34,7 +34,6 @@ const Summary: React.FC = () => {
     // Aquí iría la lógica de clasificación de la imagen
     fetchAPI(imagePath)
       .then((response) => {
-        console.log(response);
         setPrediction(response); // Assuming response has a prediction field
       })
       .catch((error) => {
