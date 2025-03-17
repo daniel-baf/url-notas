@@ -7,3 +7,6 @@ venv/lib64
 .venv/*
 jupytervenv/
 node_modules/
+
+**/bin/**
+**/obj/**
