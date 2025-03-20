@@ -1,0 +1,12 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4550 -DL -O11111114 -fo8 -N"C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\MikroC\clase1\hola_mundo_v2_tmr0.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\MikroC\clase1\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "hola_mundo_v2_tmr0.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 2027 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	hola_mundo_v2_tmr0.c
+diagnostics: 34	123	Compiled Successfully	hola_mundo_v2_tmr0.c
+hint: 24	1164	Variable 'contador' has been eliminated by optimizer	hola_mundo_v2_tmr0.c
+diagnostics: 0	127	All files Compiled in 109 ms	 
+hint: 0	1144	Used RAM (bytes): 0 (1%)  Free RAM (bytes): 2027 (99%)	Used RAM (bytes): 0 (1%)  Free RAM (bytes): 2027 (99%)
+hint: 0	1144	Used ROM (bytes): 104 (1%)  Free ROM (bytes): 32664 (99%)	Used ROM (bytes): 104 (1%)  Free ROM (bytes): 32664 (99%)
+diagnostics: 0	125	Project Linked Successfully	hola_mundo_v2_tmr0.mcppi
+diagnostics: 0	128	Linked in 31 ms	 
+diagnostics: 0	129	Project 'hola_mundo_v2_tmr0.mcppi' completed: 312 ms	 
+diagnostics: 0	103	Finished successfully: 04 Sep 2023, 11:44:07	hola_mundo_v2_tmr0.mcppi
