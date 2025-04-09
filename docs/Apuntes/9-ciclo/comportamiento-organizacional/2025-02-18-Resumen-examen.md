@@ -21,7 +21,7 @@ Capacidades y conocimientos que un emprendedor debe desarrollar para realizar ac
 - Gerente de linea -> supervisa a los operarios
 - Empleados no administrativos
 
-**Qué es lo que hace un gerente**, cumple sus finciones administrativas, planear, organizar, integrar, dirigir y controlar.
+**Qué es lo que hace un gerente**, cumple sus funciones administrativas, planear, organizar, integrar, dirigir y controlar.
 
 ## Roles como gerentes o personas
 

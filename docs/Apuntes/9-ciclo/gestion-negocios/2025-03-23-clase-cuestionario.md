@@ -93,3 +93,32 @@ Finalmente, el impacto que generan en la empresa es distinto. Un jefe puede logr
 	6. **Eficiencia en los procesos**: Se logran los objetivos con menos fricción y errores.  
 	7. **Baja rotación de personal**: La gente se siente parte del equipo y quiere quedarse.
 
+
+# 2025-04-01-Gestion-de-talento-humano
+
+Vamos a diseñar todas las herramientas que como lideres necesitamos para poder gestionar los recursos de la empresa. 
+Hablaremos de controles previos, posteriores y concurrentes.
+
+El **organigrama** nos sirve para poder gestionar el orden en que la empresa está distribuida. En nuestro proyecto hemos establecido qué servicios y productos vamos a lanzar al mercado, ahora nos vamos a basar en eso para crear puestos de trabajo, y pensar en nuestro negocio cómo una estructura, donde requerimos varios colaboradores, lideres... y departamentos.
+
+> [!NOTE]
+> NINGUN ORGANIGRAMA PUEDE TENER CIRCULOS
+
+
+
+1. Crear puesto de trabajo
+	1. si mi negocio ofrece proyectos de desarrollo de software, ¿qué puestos requiero para esa actividad?
+		1. desarrolladores
+		2. un vendedor de proyectos
+		3. analista de sistemas
+		4. …
+2. Departametización
+	1. Dividir cada puesto de trabajo en actividades diferentes
+3. Asignar jerarquías
+	2. Decir los niveles de autoridad y los responsables de un puesto
+
+> [!NOTE]
+> La linea horizontal en un organigrama indica **coordinación**
+
+
+Tenemos que jugar con la *jerarquía, coordinación 

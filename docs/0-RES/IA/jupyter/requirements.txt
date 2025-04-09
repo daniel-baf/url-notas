@@ -33,3 +33,6 @@ scikit-image
 # CLASE 11
 common
 pytesseract
+
+# CLASE 16
+tensorflow

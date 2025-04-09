@@ -24,7 +24,6 @@ Puedo usar escala corrida o escala calendario, para saber cuanto tiempo me va ll
 20 días pero en calendario, luego responde a la pregunta cuando lo voy a hacer.
 
 
-
 **HAY 2 TIPOS DE PLANES, ESTRATÉGICO Y FUNCIONAL**
 
 El estratégico es el que tiene la misión, vision, estrategias, valores... mientras que los funcionales son los que definen  objetivos y son operativos.
