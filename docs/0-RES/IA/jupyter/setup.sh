@@ -1,5 +1,4 @@
 # install pyteseract
-sudo apt update
-sudo apt install tesseract-ocr
-sudo apt install tesseract-ocr-eng
+sudo pacman -Syuu
+sudo pacman -S tesseract-ocr tesseract-ocr-eng
 tesseract --version

@@ -35,4 +35,8 @@ common
 pytesseract
 
 # CLASE 16
-tensorflow
+tensorflow==2.15.0
+
+
+# CLASE 20
+mediapipe
