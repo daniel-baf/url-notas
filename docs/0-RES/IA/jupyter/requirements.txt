@@ -10,6 +10,7 @@ lxml
 # CLASE 3
 scipy
 statsmodels
+opencv-python
 
 # CLASE 4
 bs4
@@ -35,7 +36,7 @@ common
 pytesseract
 
 # CLASE 16
-tensorflow==2.15.0
+tensorflow[and-cuda]
 
 
 # CLASE 20
