@@ -8,3 +8,8 @@ scikit-learn
 matplotlib
 ipykernel
 seaborn
+rapidfuzz
+
+
+# server
+django
