@@ -1,52 +1,52 @@
 import os
-import uuid
-from django.shortcuts import render
-from django.http import JsonResponse
+import wave
 from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
 from django.conf import settings
-from django.core.files.storage import default_storage
 
-from .model.audio_predict import predict_audio
-
-
-def about(request):
-    return render(request, "iot_api/about.html")  # Include app prefix
+# Variables globales para acumular datos
+audio_buffer = bytearray()
+TARGET_BYTES = 44100 * 5 * 2  # 44100 samples/s * 5 s * 2 bytes/sample = 441000 bytes
 
 
 @csrf_exempt
-def upload_audio(request):
-    print("Received request to upload audio file.")
-    print(f"Request method: {request.method}")
+def audio_stream(request):
+    global audio_buffer
 
-    if request.method == "POST" and request.FILES.get("file"):
-        audio_file = request.FILES["file"]
+    if request.method == "POST":
+        # Leer datos binarios del body
+        chunk = request.body
 
-        # Guarda temporalmente el archivo en MEDIA_ROOT/tmp/
-        tmp_dir = os.path.join(settings.MEDIA_ROOT, "tmp")
-        os.makedirs(tmp_dir, exist_ok=True)
+        # Añadir al buffer global
+        audio_buffer.extend(chunk)
 
-        temp_filename = f"{uuid.uuid4().hex}.wav"
-        temp_path = os.path.join(tmp_dir, temp_filename)
+        # Verificar si ya tenemos suficiente para 5 segundos
+        if len(audio_buffer) >= TARGET_BYTES:
+            # Crear carpeta para guardar archivos, si no existe
+            folder_path = os.path.join(settings.BASE_DIR, "audio_files")
+            os.makedirs(folder_path, exist_ok=True)
 
-        with default_storage.open(temp_path, "wb+") as destination:
-            for chunk in audio_file.chunks():
-                destination.write(chunk)
+            # Nombre del archivo (puedes usar timestamp o contador)
+            filename = os.path.join(folder_path, "audio_5_seconds.wav")
 
-        try:
-            predicted_class, confidence = predict_audio(temp_path)
-            response = {
-                "predicted_class": predicted_class,
-                "confidence": round(confidence, 4),
-            }
-            print(f"Predicted class: {predicted_class}, Confidence: {confidence}")
-            return JsonResponse(response, status=200)
-        except Exception as e:
-            return JsonResponse({"error": f"Prediction failed: {str(e)}"}, status=500)
-        finally:
-            # Limpieza del archivo temporal
-            if os.path.exists(temp_path):
-                os.remove(temp_path)
-    else:
+            # Crear archivo WAV a partir del buffer PCM
+            with wave.open(filename, "wb") as wf:
+                wf.setnchannels(1)  # Mono
+                wf.setsampwidth(2)  # 2 bytes = 16 bits
+                wf.setframerate(44100)  # 44.1 kHz
+                wf.writeframes(audio_buffer[:TARGET_BYTES])
+
+            # Eliminar los bytes usados del buffer
+            audio_buffer = audio_buffer[TARGET_BYTES:]
+
+            return JsonResponse(
+                {"message": "Archivo WAV guardado", "filename": filename}
+            )
+
         return JsonResponse(
-            {"error": "Invalid request method or no file provided."}, status=400
+            {
+                "message": f"Recibidos {len(audio_buffer)} bytes, esperando para 5 segundos"
+            }
         )
+
+    return JsonResponse({"error": "Método no permitido"}, status=405)

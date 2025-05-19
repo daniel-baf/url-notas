@@ -176,7 +176,7 @@ handler_chain = VictoriaHandler()
 handler_chain.set_next(ManoCerradaHandler()).set_next(PulgarArribaHandler()).set_next(
     ManoAbiertaHandler()
 ).set_next(AltoHandler()).set_next(LlamameHandler()).set_next(
-    TeQuieroHandler()
+w    TeQuieroHandler()
 ).set_next(CuernosHandler())
 # handler_chain.set_next(PulgarArribaHandler()).set_next(OKHandler()).set_next(
 #     AltoHandler()
