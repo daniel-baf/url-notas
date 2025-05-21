@@ -13,3 +13,4 @@ rapidfuzz
 
 # server
 django
+pydub

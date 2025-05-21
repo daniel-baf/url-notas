@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ ! -d media ]; then
+    mkdir media
+fi
+
 # Exit on error
 set -e
 

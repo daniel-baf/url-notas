@@ -1,52 +1,38 @@
-import os
-import wave
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
+import os
 from django.conf import settings
 
-# Variables globales para acumular datos
-audio_buffer = bytearray()
-TARGET_BYTES = 44100 * 5 * 2  # 44100 samples/s * 5 s * 2 bytes/sample = 441000 bytes
+from .model.audio_predict import predict_audio
+
+from .services.audio_handler import enhance_and_handle_audio
 
 
 @csrf_exempt
-def audio_stream(request):
-    global audio_buffer
-
+def upload_audio(request):
+    """
+    Endpoint to receive raw audio (WAV) and save it to the server.
+    """
     if request.method == "POST":
-        # Leer datos binarios del body
-        chunk = request.body
+        print("Receiving audio data...")
+        try:
+            # Define path to save audio
+            save_path = os.path.join(settings.MEDIA_ROOT, "received_audio.wav")
 
-        # Añadir al buffer global
-        audio_buffer.extend(chunk)
+            # Read and save raw binary content
+            with open(save_path, "wb") as f:
+                f.write(request.body)
 
-        # Verificar si ya tenemos suficiente para 5 segundos
-        if len(audio_buffer) >= TARGET_BYTES:
-            # Crear carpeta para guardar archivos, si no existe
-            folder_path = os.path.join(settings.BASE_DIR, "audio_files")
-            os.makedirs(folder_path, exist_ok=True)
-
-            # Nombre del archivo (puedes usar timestamp o contador)
-            filename = os.path.join(folder_path, "audio_5_seconds.wav")
-
-            # Crear archivo WAV a partir del buffer PCM
-            with wave.open(filename, "wb") as wf:
-                wf.setnchannels(1)  # Mono
-                wf.setsampwidth(2)  # 2 bytes = 16 bits
-                wf.setframerate(44100)  # 44.1 kHz
-                wf.writeframes(audio_buffer[:TARGET_BYTES])
-
-            # Eliminar los bytes usados del buffer
-            audio_buffer = audio_buffer[TARGET_BYTES:]
+            enhance_and_handle_audio(save_path)
 
             return JsonResponse(
-                {"message": "Archivo WAV guardado", "filename": filename}
+                {"status": "success", "message": "Audio received and saved."},
+                status=200,
             )
 
-        return JsonResponse(
-            {
-                "message": f"Recibidos {len(audio_buffer)} bytes, esperando para 5 segundos"
-            }
-        )
+        except Exception as e:
+            print("Error saving audio:", e)
+            return JsonResponse({"status": "error", "message": str(e)}, status=500)
 
-    return JsonResponse({"error": "Método no permitido"}, status=405)
+    else:
+        return HttpResponse("Only POST method is allowed", status=405)
