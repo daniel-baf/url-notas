@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+
+        .prediction-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        .prediction-table th, .prediction-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .prediction-table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .switch-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+        }
+
+        .switch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .switch input[type="checkbox"] {
+            display: none;
+        }
+
+        .slider {
+            position: relative;
+            width: 50px;
+            height: 25px;
+            background-color: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            background-color: white;
+            border-radius: 50%;
+            top: 1px;
+            left: 1px;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider {
+            background-color: #28a745;
+        }
+
+        input:checked + .slider::before {
+            transform: translateX(25px);
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Últimas 20 Predicciones</h1>
+
+    <table class="prediction-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Predicción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for prediction in recent_predictions %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ prediction }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No hay predicciones disponibles.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Configuración de Notificaciones</h2>
+
+    <div class="switch-container">
+        {% for key, value in notification_settings.items %}
+            <div class="switch">
+                <label for="{{ key }}">{{ key|capfirst }}</label>
+                <label class="slider-label">
+                    <input type="checkbox" id="{{ key }}" {% if value.display %}checked{% endif %} onchange="toggleSetting('{{ key }}')">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h3>Estado actual (JSON):</h3>
+    <pre id="settings-json">{{ notification_settings|safe }}</pre>
+
+    <script>
+        let settings = {{ notification_settings|safe }};
+
+        function toggleSetting(key) {
+            const checkbox = document.getElementById(key);
+            settings[key].display = checkbox.checked;
+
+            // Refrescar visualización del JSON
+            document.getElementById("settings-json").textContent = JSON.stringify(settings, null, 4);
+
+            // Aquí puedes enviar los cambios al servidor si es necesario (por POST o AJAX)
+            // fetch('/update_settings/', { method: 'POST', ... })
+        }
+    </script>
+</body>
+</html>
