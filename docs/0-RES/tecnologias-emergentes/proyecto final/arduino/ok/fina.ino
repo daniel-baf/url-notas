@@ -24,7 +24,7 @@
 #define FILENAME "/recording.wav"
 
 // Tiempo máximo de espera para la respuesta del servidor (en milisegundos)
-unsigned long httpTimeoutMs = 7000; 
+unsigned long httpTimeoutMs = 1000; 
 
 
 // Wi-Fi credentials
@@ -35,7 +35,7 @@ const char* password = "4NJ667300472";
 const char* serverUrl = "http://192.168.0.17:8000/api/upload/";
 
 // Time to wait before starting the next recording (in milliseconds)
-unsigned long delayAfterSuccess = 10000;  // configurable delay
+unsigned long delayAfterSuccess = 6000;  // configurable delay
 
 // WAV header structure for proper formatting
 struct WavHeader {
@@ -144,14 +144,11 @@ void recordAudio() {
     samplesWritten += bytesRead / 4;
 
     if (millis() - startTime > 1000) {
-      Serial.printf("Recording... %d%%\n", (samplesWritten * 100) / totalSamples);
       startTime = millis();
     }
   }
 
   file.close();
-  Serial.println("Recording finished.");
-  Serial.printf("File saved: %s\n", FILENAME);
 }
 
 bool sendAudioFile() {
