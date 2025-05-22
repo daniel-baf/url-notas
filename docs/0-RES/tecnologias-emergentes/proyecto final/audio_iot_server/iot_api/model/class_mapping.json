@@ -1,1 +1,42 @@
-{"dog_bark": 3, "children_playing": 2, "car_horn": 1, "air_conditioner": 0, "street_music": 9, "gun_shot": 6, "siren": 8, "engine_idling": 5, "jackhammer": 7, "drilling": 4}
+{
+    "dog_bark": {
+        "id": 3,
+        "display": false
+    },
+    "children_playing": {
+        "id": 2,
+        "display": false
+    },
+    "car_horn": {
+        "id": 1,
+        "display": true
+    },
+    "air_conditioner": {
+        "id": 0,
+        "display": false
+    },
+    "street_music": {
+        "id": 9,
+        "display": false
+    },
+    "gun_shot": {
+        "id": 6,
+        "display": true
+    },
+    "siren": {
+        "id": 8,
+        "display": false
+    },
+    "engine_idling": {
+        "id": 5,
+        "display": true
+    },
+    "jackhammer": {
+        "id": 7,
+        "display": false
+    },
+    "drilling": {
+        "id": 4,
+        "display": false
+    }
+}

@@ -15,5 +15,4 @@ def enhance_and_handle_audio(audio_path, amplification_db=5):
 
     prediction, confidence = predict_audio(temp_path)
 
-    print(f"\033[43mPredicted class: {prediction}, Confidence: {confidence}\033[0m")
     return prediction, confidence
