@@ -48,6 +48,6 @@ def predict_audio(audio_path):
     confidence = float(predictions[predicted_class_idx])
 
     # 4. Map to class name
-    id_to_class = {v: k for k, v in class_mapping.items()}
+    id_to_class = {v["id"]: k for k, v in class_mapping.items()}
 
     return id_to_class[predicted_class_idx], confidence
