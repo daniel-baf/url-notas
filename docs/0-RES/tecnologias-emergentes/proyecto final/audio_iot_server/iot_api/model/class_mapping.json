@@ -1,11 +1,11 @@
 {
     "dog_bark": {
         "id": 3,
-        "display": false
+        "display": true
     },
     "children_playing": {
         "id": 2,
-        "display": false
+        "display": true
     },
     "car_horn": {
         "id": 1,
