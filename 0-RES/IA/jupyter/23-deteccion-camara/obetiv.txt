@@ -1,0 +1,15 @@
+- Señalar a la izquierda 👈         ❌      ✔️
+- Señalar a la derecha 👉           ❌      ✔️
+- Mano Cerrada ✊                   ✔️      ✔️
+- Puño 👊                           ❌      ✔️
+- Pulgar Arriba 👍                  ✔️      ✔️
+- Victoria ✌️                       ✔️      ✔️
+- Cuernos 🤘                        ❌      ✔️
+- "Te quiero" 🤟                    ❌      ✔️
+- Llámame 🤙                        ❌      ✔️
+- Pinza 🤏                          ❌      ✔️
+- ok 👌                             🐞      ✔️
+- Saludo Vulcano 🖖                 ❌
+- Alto ✋                           ❌      🐞
+- Mano Abierta 🖐️                   ✔️      ✔️
+- "Corazón Koreano" 🫰              ❌

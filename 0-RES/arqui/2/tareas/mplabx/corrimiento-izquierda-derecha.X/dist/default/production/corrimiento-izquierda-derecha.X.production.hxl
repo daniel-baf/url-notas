@@ -1,0 +1,9 @@
+### HEXMate logfile and output summary ###
+
+### Command-line arguments ###
+ C:\Users\danib\AppData\Local\Temp\xcAsbb8.\driver_tmp_3.o
+ -Odist/default/production\corrimiento-izquierda-derecha.X.production.hex
+ -logfile=dist/default/production\corrimiento-izquierda-derecha.X.production.hxl
+ -addressing=1
+ -break=300000
+
