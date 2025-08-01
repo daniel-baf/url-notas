@@ -1,0 +1,3778 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../2025-02-13-redes/" rel="prev"/>
+<link href="../2025-03-03-practica/" rel="next"/>
+<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.16" name="generator"/>
+<title>Sistemas operativos - obsidian-mkdocs template</title>
+<link href="../../../../assets/stylesheets/main.7e37652d.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#sistemas-operativos">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="obsidian-mkdocs template" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Sistemas operativos
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="obsidian-mkdocs template" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    obsidian-mkdocs template
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+<span class="md-ellipsis">
+    Obsidian Notes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    0 RES
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            0 RES
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/a/">
+<span class="md-ellipsis">
+    ITIL
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Sistemas operativos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/Sistemas-operativos/practica-procesos/">
+<span class="md-ellipsis">
+    Practica procesos
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Tecnologias emergentes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Tecnologias emergentes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Proyecto final
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Proyecto final
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/tecnologias-emergentes/proyecto%20final/">
+<span class="md-ellipsis">
+    Index
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2" id="__nav_2_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Notebook
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_2_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2_1" id="__nav_2_3_1_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_2_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1_2_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2_1_1" id="__nav_2_3_1_2_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    ESC 50 master
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_2_1_1_label" class="md-nav" data-md-level="6">
+<label class="md-nav__title" for="__nav_2_3_1_2_1_1">
+<span class="md-nav__icon md-icon"></span>
+            ESC 50 master
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/tecnologias-emergentes/proyecto%20final/notebook/data/ESC-50-master/">
+<span class="md-ellipsis">
+    Index
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Udemy
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Udemy
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    React
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+            React
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1_1" id="__nav_2_4_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Proyectos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_4_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Proyectos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1_1_1" id="__nav_2_4_1_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Carro compras
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_1_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_4_1_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Carro compras
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/udemy/react/proyectos/carro-compras/">
+<span class="md-ellipsis">
+    Getting Started with Create React App
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1_1_2" id="__nav_2_4_1_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Mi app
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_1_2_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_4_1_1_2">
+<span class="md-nav__icon md-icon"></span>
+            Mi app
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/udemy/react/proyectos/mi-app/">
+<span class="md-ellipsis">
+    Getting Started with Create React App
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Apuntes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Apuntes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    5 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            5 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Arqui computador 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Arqui computador 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/10.permisos/">
+<span class="md-ellipsis">
+    10.permisos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/Recursos/">
+<span class="md-ellipsis">
+    Recursos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_1_3" id="__nav_3_1_1_3_label" tabindex="0">
+<span class="md-ellipsis">
+    1 DOSBOX
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_3_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_3">
+<span class="md-nav__icon md-icon"></span>
+            1 DOSBOX
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/1-DOSBOX/1-Ensamblador/">
+<span class="md-ellipsis">
+    1 Ensamblador
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_1_4" id="__nav_3_1_1_4_label" tabindex="0">
+<span class="md-ellipsis">
+    2 NASM
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_4_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_4">
+<span class="md-nav__icon md-icon"></span>
+            2 NASM
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/1.Hola-mundo-en-NASM/">
+<span class="md-ellipsis">
+    1.Hola mundo en NASM
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/2.Llamadas-de-subrutinas/">
+<span class="md-ellipsis">
+    2.Llamadas de subrutinas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/3.Include-headers/">
+<span class="md-ellipsis">
+    3.Include headers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/4.Parametros/">
+<span class="md-ellipsis">
+    4.Parametros
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/5.Lectura-de-datos/">
+<span class="md-ellipsis">
+    5.Lectura de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/6.1.-Funciones/">
+<span class="md-ellipsis">
+    6.1. Funciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/6.Ciclos-numeros/">
+<span class="md-ellipsis">
+    6.Ciclos numeros
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/7.Aritmeticas/">
+<span class="md-ellipsis">
+    7.Aritmeticas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/8.Codificacion/">
+<span class="md-ellipsis">
+    8.Codificacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/9.funciones-externas/">
+<span class="md-ellipsis">
+    9.funciones externas
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Base datos 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            Base datos 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_2_1" id="__nav_3_1_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    DSM
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+            DSM
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Base-datos-1/DSM/Repaso/">
+<span class="md-ellipsis">
+    Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Base-datos-1/DSM/Sentencias%20DSM/">
+<span class="md-ellipsis">
+    Sentencias DSM
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    6 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            6 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/Untitled/">
+<span class="md-ellipsis">
+    Untitled
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    IO 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_2">
+<span class="md-nav__icon md-icon"></span>
+            IO 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-10-CAP-2-HILLER-Y-LIBERMAN/">
+<span class="md-ellipsis">
+    2023 08 10 CAP 2 HILLER Y LIBERMAN
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-15-Modelado-y-costos/">
+<span class="md-ellipsis">
+    2023 08 15 Modelado y costos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-17-PROGRAMACI%C3%93N-LINEAL/">
+<span class="md-ellipsis">
+    PL - Programación lineal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-23-Programacion-lineal/">
+<span class="md-ellipsis">
+    2023 08 23 Programacion lineal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-24-Tiempo-de-produccion/">
+<span class="md-ellipsis">
+    EJERCICIO 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-10-Rutas/">
+<span class="md-ellipsis">
+    Minimización
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-12-Ejercicios/">
+<span class="md-ellipsis">
+    2023 10 12 Ejercicios
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-17-CPM/">
+<span class="md-ellipsis">
+    2023 10 17 CPM
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-26-Reduccion-tiempos/">
+<span class="md-ellipsis">
+    2023 10 26 Reduccion tiempos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/RESUMEN-SIMPOSIO/">
+<span class="md-ellipsis">
+    Aplicación de Tecnologías Emergentes en Investigación de Operaciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2_11" id="__nav_3_2_2_11_label" tabindex="0">
+<span class="md-ellipsis">
+    2023 09 07
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_2_11_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_2_2_11">
+<span class="md-nav__icon md-icon"></span>
+            2023 09 07
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-09-07/2023-09-07-Rutas/">
+<span class="md-ellipsis">
+    2023 09 07 Rutas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-09-07/2023-09-07-ejercicios/">
+<span class="md-ellipsis">
+    QUÉ PASA SI
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    arquitectura computador II
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+            arquitectura computador II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-10-Notas/">
+<span class="md-ellipsis">
+    2023 08 10 Notas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-14-Proteus/">
+<span class="md-ellipsis">
+    2023 08 14 Proteus
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-18-MPXLAB/">
+<span class="md-ellipsis">
+    2023 08 18 MPXLAB
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-28-Formulas/">
+<span class="md-ellipsis">
+    2023 08 28 Formulas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-09-04-MikroC/">
+<span class="md-ellipsis">
+    2023 09 04 MikroC
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-09-25-ARDUINO/">
+<span class="md-ellipsis">
+    Arduino
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-10-27-IoT-Ardunio/">
+<span class="md-ellipsis">
+    2023 10 27 IoT Ardunio
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4" id="__nav_3_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    base de datos II
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_4">
+<span class="md-nav__icon md-icon"></span>
+            base de datos II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-14-Transacciones/">
+<span class="md-ellipsis">
+    2023 08 14 Transacciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-16-Errores-transacciones/">
+<span class="md-ellipsis">
+    Niveles de aislamiento en la BD
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-16-Transacciones/">
+<span class="md-ellipsis">
+    2023 08 16 Transacciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-23-Aislamiento/">
+<span class="md-ellipsis">
+    2023 08 23 Aislamiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-09-06-Alta-Disponiblidad/">
+<span class="md-ellipsis">
+    2023 09 06 Alta Disponiblidad
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-09-25-BD-Alta-Disponibilidad/">
+<span class="md-ellipsis">
+    Bases de datos en espera
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4_7" id="__nav_3_2_4_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Cluster
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_4_7_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_2_4_7">
+<span class="md-nav__icon md-icon"></span>
+            Cluster
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/cluster/2023-10-16-Galera/">
+<span class="md-ellipsis">
+    Galera
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/cluster/2023-10-19-pasos-AWS/">
+<span class="md-ellipsis">
+    Pasos
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_5" id="__nav_3_2_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Compiladores
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_5">
+<span class="md-nav__icon md-icon"></span>
+            Compiladores
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-11%20An%C3%A1lisis/">
+<span class="md-ellipsis">
+    2023 08 11 Análisis
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-16-MIPS/">
+<span class="md-ellipsis">
+    2023 08 16 MIPS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-16-Resumen/">
+<span class="md-ellipsis">
+    2023 08 16 Resumen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-24-Investigacion-casa/">
+<span class="md-ellipsis">
+    2023 08 24 Investigacion casa
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-25-Economia-lenguajes-programacion/">
+<span class="md-ellipsis">
+    2023 08 25 Economia lenguajes programacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-06-An%C3%A1lisis-L%C3%A9xico/">
+<span class="md-ellipsis">
+    2023 09 06 Análisis Léxico
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-10-S5.2/">
+<span class="md-ellipsis">
+    2023 09 10 S5.2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-20-Lex/">
+<span class="md-ellipsis">
+    2023 09 20 Lex
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-29-FreePascal/">
+<span class="md-ellipsis">
+    2023 09 29 FreePascal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-10-04-Ej.-gramaticas/">
+<span class="md-ellipsis">
+    DATOS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-10-13-TAREA-gramaticas/">
+<span class="md-ellipsis">
+    2023 10 13 TAREA gramaticas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-10-26-GIC-aritmeticas-free-pascal/">
+<span class="md-ellipsis">
+    2023 10 26 GIC aritmeticas free pascal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-11-08-YAC/">
+<span class="md-ellipsis">
+    2023 11 08 YAC
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/Errores-en-Go/">
+<span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_6" id="__nav_3_2_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Microprogramacion
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_6_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_6">
+<span class="md-nav__icon md-icon"></span>
+            Microprogramacion
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-09-Von-Neumann/">
+<span class="md-ellipsis">
+    2023 08 09 Von Neumann
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-15-ALU/">
+<span class="md-ellipsis">
+    2023 08 15 ALU
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-15-Cuestionario/">
+<span class="md-ellipsis">
+    2023 08 15 Cuestionario
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-22-ARQUITECTURAS/">
+<span class="md-ellipsis">
+    CISC y RISC
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-22-Cuestionario-Cach%C3%A9/">
+<span class="md-ellipsis">
+    2023 08 22 Cuestionario Caché
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-24-UCP/">
+<span class="md-ellipsis">
+    2023 08 24 UCP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-09-05-Programas-en-ensamblador/">
+<span class="md-ellipsis">
+    Programas en ensamblador
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-09-19-INMB/">
+<span class="md-ellipsis">
+    2023 09 19 INMB
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-10-05-Pr%C3%A1ctica-3/">
+<span class="md-ellipsis">
+    2023 10 05 Práctica 3
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-10-19-Practica-4/">
+<span class="md-ellipsis">
+    2023 10 19 Practica 4
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-10-26-Segunda-hoja-trabajo/">
+<span class="md-ellipsis">
+    Ejercicio 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-11-09-Contenido-FINAL/">
+<span class="md-ellipsis">
+    2023 11 09 Contenido FINAL
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/Cuesionario-segmentacion-cache-viode/">
+<span class="md-ellipsis">
+    Cuesionario segmentacion cache viode
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    7 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            7 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Analisis diseno
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Analisis diseno
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/Analisis-diseno/Modelos%20de%20desarrollo/">
+<span class="md-ellipsis">
+    Comparación entre distintos modelos de desarrollo
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Analisis y diseño
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Analisis y diseño
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/analisis%20y%20dise%C3%B1o/2024-03-22%20Repaso%20en%20clase/">
+<span class="md-ellipsis">
+    Repaso en clase
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Costos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Costos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/costos/Libro-Mayor-Inventario-Libro-caja/">
+<span class="md-ellipsis">
+    Libro Mayor Inventario Libro caja
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/costos/Resumen-de-Ecuaciones-patrimoniales-y-Libro-contable/">
+<span class="md-ellipsis">
+    Resumen de Ecuaciones Patrimoniales y Libros Contables
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    8 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            8 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/RESUMEN-SAM/">
+<span class="md-ellipsis">
+    Sondeo eléctrico vertical
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Ingenieria economica
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Ingenieria economica
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-07-24-Diagrama-de-flujo-efectivo/">
+<span class="md-ellipsis">
+    2024 07 24 Diagrama de flujo efectivo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-07-26-Inversiones/">
+<span class="md-ellipsis">
+    2024 07 26 Inversiones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-02-Soluciones-tarea/">
+<span class="md-ellipsis">
+    2024 08 02 Soluciones tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-07-Factores-de-gradiente-aritmentico-y-geometrico/">
+<span class="md-ellipsis">
+    2024 08 07 Factores de gradiente aritmentico y geometrico
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-09-Este-dia-llegue-tarde./">
+<span class="md-ellipsis">
+    2024 08 09 Este dia llegue tarde.
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-14-Intereses/">
+<span class="md-ellipsis">
+    Soluciones de tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-16-Ejercicios-interes/">
+<span class="md-ellipsis">
+    2024 08 16 Ejercicios interes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-21-Valores-usuales-repaso/">
+<span class="md-ellipsis">
+    2024 08 21 Valores usuales repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-08-28-An%C3%A1lisis-valor-presente/">
+<span class="md-ellipsis">
+    2024 08 28 Análisis valor presente
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-04-Ejemplos/">
+<span class="md-ellipsis">
+    2024 09 04 Ejemplos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-10-Comparacion-valor-de-alternativas-como-vidas-utiles-diferentes/">
+<span class="md-ellipsis">
+    2024 09 10 Comparacion valor de alternativas como vidas utiles diferentes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-11-Repaso/">
+<span class="md-ellipsis">
+    2024 09 11 Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-20-Recuperaci%C3%B3n-Capital-valores-anuales/">
+<span class="md-ellipsis">
+    2024 09 20 Recuperación Capital valores anuales
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-24-PRI/">
+<span class="md-ellipsis">
+    Periodo de recuperacion de la inversión (PRI)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-24-Solucion-tarea/">
+<span class="md-ellipsis">
+    2024 09 24 Solucion tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-25-flujo-caja-vpn/">
+<span class="md-ellipsis">
+    2024 09 25 flujo caja vpn
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-09-27-Ejemplos-VAN/">
+<span class="md-ellipsis">
+    2024 09 27 Ejemplos VAN
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-10-02-Calcular-flujo-caja/">
+<span class="md-ellipsis">
+    2024 10 02 Calcular flujo caja
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-10-11-Simposio/">
+<span class="md-ellipsis">
+    2024 10 11 Simposio
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2024-10-17-COSTO-BENEFICIO/">
+<span class="md-ellipsis">
+    2024 10 17 COSTO BENEFICIO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Ingenieria-economica/2028-10-09-Calculo-Flujos-Caja/">
+<span class="md-ellipsis">
+    2028 10 09 Calculo Flujos Caja
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Manejo e implementacion archivos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Manejo e implementacion archivos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-07-13-Introduccion-archivos/">
+<span class="md-ellipsis">
+    2024 07 13 Introduccion archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-07-17-conversiones/">
+<span class="md-ellipsis">
+    2024 07 17 conversiones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-07-24-archivos-python/">
+<span class="md-ellipsis">
+    2024 07 24 archivos python
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-07-26-binario/">
+<span class="md-ellipsis">
+    2024 07 26 binario
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-07-31-Archivos-CSV/">
+<span class="md-ellipsis">
+    2024 07 31 Archivos CSV
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-02-Jerarquia-Memoria/">
+<span class="md-ellipsis">
+    2024 08 02 Jerarquia Memoria
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-07-Administraci%C3%B3n-del-almacenamiento/">
+<span class="md-ellipsis">
+    2024 08 07 Administración del almacenamiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-09-Organizaci%C3%B3n-de-archivos/">
+<span class="md-ellipsis">
+    2024 08 09 Organización de archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-14-Ram-vs-archivos/">
+<span class="md-ellipsis">
+    Estructura de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-21-Sistemas-de-archivos/">
+<span class="md-ellipsis">
+    2024 08 21 Sistemas de archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-23-Tablas-particiones/">
+<span class="md-ellipsis">
+    2024 08 23 Tablas particiones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-28-Based-de-datos/">
+<span class="md-ellipsis">
+    2024 08 28 Based de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-08-30-Archivos-Apilado/">
+<span class="md-ellipsis">
+    2024 08 30 Archivos Apilado
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-09-04-Archivos-secuenciales/">
+<span class="md-ellipsis">
+    2024 09 04 Archivos secuenciales
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-09-18-Repaso/">
+<span class="md-ellipsis">
+    2024 09 18 Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-09-20-Indice-Invertido/">
+<span class="md-ellipsis">
+    2024 09 20 Indice Invertido
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-09-27-Archivo-Multillave/">
+<span class="md-ellipsis">
+    Archivo Multi Llave
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-10-09-BACKUP/">
+<span class="md-ellipsis">
+    2024 10 09 BACKUP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/2024-10-16-Almacenamiento%20en%20la%20nube/">
+<span class="md-ellipsis">
+    2024 10 16 Almacenamiento en la nube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/Manejo-e-implementacion-archivos/T1-archivos-programas/">
+<span class="md-ellipsis">
+    T1 archivos programas
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Ingenieria software i
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Ingenieria software i
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-07-18-Introduccion-desarrollo-software/">
+<span class="md-ellipsis">
+    2024 07 18 Introduccion desarrollo software
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-08-20-Trabajo-parejas-pruebas/">
+<span class="md-ellipsis">
+    2024 08 20 Trabajo parejas pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-08-22-Repaso/">
+<span class="md-ellipsis">
+    2024 08 22 Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-08-29-Preguntas/">
+<span class="md-ellipsis">
+    2024 08 29 Preguntas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-03-Tecnias-de-revisi%C3%B3n/">
+<span class="md-ellipsis">
+    2024 09 03 Tecnias de revisión
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-05-NIST/">
+<span class="md-ellipsis">
+    2024 09 05 NIST
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-09-Resumen-Examen-2/">
+<span class="md-ellipsis">
+    Administración de la calidad
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-17-Resumen/">
+<span class="md-ellipsis">
+    Actividades sombrilla
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-17-Tarea-Pruebas/">
+<span class="md-ellipsis">
+    2024 09 17 Tarea Pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-19-Pruebas/">
+<span class="md-ellipsis">
+    2024 09 19 Pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-19-Resumen-video/">
+<span class="md-ellipsis">
+    2024 09 19 Resumen video
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-26-Estrategias-Prueba/">
+<span class="md-ellipsis">
+    2024 09 26 Estrategias Prueba
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-09-26-Pruebas-curso/">
+<span class="md-ellipsis">
+    2024 09 26 Pruebas curso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-10-03-Investigacion/">
+<span class="md-ellipsis">
+    CASO DE PRUEBA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-10-08-Investigacion/">
+<span class="md-ellipsis">
+    2024 10 08 Investigacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-10-10-Clase-Discusion/">
+<span class="md-ellipsis">
+    2024 10 10 Clase Discusion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-10-10-Pruebas/">
+<span class="md-ellipsis">
+    2024 10 10 Pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-10-15-Lehman/">
+<span class="md-ellipsis">
+    Lehman
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/2024-10-17-Temas/">
+<span class="md-ellipsis">
+    Resumen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/Herramientas-para-el-desarrollo-completo-de-software./">
+<span class="md-ellipsis">
+    Herramientas para el desarrollo completo de software.
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/ingenieria-software-i/Resumen-Examen-1/">
+<span class="md-ellipsis">
+    ERP
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Simposio
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_5">
+<span class="md-nav__icon md-icon"></span>
+            Simposio
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/simposio/resumen-economicas/">
+<span class="md-ellipsis">
+    Resumen economicas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../8-ciclo/simposio/resumen/">
+<span class="md-ellipsis">
+    Resumen
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    9 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            9 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Untitled/">
+<span class="md-ellipsis">
+    Proveedores de Internet en Quetzaltenango
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Comportamiento organizacional
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_2">
+<span class="md-nav__icon md-icon"></span>
+            Comportamiento organizacional
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-14-Introduccion/">
+<span class="md-ellipsis">
+    2025 01 14 Introduccion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-17-Habilidades/">
+<span class="md-ellipsis">
+    2025 01 17 Habilidades
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-20-Tarea/">
+<span class="md-ellipsis">
+    2025 01 20 Tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-22-Cultura-irtra-investigacion/">
+<span class="md-ellipsis">
+    2025 01 22 Cultura irtra investigacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-25-Clase/">
+<span class="md-ellipsis">
+    Presiones económicas y globallización
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-29-Fuerzas-tarea/">
+<span class="md-ellipsis">
+    2025 01 29 Fuerzas tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-29-Informe-irtra/">
+<span class="md-ellipsis">
+    2025 01 29 Informe irtra
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-29-Modelo-tarea/">
+<span class="md-ellipsis">
+    2025 01 29 Modelo tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-29-Temas-cambio/">
+<span class="md-ellipsis">
+    El Modelo de Cambio Según Kurt Lewin
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-01-31-Estres-laboral/">
+<span class="md-ellipsis">
+    2025 01 31 Estres laboral
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-05-EL-INDIVIDUO/">
+<span class="md-ellipsis">
+    2025 02 05 EL INDIVIDUO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-07-Tarea/">
+<span class="md-ellipsis">
+    2025 02 07 Tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-09-Guia-Inclusion/">
+<span class="md-ellipsis">
+    Guía de Inclusión Laboral de Personas con Discapacidad para Empresas: Síntesis Detallada
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-12-Factores-satisfaccion/">
+<span class="md-ellipsis">
+    2025 02 12 Factores satisfaccion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-12-Satisfacci%C3%B3n-laboral/">
+<span class="md-ellipsis">
+    Satisfacción Laboral
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-14-Motivacion/">
+<span class="md-ellipsis">
+    Motivación
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-18-Resumen-examen/">
+<span class="md-ellipsis">
+    2025 02 18 Resumen examen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-19-Participacion-trabajadores/">
+<span class="md-ellipsis">
+    2025 02 19 Participacion trabajadores
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-26-Organizacion/">
+<span class="md-ellipsis">
+    2025 02 26 Organizacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-28-Teorias-contemporaneas-de-la-motivacion/">
+<span class="md-ellipsis">
+    2025 02 28 Teorias contemporaneas de la motivacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-02-28-tarea/">
+<span class="md-ellipsis">
+    2025 02 28 tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-05-EL-GRUPO/">
+<span class="md-ellipsis">
+    2025 03 05 EL GRUPO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-12-Tipos-de-papeles/">
+<span class="md-ellipsis">
+    2025 03 12 Tipos de papeles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-14-Estructura-organizacional/">
+<span class="md-ellipsis">
+    2025 03 14 Estructura organizacional
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-19-la-comunicacion/">
+<span class="md-ellipsis">
+    Comunicación.
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-21-comunicaci%C3%B3n-acertiva/">
+<span class="md-ellipsis">
+    2025 03 21 comunicación acertiva
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-26-liderazgo/">
+<span class="md-ellipsis">
+    2025 03 26 liderazgo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-03-26-tarea/">
+<span class="md-ellipsis">
+    Positivo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-04-01-grupo/">
+<span class="md-ellipsis">
+    2025 04 01 grupo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-04-02-Temperamento/">
+<span class="md-ellipsis">
+    2025 04 02 Temperamento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-04-23-gerencia-integral/">
+<span class="md-ellipsis">
+    2025 04 23 gerencia integral
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-04-25-ejercicio-clase/">
+<span class="md-ellipsis">
+    2025 04 25 ejercicio clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-04-30-encuesta/">
+<span class="md-ellipsis">
+    2025 04 30 encuesta
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-04-30-endomarketing/">
+<span class="md-ellipsis">
+    2025 04 30 endomarketing
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-05-02-Clase%2Btarea/">
+<span class="md-ellipsis">
+    2025 05 02 Clase+tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-05-09-empoderamiento/">
+<span class="md-ellipsis">
+    2025 05 09 empoderamiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../comportamiento-organizacional/2025-05-14-investigacion/">
+<span class="md-ellipsis">
+    2025 05 14 investigacion
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Etica social
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_3">
+<span class="md-nav__icon md-icon"></span>
+            Etica social
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../etica-social/2025-02-01-Cancion-mana/">
+<span class="md-ellipsis">
+    1. Análisis de la canción "Me Vale"
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../etica-social/2025-03-24-violencia-y-conflictividad/">
+<span class="md-ellipsis">
+    2025 03 24 violencia y conflictividad
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_4" id="__nav_3_5_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Gestion negocios
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_4">
+<span class="md-nav__icon md-icon"></span>
+            Gestion negocios
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-01-14-Introduccion/">
+<span class="md-ellipsis">
+    2025 01 14 Introduccion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-01-14-Tarea/">
+<span class="md-ellipsis">
+    Administración
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-01-16-Clase/">
+<span class="md-ellipsis">
+    2025 01 16 Clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-01-21-Emprendimiento/">
+<span class="md-ellipsis">
+    2025 01 21 Emprendimiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-01-28-Estructuar-de-un-plan/">
+<span class="md-ellipsis">
+    2025 01 28 Estructuar de un plan
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-02-11-Plan-Estrategico/">
+<span class="md-ellipsis">
+    2025 02 11 Plan Estrategico
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-02-13-Resumen-lectura/">
+<span class="md-ellipsis">
+    2025 02 13 Resumen lectura
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-02-18-Planifiacion/">
+<span class="md-ellipsis">
+    2025 02 18 Planifiacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-02-27-Branding/">
+<span class="md-ellipsis">
+    Brand
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-06-Marketing-empresas/">
+<span class="md-ellipsis">
+    2025 03 06 Marketing empresas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-06-Tarea-clase/">
+<span class="md-ellipsis">
+    2025 03 06 Tarea clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-11-Mezcla-promocional/">
+<span class="md-ellipsis">
+    2025 03 11 Mezcla promocional
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-13-Proceso-de-ventas/">
+<span class="md-ellipsis">
+    2025 03 13 Proceso de ventas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-18-AIDA/">
+<span class="md-ellipsis">
+    2025 03 18 AIDA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-20-liderazgo/">
+<span class="md-ellipsis">
+    2025 03 20 liderazgo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-03-23-clase-cuestionario/">
+<span class="md-ellipsis">
+    2025 03 23 clase cuestionario
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-04-03-Organizacion/">
+<span class="md-ellipsis">
+    2025 04 03 Organizacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-04-08-Descriptor-de-puesto/">
+<span class="md-ellipsis">
+    2025 04 08 Descriptor de puesto
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gestion-negocios/2025-04-24-exposiciones/">
+<span class="md-ellipsis">
+    2025 04 24 exposiciones
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_5_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_5">
+<span class="md-nav__icon md-icon"></span>
+            Sistemas operativos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-01-14-Sistema-operativo/">
+<span class="md-ellipsis">
+    Sistema operativo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-01-16-Historia-SO/">
+<span class="md-ellipsis">
+    Historia de los sistemas operativos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-01-21-Clase/">
+<span class="md-ellipsis">
+    Procesadores
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-01-23-Conceptos-basicos-SO/">
+<span class="md-ellipsis">
+    Conceptos basicos de Sistemas Operativos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-01-28-llamadas-de-sistema/">
+<span class="md-ellipsis">
+    2025 01 28 llamadas de sistema
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-01-30-comandos/">
+<span class="md-ellipsis">
+    2025 01 30 comandos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-02-04-Servidor-web/">
+<span class="md-ellipsis">
+    2025 02 04 Servidor web
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-02-11-FTP/">
+<span class="md-ellipsis">
+    2025 02 11 FTP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-02-12-FTP/">
+<span class="md-ellipsis">
+    2025 02 12 FTP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-02-13-redes/">
+<span class="md-ellipsis">
+    2025 02 13 redes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#que-es-un-sistema-operativo">
+<span class="md-ellipsis">
+      ¿Qué es un sistema operativo?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#como-funcionan-los-sistemas-operativos">
+<span class="md-ellipsis">
+      ¿Cómo funcionan los sistemas operativos?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tipos-de-sistemas-operativos">
+<span class="md-ellipsis">
+      Tipos de sistemas operativos
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diferencias-entre-los-tipos-de-sistemas-operativos">
+<span class="md-ellipsis">
+      Diferencias entre los tipos de sistemas operativos
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resumen">
+<span class="md-ellipsis">
+      Resumen:
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-03-practica/">
+<span class="md-ellipsis">
+    2025 03 03 practica
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-04-exclusion-mutua/">
+<span class="md-ellipsis">
+    2025 03 04 exclusion mutua
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-11-subllamadas/">
+<span class="md-ellipsis">
+    2025 03 11 subllamadas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-13-Laboratorio-semaforos/">
+<span class="md-ellipsis">
+    Informe de Experimentos sobre Interbloqueo y Semáforos en Linux
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-18-Laboratorio-interbloqueos/">
+<span class="md-ellipsis">
+    2025 03 18 Laboratorio interbloqueos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-25-laboratorio-3/">
+<span class="md-ellipsis">
+    2025 03 25 laboratorio 3
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-03-27-PRACTICA-cpu/">
+<span class="md-ellipsis">
+    INFORMACION CPU
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-04-01-Preguntas-interbloqueo/">
+<span class="md-ellipsis">
+    Preguntas y Respuestas sobre Interbloqueos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-04-29-Exposicion/">
+<span class="md-ellipsis">
+    2025 04 29 Exposicion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2025-05-14-informe-final/">
+<span class="md-ellipsis">
+    2025 05 14 informe final
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_6" id="__nav_3_5_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Tecnologias emergentes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_6_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_6">
+<span class="md-nav__icon md-icon"></span>
+            Tecnologias emergentes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-16-Clase-2/">
+<span class="md-ellipsis">
+    2025 01 16 Clase 2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-21-Investigaciones/">
+<span class="md-ellipsis">
+    IoT
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-21-Resumen-clase-1/">
+<span class="md-ellipsis">
+    2025 01 21 Resumen clase 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-21-Resumen-clase-2/">
+<span class="md-ellipsis">
+    2025 01 21 Resumen clase 2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-23-Clase/">
+<span class="md-ellipsis">
+    2025 01 23 Clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-28-Resumenes/">
+<span class="md-ellipsis">
+    Grupo 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-01-30-Resumen-exposicion/">
+<span class="md-ellipsis">
+    2025 01 30 Resumen exposicion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-02-04-IA/">
+<span class="md-ellipsis">
+    Tendencias de la IA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-02-06-Continuacion-IA/">
+<span class="md-ellipsis">
+    2025 02 06 Continuacion IA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-02-13-IA/">
+<span class="md-ellipsis">
+    2025 02 13 IA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-02-13-Tarea/">
+<span class="md-ellipsis">
+    IA en la vida cotidiana
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-02-27-Blockchain/">
+<span class="md-ellipsis">
+    2025 02 27 Blockchain
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-03-11-mecanismos-concenso/">
+<span class="md-ellipsis">
+    2025 03 11 mecanismos concenso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-03-20-Investigacion-IoT/">
+<span class="md-ellipsis">
+    2025 03 20 Investigacion IoT
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-03-20-IoT/">
+<span class="md-ellipsis">
+    2025 03 20 IoT
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-04-08-investigacion/">
+<span class="md-ellipsis">
+    2025 04 08 investigacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tecnologias-emergentes/2025-04-21-ARCORE-google/">
+<span class="md-ellipsis">
+    2025 04 21 ARCORE google
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Angular
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Angular
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/0-dependencias/">
+<span class="md-ellipsis">
+    0 dependencias
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/1-primeros-pasos/">
+<span class="md-ellipsis">
+    1 primeros pasos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/1.2.-Notas/">
+<span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/2-Routing/">
+<span class="md-ellipsis">
+    2 Routing
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/3-HTTP/">
+<span class="md-ellipsis">
+    3 HTTP
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+<span class="md-ellipsis">
+    ONE
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+            ONE
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
+<span class="md-ellipsis">
+    ORACLE University
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_7_1">
+<span class="md-nav__icon md-icon"></span>
+            ORACLE University
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7_1_1" id="__nav_3_7_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Java
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_1_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_7_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Java
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7_1_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7_1_1_1" id="__nav_3_7_1_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Fundamentals
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_1_1_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_3_7_1_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Fundamentals
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ONE/ORACLE-University/Java/Fundamentals/1-Principios%20de%20programaci%C3%B3n/">
+<span class="md-ellipsis">
+    1 Principios de programación
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ONE/ORACLE-University/Java/Fundamentals/2-Estructura-de-sintaxis-de-un-programa/">
+<span class="md-ellipsis">
+    2 Estructura de sintaxis de un programa
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ONE/ORACLE-University/Java/Fundamentals/3-Organizando-un-programa-en-componentes/">
+<span class="md-ellipsis">
+    3 Organizando un programa en componentes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Proyectos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_8">
+<span class="md-nav__icon md-icon"></span>
+            Proyectos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8_1" id="__nav_3_8_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Farmacia chiquirichap
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_8_1">
+<span class="md-nav__icon md-icon"></span>
+            Farmacia chiquirichap
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Proyectos/farmacia-chiquirichap/Producto/">
+<span class="md-ellipsis">
+    Farmacia
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Proyectos/farmacia-chiquirichap/Propuesta/">
+<span class="md-ellipsis">
+    Informe de Requisitos del Sistema para la Gestión de Farmacia
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#que-es-un-sistema-operativo">
+<span class="md-ellipsis">
+      ¿Qué es un sistema operativo?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#como-funcionan-los-sistemas-operativos">
+<span class="md-ellipsis">
+      ¿Cómo funcionan los sistemas operativos?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tipos-de-sistemas-operativos">
+<span class="md-ellipsis">
+      Tipos de sistemas operativos
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diferencias-entre-los-tipos-de-sistemas-operativos">
+<span class="md-ellipsis">
+      Diferencias entre los tipos de sistemas operativos
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resumen">
+<span class="md-ellipsis">
+      Resumen:
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="sistemas-operativos">Sistemas operativos<a class="headerlink" href="#sistemas-operativos" title="Permanent link">¶</a></h1>
+<h3 id="que-es-un-sistema-operativo">¿Qué es un sistema operativo?<a class="headerlink" href="#que-es-un-sistema-operativo" title="Permanent link">¶</a></h3>
+<p>Un <strong>sistema operativo (SO)</strong> es un conjunto de programas que administran los recursos de hardware y software de una computadora. El SO actúa como un intermediario entre los usuarios y el hardware del dispositivo. Su función principal es gestionar los recursos (como la CPU, memoria, almacenamiento y dispositivos de entrada/salida) y proporcionar servicios para que las aplicaciones y programas puedan ejecutarse sin tener que interactuar directamente con el hardware. Los sistemas operativos permiten que el hardware se utilice de manera eficiente y proporcionan una interfaz para los usuarios para interactuar con la máquina.</p>
+<h3 id="como-funcionan-los-sistemas-operativos">¿Cómo funcionan los sistemas operativos?<a class="headerlink" href="#como-funcionan-los-sistemas-operativos" title="Permanent link">¶</a></h3>
+<p>Los sistemas operativos funcionan a través de varias funciones clave:</p>
+<ol>
+<li><strong>Gestión de procesos:</strong> El SO controla la ejecución de programas y procesos. Esto incluye la creación, programación, sincronización y terminación de procesos.</li>
+<li><strong>Gestión de memoria:</strong> El SO maneja la memoria del sistema, asignando y liberando espacios de memoria para los programas en ejecución. También se encarga de la memoria virtual, que permite usar el disco duro como extensión de la RAM.</li>
+<li><strong>Gestión de almacenamiento:</strong> El SO organiza y controla el acceso a los dispositivos de almacenamiento (como discos duros o SSDs), permitiendo guardar y recuperar datos.</li>
+<li><strong>Gestión de dispositivos de entrada/salida (E/S):</strong> El SO facilita la comunicación con dispositivos como teclados, ratones, pantallas, impresoras y otros periféricos, a través de controladores y protocolos.</li>
+<li><strong>Interfaz de usuario:</strong> Muchos SO proporcionan interfaces gráficas o de línea de comandos para que los usuarios interactúen con la máquina de manera intuitiva.</li>
+</ol>
+<p>Además, los SO incluyen mecanismos de seguridad (como la autenticación y la protección de datos) y gestionan las comunicaciones en redes, lo que permite que los dispositivos se conecten a otras máquinas o servicios a través de internet.</p>
+<h3 id="tipos-de-sistemas-operativos">Tipos de sistemas operativos<a class="headerlink" href="#tipos-de-sistemas-operativos" title="Permanent link">¶</a></h3>
+<p>Los sistemas operativos se pueden clasificar según diversos criterios. Aquí te dejo algunos tipos comunes:</p>
+<ol>
+<li><strong>Sistemas operativos de tiempo compartido (Multitarea):</strong> Permiten que múltiples usuarios o procesos compartan el mismo sistema al mismo tiempo. Ejemplos: <strong>Linux</strong>, <strong>Unix</strong>, <strong>Windows</strong>.</li>
+<li><strong>Sistemas operativos de tiempo real (RTOS):</strong> Están diseñados para responder a eventos o inputs dentro de un tiempo específico, lo cual es crucial para aplicaciones como sistemas embebidos o control de maquinaria industrial. Ejemplos: <strong>FreeRTOS</strong>, <strong>VxWorks</strong>.</li>
+<li><strong>Sistemas operativos monolíticos:</strong> Son aquellos en los que todos los servicios del sistema operativo funcionan en el mismo espacio de memoria. Ejemplos: <strong>Linux</strong> y <strong>Unix</strong> (en su forma tradicional).</li>
+<li><strong>Sistemas operativos microkernel:</strong> Estos sistemas operativos tienen un núcleo más pequeño y modular, y los servicios adicionales como la gestión de dispositivos y la comunicación se implementan como procesos separados. Ejemplos: <strong>Minix</strong>, <strong>QNX</strong>.</li>
+<li><strong>Sistemas operativos de red:</strong> Son aquellos diseñados para gestionar redes de computadoras y proporcionar servicios de red. Ejemplo: <strong>Novell NetWare</strong>.</li>
+<li><strong>Sistemas operativos de disco:</strong> Se centran en la gestión de la memoria y la administración del almacenamiento. Ejemplos: <strong>MS-DOS</strong>, <strong>CP/M</strong>.</li>
+<li><strong>Sistemas operativos móviles:</strong> Están diseñados para dispositivos portátiles, como teléfonos inteligentes y tabletas. Ejemplos: <strong>Android</strong>, <strong>iOS</strong>.</li>
+</ol>
+<h3 id="diferencias-entre-los-tipos-de-sistemas-operativos">Diferencias entre los tipos de sistemas operativos<a class="headerlink" href="#diferencias-entre-los-tipos-de-sistemas-operativos" title="Permanent link">¶</a></h3>
+<ol>
+<li><strong>Multitarea vs. Tiempo real:</strong> Los sistemas multitarea permiten que varios procesos se ejecuten de manera concurrente, mientras que los de tiempo real deben responder en un plazo fijo ante eventos o entradas. Los RTOS están diseñados para sistemas donde el tiempo de respuesta es crítico.</li>
+<li><strong>Monolítico vs. Microkernel:</strong> Los SO monolíticos tienen un núcleo que incluye todos los servicios necesarios, lo que los hace más rápidos pero menos flexibles. Los microkernels, por otro lado, son más modulares y permiten un mejor aislamiento y mantenimiento, pero pueden ser más lentos debido a la comunicación entre los módulos.</li>
+<li><strong>Sistemas operativos de red:</strong> Mientras que los SO tradicionales se enfocan en la gestión local de la computadora, los sistemas operativos de red están optimizados para administrar y facilitar la comunicación entre varias máquinas en una red.</li>
+<li><strong>Móviles vs. de escritorio:</strong> Los sistemas operativos móviles están optimizados para la interacción táctil, la eficiencia energética y el trabajo con hardware limitado, mientras que los sistemas operativos de escritorio están diseñados para ofrecer una mayor potencia y capacidad de personalización, pero a costa de un mayor consumo de recursos.</li>
+</ol>
+<h3 id="resumen">Resumen:<a class="headerlink" href="#resumen" title="Permanent link">¶</a></h3>
+<p>Los sistemas operativos son el núcleo que permite la interacción entre el hardware y el software en una computadora. Funcionan gestionando recursos y proporcionando una interfaz para que los usuarios y programas puedan interactuar con el sistema. Existen diferentes tipos, como multitarea, tiempo real, monolíticos, microkernel, y específicos para redes o dispositivos móviles, cada uno con sus características particulares según el entorno y los requerimientos de uso.</p>
+<h1 id="preguntas-y-respuestas-sobre-sistemas-operativos-explicadas-a-fondo"><strong>Preguntas y respuestas sobre Sistemas Operativos (Explicadas a fondo)</strong><a class="headerlink" href="#preguntas-y-respuestas-sobre-sistemas-operativos-explicadas-a-fondo" title="Permanent link">¶</a></h1>
+<h2 id="1-cual-es-la-diferencia-entre-el-modo-usuario-y-el-modo-kernel-en-una-cpu"><strong>1. ¿Cuál es la diferencia entre el modo usuario y el modo kernel en una CPU?</strong><a class="headerlink" href="#1-cual-es-la-diferencia-entre-el-modo-usuario-y-el-modo-kernel-en-una-cpu" title="Permanent link">¶</a></h2>
+<p>✔ <strong>El modo usuario restringe el acceso al hardware, mientras que el modo kernel tiene control total sobre los recursos del sistema.</strong></p>
+<h3 id="explicacion-detallada"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada" title="Permanent link">¶</a></h3>
+<p>Los procesadores modernos tienen al menos dos modos de ejecución:</p>
+<ul>
+<li>
+<p><strong>Modo usuario</strong> (User Mode):</p>
+<ul>
+<li>Se usa para ejecutar aplicaciones y software de usuario.</li>
+<li>No puede acceder directamente al hardware ni ejecutar instrucciones privilegiadas.</li>
+<li>Si un programa necesita acceder a hardware (como leer un archivo o usar la red), debe hacerlo a través de <strong>llamadas al sistema</strong> (system calls).</li>
+<li>
+<p><strong>Modo kernel</strong> (Kernel Mode):</p>
+</li>
+<li>
+<p>Se usa para ejecutar el núcleo del sistema operativo y controladores de dispositivos.</p>
+</li>
+<li>Tiene acceso completo a la memoria, CPU y dispositivos de hardware.</li>
+<li>Permite modificar estructuras críticas del sistema, como la tabla de procesos y la memoria virtual.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo:</strong><br/>
+Cuando una aplicación en modo usuario quiere leer un archivo, no puede acceder directamente al disco. En su lugar, realiza una llamada al sistema <code>read()</code>, la cual cambia el control al modo kernel, accede al disco y devuelve los datos al modo usuario.</p>
+<hr/>
+<h2 id="2-que-es-la-memoria-virtual-y-como-funciona"><strong>2. ¿Qué es la memoria virtual y cómo funciona?</strong><a class="headerlink" href="#2-que-es-la-memoria-virtual-y-como-funciona" title="Permanent link">¶</a></h2>
+<p>✔ <strong>La memoria virtual es una técnica que permite ejecutar programas más grandes que la memoria física, usando espacio en el disco como una extensión de la RAM.</strong></p>
+<h3 id="explicacion-detallada_1"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>Permite que los procesos tengan la <strong>ilusión de disponer de más memoria</strong> de la que realmente tiene el sistema.</p>
+</li>
+<li>
+<p>Se implementa mediante:</p>
+<ul>
+<li><strong>Paginación</strong>: Divide la memoria en bloques de tamaño fijo llamados <strong>páginas</strong> y las asigna a marcos en la memoria física.</li>
+<li><strong>Segmentación</strong>: Divide la memoria en segmentos de tamaño variable según la estructura lógica del programa.</li>
+<li>Usa una <strong>tabla de páginas</strong> para mapear direcciones lógicas en direcciones físicas.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo:</strong><br/>
+Si una computadora tiene 8 GB de RAM y se ejecutan programas que requieren 16 GB, el sistema operativo mueve las partes inactivas de los procesos al <strong>archivo de paginación</strong> en el disco duro, permitiendo que los programas sigan ejecutándose sin error.</p>
+<hr/>
+<h2 id="3-que-es-una-llamada-al-sistema-y-cual-es-su-proposito"><strong>3. ¿Qué es una llamada al sistema y cuál es su propósito?</strong><a class="headerlink" href="#3-que-es-una-llamada-al-sistema-y-cual-es-su-proposito" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Una llamada al sistema (system call) permite que los programas en modo usuario soliciten servicios al sistema operativo en modo kernel.</strong></p>
+<h3 id="explicacion-detallada_2"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_2" title="Permanent link">¶</a></h3>
+<ul>
+<li>Las aplicaciones no pueden acceder directamente al hardware, por lo que deben usar llamadas al sistema para interactuar con la CPU, memoria y dispositivos.</li>
+<li>Estas llamadas permiten realizar operaciones como:<ul>
+<li><strong>Crear y gestionar procesos</strong> (<code>fork()</code>, <code>exec()</code>)</li>
+<li><strong>Leer y escribir archivos</strong> (<code>read()</code>, <code>write()</code>, <code>open()</code>)</li>
+<li><strong>Administrar memoria</strong> (<code>mmap()</code>)</li>
+<li><strong>Comunicación entre procesos</strong> (<code>pipe()</code>, <code>socket()</code>)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo:</strong><br/>
+En Linux, al abrir un archivo en C:</p>
+<pre><code class="language-c">int fd = open("archivo.txt", O_RDONLY);
+</code></pre>
+<p><code>open()</code> es una llamada al sistema que solicita al SO acceso al archivo.</p>
+<hr/>
+<h2 id="4-que-es-la-jerarquia-de-memoria-y-por-que-es-importante"><strong>4. ¿Qué es la jerarquía de memoria y por qué es importante?</strong><a class="headerlink" href="#4-que-es-la-jerarquia-de-memoria-y-por-que-es-importante" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Es la organización de diferentes niveles de almacenamiento según velocidad, costo y capacidad.</strong></p>
+<h3 id="explicacion-detallada_3"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_3" title="Permanent link">¶</a></h3>
+<p>La memoria de un sistema se divide en niveles para optimizar rendimiento y costo:</p>
+<ol>
+<li><strong>Registros</strong> (dentro de la CPU) → Más rápidos y pequeños.</li>
+<li><strong>Caché</strong> (L1, L2, L3) → Almacena datos usados frecuentemente para acceso rápido.</li>
+<li><strong>Memoria principal (RAM)</strong> → Almacena datos de ejecución temporal.</li>
+<li><strong>Almacenamiento secundario (SSD/HDD)</strong> → Para almacenamiento persistente.</li>
+<li><strong>Almacenamiento remoto o en la nube</strong> → Más lento, pero accesible desde cualquier lugar.</li>
+</ol>
+<p>📌 <strong>Objetivo:</strong> Minimizar los accesos a la memoria más lenta y costosa.</p>
+<p><strong>Ejemplo:</strong><br/>
+Cuando abres una aplicación, sus datos primero se cargan en RAM. Si la CPU necesita acceder repetidamente a ciertos datos, los guarda en caché para acelerar su acceso.</p>
+<hr/>
+<h2 id="5-cual-de-las-siguientes-estructuras-de-sistemas-operativos-es-la-mas-tradicional-y-esta-compuesta-por-un-solo-bloque-de-codigo-que-se-ejecuta-en-modo-kernel"><strong>5. ¿Cuál de las siguientes estructuras de sistemas operativos es la más tradicional y está compuesta por un solo bloque de código que se ejecuta en modo kernel?</strong><a class="headerlink" href="#5-cual-de-las-siguientes-estructuras-de-sistemas-operativos-es-la-mas-tradicional-y-esta-compuesta-por-un-solo-bloque-de-codigo-que-se-ejecuta-en-modo-kernel" title="Permanent link">¶</a></h2>
+<p>✔ <strong>c) Estructura Monolítica</strong></p>
+<h3 id="explicacion-detallada_4"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_4" title="Permanent link">¶</a></h3>
+<p>Los sistemas operativos pueden estructurarse de diferentes maneras:</p>
+<ul>
+<li>
+<p><strong>Monolítico</strong> (Ejemplo: Linux, MS-DOS)</p>
+<ul>
+<li>Todo el SO es un solo bloque de código ejecutándose en modo kernel.</li>
+<li>Alto rendimiento, pero difícil de modificar.</li>
+<li>
+<p><strong>Microkernel</strong> (Ejemplo: MINIX, QNX)</p>
+</li>
+<li>
+<p>Solo las funciones básicas están en el kernel.</p>
+</li>
+<li>El resto (sistema de archivos, drivers) se ejecuta en modo usuario.</li>
+<li>Más seguro, pero menos eficiente.</li>
+<li>
+<p><strong>Estructura en capas</strong> (Ejemplo: THE system)</p>
+</li>
+<li>
+<p>Se divide en niveles donde cada capa solo interactúa con la inferior.</p>
+</li>
+<li>Facilita mantenimiento, pero puede ser más lento.</li>
+<li>
+<p><strong>Exokernel</strong></p>
+</li>
+<li>
+<p>Elimina la abstracción de hardware, permitiendo que las aplicaciones gestionen directamente los recursos.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo:</strong><br/>
+Linux es monolítico, por lo que el núcleo tiene control total del hardware y permite cargar módulos dinámicamente.</p>
+<hr/>
+<h2 id="6-que-ventaja-ofrece-la-estructura-en-capas-de-un-so"><strong>6. ¿Qué ventaja ofrece la estructura en capas de un SO?</strong><a class="headerlink" href="#6-que-ventaja-ofrece-la-estructura-en-capas-de-un-so" title="Permanent link">¶</a></h2>
+<p>✔ <strong>b) Facilita el mantenimiento y la modificación del sistema.</strong></p>
+<h3 id="explicacion-detallada_5"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_5" title="Permanent link">¶</a></h3>
+<ul>
+<li>Divide el sistema en <strong>capas jerárquicas</strong>, donde cada una tiene una función específica.</li>
+<li>Si hay un error en una capa, las demás no se ven afectadas.</li>
+</ul>
+<p>📌 <strong>Ejemplo de capas en un SO:</strong></p>
+<ol>
+<li><strong>Capa de hardware</strong></li>
+<li><strong>Capa de controladores de dispositivo</strong></li>
+<li><strong>Capa del kernel</strong></li>
+<li><strong>Capa de sistema de archivos</strong></li>
+<li><strong>Capa de aplicaciones de usuario</strong></li>
+</ol>
+<p><strong>Desventaja:</strong> Puede generar sobrecarga en la comunicación entre capas, reduciendo rendimiento.</p>
+<hr/>
+<h2 id="7-ejemplo-clasico-de-un-sistema-monolitico"><strong>7. ¿Ejemplo clásico de un sistema monolítico?</strong><a class="headerlink" href="#7-ejemplo-clasico-de-un-sistema-monolitico" title="Permanent link">¶</a></h2>
+<p>✔ <strong>b) MS-DOS</strong></p>
+<p>📌 <strong>MS-DOS es un sistema operativo monolítico porque:</strong></p>
+<ul>
+<li>Todo el código corre en un único bloque en modo kernel.</li>
+<li>No tiene protección de memoria ni multitarea real.</li>
+</ul>
+<p>Ejemplos de otros sistemas monolíticos:</p>
+<ul>
+<li><strong>Linux</strong> (aunque soporta módulos).</li>
+<li><strong>UNIX clásico</strong>.</li>
+</ul>
+<hr/>
+<h2 id="8-que-caracteriza-a-un-microkernel"><strong>8. ¿Qué caracteriza a un microkernel?</strong><a class="headerlink" href="#8-que-caracteriza-a-un-microkernel" title="Permanent link">¶</a></h2>
+<p>✔ <strong>b) Solo contiene las funciones esenciales, como gestión de procesos e IPC.</strong></p>
+<p>📌 <strong>Características clave:</strong></p>
+<ul>
+<li>Reduce el código en el kernel, moviendo servicios a espacio de usuario.</li>
+<li>Mejora la estabilidad y seguridad.</li>
+<li>Puede ser más lento por la comunicación entre procesos.</li>
+</ul>
+<p>Ejemplo: <strong>MINIX</strong>, diseñado por Andrew Tanenbaum para educación.</p>
+<hr/>
+<h2 id="9-que-sistema-operativo-fue-desarrollado-por-tanenbaum-y-sirvio-de-inspiracion-para-linux"><strong>9. ¿Qué sistema operativo fue desarrollado por Tanenbaum y sirvió de inspiración para Linux?</strong><a class="headerlink" href="#9-que-sistema-operativo-fue-desarrollado-por-tanenbaum-y-sirvio-de-inspiracion-para-linux" title="Permanent link">¶</a></h2>
+<p>✔ <strong>b) MINIX</strong></p>
+<h3 id="explicacion-detallada_6"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_6" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>MINIX</strong> es un sistema operativo basado en UNIX, desarrollado por <strong>Andrew Tanenbaum</strong> en 1987.</li>
+<li>Diseñado con un <strong>microkernel</strong>, lo que significa que solo las funciones esenciales están en el núcleo, mientras que el resto se ejecuta en el espacio de usuario.</li>
+<li>Fue desarrollado con fines educativos y utilizado en la enseñanza de sistemas operativos.</li>
+</ul>
+<p>📌 <strong>Relación con Linux:</strong></p>
+<ul>
+<li>Linus Torvalds, creador de <strong>Linux</strong>, se inspiró en MINIX para desarrollar su propio kernel en 1991.</li>
+<li>Aunque Linux es monolítico, adoptó varias ideas de diseño de MINIX.</li>
+</ul>
+<p><strong>Ejemplo de comando en MINIX:</strong></p>
+<pre><code class="language-bash">ps -e   # Lista procesos en ejecución
+</code></pre>
+<hr/>
+<h2 id="10-que-generacion-de-computadoras-introdujo-los-transistores-y-el-procesamiento-por-lotes"><strong>10. ¿Qué generación de computadoras introdujo los transistores y el procesamiento por lotes?</strong><a class="headerlink" href="#10-que-generacion-de-computadoras-introdujo-los-transistores-y-el-procesamiento-por-lotes" title="Permanent link">¶</a></h2>
+<p>✔ <strong>b) Segunda generación</strong></p>
+<h3 id="explicacion-detallada_7"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_7" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><strong>Primera generación (1940-1956)</strong></p>
+<ul>
+<li>Usaba <strong>tubos de vacío</strong>.</li>
+<li>Programación con cables y switches.</li>
+<li>
+<p><strong>Segunda generación (1956-1964)</strong></p>
+</li>
+<li>
+<p>Introdujo los <strong>transistores</strong>, más eficientes que los tubos de vacío.</p>
+</li>
+<li>Aparece el <strong>procesamiento por lotes</strong> (<em>batch processing</em>), donde múltiples tareas se agrupan y ejecutan sin intervención del usuario.</li>
+<li>
+<p><strong>Tercera generación (1964-1971)</strong></p>
+</li>
+<li>
+<p>Se introduce el <strong>multiprogramación</strong>, permitiendo que varios programas compartan la CPU.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>📌 <strong>Ejemplo de procesamiento por lotes:</strong></p>
+<pre><code class="language-bash">#!/bin/bash
+cp archivo1.txt destino/
+mv archivo2.txt destino/
+rm archivo3.txt
+</code></pre>
+<p>Este script ejecuta varias operaciones sin intervención del usuario.</p>
+<hr/>
+<h2 id="11-que-es-un-proceso-y-cuales-son-sus-estados-principales"><strong>11. ¿Qué es un proceso y cuáles son sus estados principales?</strong><a class="headerlink" href="#11-que-es-un-proceso-y-cuales-son-sus-estados-principales" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Un proceso es un programa en ejecución.</strong><br/>
+✔ <strong>Estados:</strong> <strong>Nuevo, Listo, Ejecutando, Bloqueado, Terminado</strong>.</p>
+<h3 id="explicacion-detallada_8"><strong>Explicación detallada:</strong><a class="headerlink" href="#explicacion-detallada_8" title="Permanent link">¶</a></h3>
+<p>Un proceso pasa por diferentes estados:</p>
+<ol>
+<li><strong>Nuevo</strong>: Se ha creado, pero aún no se ejecuta.</li>
+<li><strong>Listo</strong>: Espera que la CPU lo asigne para ejecutarse.</li>
+<li><strong>Ejecutando</strong>: Se está ejecutando en la CPU.</li>
+<li><strong>Bloqueado</strong>: Está esperando un recurso (I/O, memoria).</li>
+<li><strong>Terminado</strong>: Ha finalizado su ejecución.</li>
+</ol>
+<p>📌 <strong>Ejemplo en Linux:</strong></p>
+<pre><code class="language-bash">ps aux  # Muestra procesos en ejecución
+kill -9 PID  # Finaliza un proceso
+</code></pre>
+<hr/>
+<h2 id="12-diferencia-entre-fragmentacion-externa-e-interna"><strong>12. Diferencia entre fragmentación externa e interna</strong><a class="headerlink" href="#12-diferencia-entre-fragmentacion-externa-e-interna" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Externa:</strong> Espacio libre disperso, no contiguo.<br/>
+✔ <strong>Interna:</strong> Bloques asignados más grandes de lo necesario.</p>
+<p>📌 <strong>Ejemplo de fragmentación interna:</strong></p>
+<p>Si un SO asigna bloques de 4 KB y un archivo ocupa 3 KB, <strong>1 KB se desperdicia</strong>.</p>
+<p>📌 <strong>Ejemplo de fragmentación externa:</strong></p>
+<p>Si hay varios bloques de memoria libres pero no contiguos, un proceso grande no puede ejecutarse, aunque haya suficiente memoria total.</p>
+<p>🔹 <strong>Solución:</strong> <strong>Compactación, paginación o segmentación.</strong></p>
+<hr/>
+<h2 id="13-que-es-un-sistema-de-archivos-y-sus-componentes"><strong>13. ¿Qué es un sistema de archivos y sus componentes?</strong><a class="headerlink" href="#13-que-es-un-sistema-de-archivos-y-sus-componentes" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Organiza y gestiona archivos en el almacenamiento.</strong><br/>
+✔ <strong>Componentes:</strong> Estructura de directorios, metadatos, tabla de asignación.</p>
+<p>📌 <strong>Ejemplo de sistemas de archivos:</strong></p>
+<ul>
+<li><strong>FAT32</strong> (compatible pero con límite de 4 GB por archivo).</li>
+<li><strong>NTFS</strong> (Windows, soporta permisos y compresión).</li>
+<li><strong>EXT4</strong> (Linux, más eficiente en disco grande).</li>
+</ul>
+<p>📌 <strong>Ejemplo de comandos para manipular archivos:</strong></p>
+<pre><code class="language-bash">ls -l  # Listar archivos con detalles
+touch nuevo.txt  # Crear un archivo vacío
+rm archivo.txt  # Eliminar un archivo
+</code></pre>
+<hr/>
+<h2 id="14-que-es-la-planificacion-de-procesos-y-sus-algoritmos-comunes"><strong>14. ¿Qué es la planificación de procesos y sus algoritmos comunes?</strong><a class="headerlink" href="#14-que-es-la-planificacion-de-procesos-y-sus-algoritmos-comunes" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Distribuye el uso de la CPU entre procesos.</strong><br/>
+✔ <strong>Algoritmos:</strong> FCFS, SJF, Round Robin, Prioridad, Multinivel.</p>
+<p>📌 <strong>Explicación de los algoritmos:</strong></p>
+<ul>
+<li><strong>FCFS (First-Come, First-Served)</strong>: El primero en llegar es el primero en ejecutarse.</li>
+<li><strong>SJF (Shortest Job First)</strong>: Se ejecuta primero el proceso más corto.</li>
+<li><strong>Round Robin</strong>: Asigna un tiempo fijo a cada proceso y los rota.</li>
+<li><strong>Prioridad</strong>: Ejecuta procesos según su prioridad.</li>
+<li><strong>Multinivel</strong>: Divide procesos en diferentes colas según su tipo.</li>
+</ul>
+<p>📌 <strong>Ejemplo de <code>ps</code> en Linux:</strong></p>
+<pre><code class="language-bash">ps -eo pid,cmd,%cpu,%mem --sort=-%cpu  # Ordena por uso de CPU
+</code></pre>
+<hr/>
+<h2 id="15-que-es-la-comunicacion-entre-procesos-ipc-y-metodos-comunes"><strong>15. ¿Qué es la comunicación entre procesos (IPC) y métodos comunes?</strong><a class="headerlink" href="#15-que-es-la-comunicacion-entre-procesos-ipc-y-metodos-comunes" title="Permanent link">¶</a></h2>
+<p>✔ <strong>La comunicación entre procesos (IPC, Inter-Process Communication) permite que múltiples procesos intercambien información, incluso si están en diferentes espacios de memoria.</strong></p>
+<p>Los procesos pueden necesitar comunicarse para compartir datos, sincronizar acciones o coordinar tareas. Existen varios métodos de IPC:</p>
+<h3 id="1-memoria-compartida"><strong>1. Memoria Compartida</strong><a class="headerlink" href="#1-memoria-compartida" title="Permanent link">¶</a></h3>
+<ul>
+<li>Permite que múltiples procesos accedan a una misma región de memoria.</li>
+<li>Es eficiente porque evita el intercambio de datos mediante copias.</li>
+<li>
+<p><strong>Ejemplo en C (usando <code>shmget</code>)</strong>:</p>
+<p>```c</p>
+<h1 id="include">include <stdio.h><a class="headerlink" href="#include" title="Permanent link">¶</a></stdio.h></h1>
+<h1 id="include_1">include <sys ipc.h=""><a class="headerlink" href="#include_1" title="Permanent link">¶</a></sys></h1>
+<h1 id="include_2">include <sys shm.h=""><a class="headerlink" href="#include_2" title="Permanent link">¶</a></sys></h1>
+<h1 id="include_3">include <string.h><a class="headerlink" href="#include_3" title="Permanent link">¶</a></string.h></h1>
+<p>int main() {
+    key_t key = 1234;
+    int shmid = shmget(key, 1024, 0666 | IPC_CREAT);
+    char <em>data = (char </em>)shmat(shmid, (void *)0, 0);</p>
+<pre><code>strcpy(data, "Hola desde la memoria compartida");
+printf("Escrito en memoria: %s\n", data);
+
+shmdt(data);
+return 0;
+</code></pre>
+<p>}
+```</p>
+<ul>
+<li>Un proceso puede escribir en esta memoria y otro puede leerla, sincronizando su acceso mediante semáforos.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-pipes-tuberias"><strong>2. Pipes (Tuberías)</strong><a class="headerlink" href="#2-pipes-tuberias" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>Son canales de comunicación unidireccionales entre procesos.</p>
+</li>
+<li>
+<p>Se dividen en:</p>
+<ul>
+<li><strong>Pipes anónimos</strong>: Solo sirven entre procesos padre e hijo.</li>
+<li><strong>Named pipes (FIFO)</strong>: Permiten comunicación entre procesos no relacionados.</li>
+<li><strong>Ejemplo de un pipe en C:</strong></li>
+</ul>
+<p>```c</p>
+<h1 id="include_4">include <stdio.h><a class="headerlink" href="#include_4" title="Permanent link">¶</a></stdio.h></h1>
+<h1 id="include_5">include <unistd.h><a class="headerlink" href="#include_5" title="Permanent link">¶</a></unistd.h></h1>
+<p>int main() {
+    int fd[2];
+    pipe(fd);
+    char buffer[20];</p>
+<pre><code>if (fork() == 0) {
+    close(fd[0]); // Cierra lectura
+    write(fd[1], "Mensaje IPC", 12);
+    close(fd[1]);
+} else {
+    close(fd[1]); // Cierra escritura
+    read(fd[0], buffer, 12);
+    printf("Padre recibió: %s\n", buffer);
+    close(fd[0]);
+}
+return 0;
+</code></pre>
+<p>}
+```</p>
+<ul>
+<li>Se usa para comunicación entre procesos relacionados (padre e hijo).</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-mensajes-message-queues"><strong>3. Mensajes (Message Queues)</strong><a class="headerlink" href="#3-mensajes-message-queues" title="Permanent link">¶</a></h3>
+<ul>
+<li>Un sistema de colas donde los procesos pueden enviar y recibir mensajes.</li>
+<li>Permiten una comunicación estructurada sin necesidad de memoria compartida.</li>
+<li>
+<p><strong>Ejemplo en C (usando <code>msgsnd</code> y <code>msgrcv</code>)</strong>:</p>
+<p><code>c
+struct msg_buffer {
+    long msg_type;
+    char msg_text[100];
+};</code></p>
+<ul>
+<li>Un proceso puede escribir mensajes en una cola y otro proceso puede leerlos.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-semaforos"><strong>4. Semáforos</strong><a class="headerlink" href="#4-semaforos" title="Permanent link">¶</a></h3>
+<ul>
+<li>Se utilizan para sincronizar procesos y evitar condiciones de carrera (cuando dos procesos acceden a un recurso al mismo tiempo sin control adecuado).</li>
+<li>Existen <strong>semáforos binarios (mutex)</strong> y <strong>semáforos contadores</strong>.</li>
+<li>
+<p><strong>Ejemplo en C (usando <code>sem_init</code> y <code>sem_wait</code>)</strong>:</p>
+<p>```c</p>
+<h1 id="include_6">include <pthread.h><a class="headerlink" href="#include_6" title="Permanent link">¶</a></pthread.h></h1>
+<h1 id="include_7">include <semaphore.h><a class="headerlink" href="#include_7" title="Permanent link">¶</a></semaphore.h></h1>
+<h1 id="include_8">include <stdio.h><a class="headerlink" href="#include_8" title="Permanent link">¶</a></stdio.h></h1>
+<p>sem_t sem;</p>
+<p>void<em> proceso(void</em> arg) {
+    sem_wait(&amp;sem);  // Disminuye el semáforo (bloquea)
+    printf("Proceso en ejecución...\n");
+    sem_post(&amp;sem);  // Libera el semáforo
+}</p>
+<p>int main() {
+    sem_init(&amp;sem, 0, 1);
+    pthread_t t1, t2;
+    pthread_create(&amp;t1, NULL, proceso, NULL);
+    pthread_create(&amp;t2, NULL, proceso, NULL);
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+    sem_destroy(&amp;sem);
+    return 0;
+}
+```</p>
+<ul>
+<li>Los semáforos garantizan que solo un proceso acceda a un recurso a la vez.</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-sockets"><strong>5. Sockets</strong><a class="headerlink" href="#5-sockets" title="Permanent link">¶</a></h3>
+<ul>
+<li>Permiten la comunicación entre procesos en <strong>diferentes máquinas</strong> mediante protocolos como TCP/IP.</li>
+<li>Se usan en redes, por ejemplo, en aplicaciones cliente-servidor.</li>
+</ul>
+<hr/>
+<h2 id="16-que-es-un-sistema-distribuido-y-sus-caracteristicas"><strong>16. ¿Qué es un sistema distribuido y sus características?</strong><a class="headerlink" href="#16-que-es-un-sistema-distribuido-y-sus-caracteristicas" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Un sistema distribuido es un conjunto de computadoras interconectadas que trabajan juntas como si fueran un solo sistema.</strong></p>
+<p>Se usa en bases de datos distribuidas, servicios en la nube y clusters de servidores.</p>
+<h3 id="caracteristicas-clave"><strong>Características clave:</strong><a class="headerlink" href="#caracteristicas-clave" title="Permanent link">¶</a></h3>
+<h3 id="1-transparencia"><strong>1. Transparencia</strong><a class="headerlink" href="#1-transparencia" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><strong>Los usuarios no notan que están interactuando con múltiples sistemas.</strong></p>
+</li>
+<li>
+<p>Tipos:</p>
+<ul>
+<li><strong>Transparencia de acceso:</strong> No importa en qué máquina está un recurso, siempre se accede de la misma manera.</li>
+<li><strong>Transparencia de ubicación:</strong> El usuario no necesita conocer la ubicación física de un archivo o proceso.</li>
+<li><strong>Transparencia de replicación:</strong> Si hay múltiples copias de un recurso, el sistema elige la mejor automáticamente.</li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<ul>
+<li>Google Drive: Un usuario accede a sus archivos sin saber en qué servidor están almacenados.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-concurrencia"><strong>2. Concurrencia</strong><a class="headerlink" href="#2-concurrencia" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Múltiples procesos pueden ejecutarse simultáneamente en diferentes nodos.</strong></li>
+<li>Se necesita sincronización para evitar inconsistencias en los datos.</li>
+<li><strong>Ejemplo:</strong> Un sistema bancario donde múltiples usuarios acceden a una cuenta simultáneamente.</li>
+</ul>
+<h3 id="3-escalabilidad"><strong>3. Escalabilidad</strong><a class="headerlink" href="#3-escalabilidad" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><strong>El sistema puede crecer agregando más máquinas sin afectar el rendimiento.</strong></p>
+</li>
+<li>
+<p>Tipos:</p>
+<ul>
+<li><strong>Escalabilidad horizontal:</strong> Añadir más nodos (Ejemplo: servidores en un cluster).</li>
+<li><strong>Escalabilidad vertical:</strong> Mejorar hardware existente.</li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<ul>
+<li>Amazon AWS puede agregar servidores automáticamente cuando la demanda aumenta.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="17-mecanismos-de-seguridad-de-un-sistema-operativo"><strong>17. Mecanismos de seguridad de un Sistema Operativo</strong><a class="headerlink" href="#17-mecanismos-de-seguridad-de-un-sistema-operativo" title="Permanent link">¶</a></h2>
+<p>Un sistema operativo implementa múltiples mecanismos de seguridad para proteger la integridad, confidencialidad y disponibilidad de los datos y recursos del sistema. Estos incluyen:</p>
+<h3 id="1-control-de-acceso"><strong>1. Control de acceso</strong><a class="headerlink" href="#1-control-de-acceso" title="Permanent link">¶</a></h3>
+<p>Regula quién puede acceder a qué recursos y qué operaciones puede realizar.<br/>
+✔ <strong>Ejemplo en Linux (permisos de archivos)</strong>:</p>
+<pre><code class="language-bash">chmod 700 archivo.txt  # Solo el propietario puede leer, escribir y ejecutar
+chown usuario:grupo archivo.txt  # Cambiar el propietario y grupo del archivo
+</code></pre>
+<p>✔ <strong>Ejemplo en Windows (ACL - Access Control List):</strong></p>
+<pre><code class="language-powershell">icacls "C:\Archivo.txt" /grant Usuario:F  # Otorga control total a "Usuario"
+</code></pre>
+<ul>
+<li><strong>MAC (Mandatory Access Control):</strong> Implementado en SELinux, impone restricciones estrictas.</li>
+<li><strong>RBAC (Role-Based Access Control):</strong> Acceso basado en roles, útil en empresas.</li>
+</ul>
+<h3 id="2-cifrado"><strong>2. Cifrado</strong><a class="headerlink" href="#2-cifrado" title="Permanent link">¶</a></h3>
+<p>Protege datos en tránsito y en reposo.<br/>
+✔ <strong>Ejemplo en Linux (cifrar un archivo con GPG):</strong></p>
+<pre><code class="language-bash">gpg -c archivo.txt  # Cifra el archivo con una clave
+</code></pre>
+<p>✔ <strong>Ejemplo en Windows (BitLocker):</strong></p>
+<pre><code class="language-powershell">manage-bde -on C:  # Habilita el cifrado en la unidad C:
+</code></pre>
+<h3 id="3-firewalls"><strong>3. Firewalls</strong><a class="headerlink" href="#3-firewalls" title="Permanent link">¶</a></h3>
+<p>Filtran tráfico de red para evitar accesos no autorizados.<br/>
+✔ <strong>Ejemplo en Linux (configuración de <code>iptables</code>):</strong></p>
+<pre><code class="language-bash">iptables -A INPUT -p tcp --dport 22 -j DROP  # Bloquea SSH
+</code></pre>
+<p>✔ <strong>Ejemplo en Windows:</strong></p>
+<pre><code class="language-powershell">New-NetFirewallRule -DisplayName "Bloquear HTTP" -Direction Inbound -Protocol TCP -LocalPort 80 -Action Block
+</code></pre>
+<h3 id="4-aislamiento-de-procesos"><strong>4. Aislamiento de procesos</strong><a class="headerlink" href="#4-aislamiento-de-procesos" title="Permanent link">¶</a></h3>
+<p>Evita que procesos accedan a memoria o recursos de otros.</p>
+<ul>
+<li><strong>Virtualización:</strong> Máquinas virtuales ejecutan procesos en entornos aislados.</li>
+<li><strong>Contenedores (Docker):</strong> Ejecutan aplicaciones en espacios de usuario separados. ✔ <strong>Ejemplo con Docker:</strong></li>
+</ul>
+<pre><code class="language-bash">docker run --rm -it --security-opt no-new-privileges ubuntu
+</code></pre>
+<hr/>
+<h2 id="18-que-es-la-paginacion-y-como-funciona"><strong>18. ¿Qué es la paginación y cómo funciona?</strong><a class="headerlink" href="#18-que-es-la-paginacion-y-como-funciona" title="Permanent link">¶</a></h2>
+<p>✔ <strong>La paginación es una técnica de administración de memoria que divide la memoria en bloques pequeños llamados páginas y los asigna a marcos de memoria física.</strong></p>
+<h3 id="funcionamiento"><strong>Funcionamiento</strong><a class="headerlink" href="#funcionamiento" title="Permanent link">¶</a></h3>
+<ol>
+<li><strong>División de memoria:</strong><ul>
+<li>La memoria virtual se divide en <strong>páginas</strong> de tamaño fijo (ej. 4 KB).</li>
+<li>La memoria RAM se divide en <strong>marcos</strong> del mismo tamaño.</li>
+</ul>
+</li>
+<li><strong>Asignación de páginas a marcos:</strong><ul>
+<li>Un proceso con 16 KB de memoria requerirá <strong>4 páginas</strong> si cada página mide 4 KB.</li>
+</ul>
+</li>
+<li><strong>Tabla de páginas:</strong><ul>
+<li>Traduce direcciones lógicas (de la CPU) a direcciones físicas (en RAM).</li>
+</ul>
+</li>
+</ol>
+<h3 id="ejemplo-practico"><strong>Ejemplo práctico</strong><a class="headerlink" href="#ejemplo-practico" title="Permanent link">¶</a></h3>
+<p>Supongamos que tenemos un proceso con 3 páginas:</p>
+<pre><code>| Página | Dirección lógica | Marco asignado | Dirección física |
+|--------|----------------|---------------|----------------|
+| 0      | 0x0000         | 5             | 0x5000         |
+| 1      | 0x1000         | 2             | 0x2000         |
+| 2      | 0x2000         | 7             | 0x7000         |
+</code></pre>
+<p>Si la CPU busca la dirección lógica <code>0x1000</code>, la tabla de páginas traduce <code>0x1000</code> a <code>0x2000</code> en RAM.</p>
+<h3 id="ventajas-de-la-paginacion"><strong>Ventajas de la paginación</strong><a class="headerlink" href="#ventajas-de-la-paginacion" title="Permanent link">¶</a></h3>
+<p>✔ <strong>Evita la fragmentación externa</strong> (ya que las páginas son del mismo tamaño).<br/>
+✔ <strong>Permite memoria virtual</strong>, usando espacio en disco cuando falta RAM.</p>
+<p>✔ <strong>Ejemplo en Linux (ver tabla de páginas con <code>pagemap</code>):</strong></p>
+<pre><code class="language-bash">cat /proc/self/pagemap
+</code></pre>
+<hr/>
+<h2 id="19-que-es-un-archivo-fifo-y-para-que-se-usa"><strong>19. ¿Qué es un archivo FIFO y para qué se usa?</strong><a class="headerlink" href="#19-que-es-un-archivo-fifo-y-para-que-se-usa" title="Permanent link">¶</a></h2>
+<p>✔ <strong>Un archivo FIFO (First In, First Out) es un pipe con nombre que permite la comunicación entre procesos.</strong></p>
+<h3 id="caracteristicas"><strong>Características</strong><a class="headerlink" href="#caracteristicas" title="Permanent link">¶</a></h3>
+<ul>
+<li>Permite que procesos <strong>no relacionados</strong> (sin relación padre-hijo) se comuniquen.</li>
+<li>Funciona como una cola: <strong>el primer proceso que escribe es el primero en ser leído.</strong></li>
+</ul>
+<h3 id="ejemplo-en-linux"><strong>Ejemplo en Linux</strong><a class="headerlink" href="#ejemplo-en-linux" title="Permanent link">¶</a></h3>
+<p>1️⃣ <strong>Crear el FIFO</strong>:</p>
+<pre><code class="language-bash">mkfifo mi_pipe
+</code></pre>
+<p>2️⃣ <strong>Proceso que escribe en el FIFO</strong>:</p>
+<pre><code class="language-bash">echo "Mensaje IPC" &gt; mi_pipe
+</code></pre>
+<p>3️⃣ <strong>Proceso que lee desde el FIFO</strong>:</p>
+<pre><code class="language-bash">cat mi_pipe
+</code></pre>
+<p>El mensaje "Mensaje IPC" será mostrado en pantalla.</p>
+<p>✔ <strong>Ejemplo en C:</strong></p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;unistd.h&gt;
+
+int main() {
+    int fd;
+    mkfifo("mi_pipe", 0666);  // Crear FIFO
+    fd = open("mi_pipe", O_WRONLY);
+    write(fd, "Hola FIFO", 10);
+    close(fd);
+    return 0;
+}
+</code></pre>
+<hr/>
+<h2 id="20-diferencias-entre-ntfs-y-fat32"><strong>20. Diferencias entre NTFS y FAT32</strong><a class="headerlink" href="#20-diferencias-entre-ntfs-y-fat32" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>NTFS</th>
+<th>FAT32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>Soporta permisos y cifrado</td>
+<td>No tiene seguridad integrada</td>
+</tr>
+<tr>
+<td><strong>Tamaño máximo de archivo</strong></td>
+<td>16 TB</td>
+<td>4 GB</td>
+</tr>
+<tr>
+<td><strong>Tamaño máximo de partición</strong></td>
+<td>256 TB</td>
+<td>32 GB (Windows), 2 TB (Linux)</td>
+</tr>
+<tr>
+<td><strong>Compatibilidad</strong></td>
+<td>Windows, Linux, macOS (solo lectura)</td>
+<td>Universal (Windows, Linux, macOS, consolas)</td>
+</tr>
+<tr>
+<td><strong>Journaling (registro de cambios)</strong></td>
+<td>Sí</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Velocidad en dispositivos pequeños</strong></td>
+<td>Ligeramente más lenta</td>
+<td>Más rápida en pendrives</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cuando-usar-cada-uno"><strong>¿Cuándo usar cada uno?</strong><a class="headerlink" href="#cuando-usar-cada-uno" title="Permanent link">¶</a></h3>
+<p>✔ <strong>NTFS:</strong> Para discos duros internos, sistemas con permisos y cifrado.<br/>
+✔ <strong>FAT32:</strong> Para pendrives, tarjetas SD, compatibilidad con sistemas antiguos.</p>
+<p>✔ <strong>Ejemplo en Windows (formatear un disco en NTFS):</strong></p>
+<pre><code class="language-powershell">format /FS:NTFS D:
+</code></pre>
+<p>✔ <strong>Ejemplo en Linux (formatear en FAT32):</strong></p>
+<pre><code class="language-bash">mkfs.vfat -F 32 /dev/sdb1
+</code></pre>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

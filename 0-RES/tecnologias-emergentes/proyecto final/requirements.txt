@@ -1,0 +1,16 @@
+pandas
+librosa
+numpy
+IPython
+glob2
+tensorflow
+scikit-learn
+matplotlib
+ipykernel
+seaborn
+rapidfuzz
+
+
+# server
+django
+pydub

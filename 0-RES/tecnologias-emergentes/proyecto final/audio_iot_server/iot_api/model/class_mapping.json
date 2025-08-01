@@ -1,0 +1,42 @@
+{
+    "dog_bark": {
+        "id": 3,
+        "display": true
+    },
+    "children_playing": {
+        "id": 2,
+        "display": true
+    },
+    "car_horn": {
+        "id": 1,
+        "display": true
+    },
+    "air_conditioner": {
+        "id": 0,
+        "display": false
+    },
+    "street_music": {
+        "id": 9,
+        "display": false
+    },
+    "gun_shot": {
+        "id": 6,
+        "display": true
+    },
+    "siren": {
+        "id": 8,
+        "display": false
+    },
+    "engine_idling": {
+        "id": 5,
+        "display": true
+    },
+    "jackhammer": {
+        "id": 7,
+        "display": false
+    },
+    "drilling": {
+        "id": 4,
+        "display": false
+    }
+}

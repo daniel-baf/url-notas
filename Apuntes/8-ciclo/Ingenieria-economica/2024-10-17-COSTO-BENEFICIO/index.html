@@ -1,0 +1,3066 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../2024-10-11-Simposio/" rel="prev"/>
+<link href="../2028-10-09-Calculo-Flujos-Caja/" rel="next"/>
+<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.16" name="generator"/>
+<title>2024 10 17 COSTO BENEFICIO - obsidian-mkdocs template</title>
+<link href="../../../../assets/stylesheets/main.7e37652d.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="obsidian-mkdocs template" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              2024 10 17 COSTO BENEFICIO
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="obsidian-mkdocs template" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    obsidian-mkdocs template
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+<span class="md-ellipsis">
+    Obsidian Notes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    0 RES
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            0 RES
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/a/">
+<span class="md-ellipsis">
+    ITIL
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Sistemas operativos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/Sistemas-operativos/practica-procesos/">
+<span class="md-ellipsis">
+    Practica procesos
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Tecnologias emergentes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Tecnologias emergentes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Proyecto final
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Proyecto final
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/tecnologias-emergentes/proyecto%20final/">
+<span class="md-ellipsis">
+    Index
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2" id="__nav_2_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Notebook
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_2_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            Notebook
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2_1" id="__nav_2_3_1_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_2_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_1_2_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_1_2_1_1" id="__nav_2_3_1_2_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    ESC 50 master
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_1_2_1_1_label" class="md-nav" data-md-level="6">
+<label class="md-nav__title" for="__nav_2_3_1_2_1_1">
+<span class="md-nav__icon md-icon"></span>
+            ESC 50 master
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/tecnologias-emergentes/proyecto%20final/notebook/data/ESC-50-master/">
+<span class="md-ellipsis">
+    Index
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Udemy
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Udemy
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    React
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+            React
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1_1" id="__nav_2_4_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Proyectos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_4_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Proyectos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1_1_1" id="__nav_2_4_1_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Carro compras
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_1_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_4_1_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Carro compras
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/udemy/react/proyectos/carro-compras/">
+<span class="md-ellipsis">
+    Getting Started with Create React App
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4_1_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1_1_2" id="__nav_2_4_1_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Mi app
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_1_1_2_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_4_1_1_2">
+<span class="md-nav__icon md-icon"></span>
+            Mi app
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../0-RES/udemy/react/proyectos/mi-app/">
+<span class="md-ellipsis">
+    Getting Started with Create React App
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Apuntes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Apuntes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    5 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            5 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Arqui computador 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Arqui computador 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/10.permisos/">
+<span class="md-ellipsis">
+    10.permisos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/Recursos/">
+<span class="md-ellipsis">
+    Recursos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_1_3" id="__nav_3_1_1_3_label" tabindex="0">
+<span class="md-ellipsis">
+    1 DOSBOX
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_3_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_3">
+<span class="md-nav__icon md-icon"></span>
+            1 DOSBOX
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/1-DOSBOX/1-Ensamblador/">
+<span class="md-ellipsis">
+    1 Ensamblador
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_1_4" id="__nav_3_1_1_4_label" tabindex="0">
+<span class="md-ellipsis">
+    2 NASM
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_4_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_1_4">
+<span class="md-nav__icon md-icon"></span>
+            2 NASM
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/1.Hola-mundo-en-NASM/">
+<span class="md-ellipsis">
+    1.Hola mundo en NASM
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/2.Llamadas-de-subrutinas/">
+<span class="md-ellipsis">
+    2.Llamadas de subrutinas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/3.Include-headers/">
+<span class="md-ellipsis">
+    3.Include headers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/4.Parametros/">
+<span class="md-ellipsis">
+    4.Parametros
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/5.Lectura-de-datos/">
+<span class="md-ellipsis">
+    5.Lectura de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/6.1.-Funciones/">
+<span class="md-ellipsis">
+    6.1. Funciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/6.Ciclos-numeros/">
+<span class="md-ellipsis">
+    6.Ciclos numeros
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/7.Aritmeticas/">
+<span class="md-ellipsis">
+    7.Aritmeticas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/8.Codificacion/">
+<span class="md-ellipsis">
+    8.Codificacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Arqui-computador-1/2-NASM/9.funciones-externas/">
+<span class="md-ellipsis">
+    9.funciones externas
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Base datos 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            Base datos 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_2_1" id="__nav_3_1_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    DSM
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+            DSM
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Base-datos-1/DSM/Repaso/">
+<span class="md-ellipsis">
+    Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../5-ciclo/Base-datos-1/DSM/Sentencias%20DSM/">
+<span class="md-ellipsis">
+    Sentencias DSM
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    6 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            6 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/Untitled/">
+<span class="md-ellipsis">
+    Untitled
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    IO 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_2">
+<span class="md-nav__icon md-icon"></span>
+            IO 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-10-CAP-2-HILLER-Y-LIBERMAN/">
+<span class="md-ellipsis">
+    2023 08 10 CAP 2 HILLER Y LIBERMAN
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-15-Modelado-y-costos/">
+<span class="md-ellipsis">
+    2023 08 15 Modelado y costos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-17-PROGRAMACI%C3%93N-LINEAL/">
+<span class="md-ellipsis">
+    PL - Programación lineal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-23-Programacion-lineal/">
+<span class="md-ellipsis">
+    2023 08 23 Programacion lineal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-08-24-Tiempo-de-produccion/">
+<span class="md-ellipsis">
+    EJERCICIO 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-10-Rutas/">
+<span class="md-ellipsis">
+    Minimización
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-12-Ejercicios/">
+<span class="md-ellipsis">
+    2023 10 12 Ejercicios
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-17-CPM/">
+<span class="md-ellipsis">
+    2023 10 17 CPM
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-10-26-Reduccion-tiempos/">
+<span class="md-ellipsis">
+    2023 10 26 Reduccion tiempos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/RESUMEN-SIMPOSIO/">
+<span class="md-ellipsis">
+    Aplicación de Tecnologías Emergentes en Investigación de Operaciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2_11" id="__nav_3_2_2_11_label" tabindex="0">
+<span class="md-ellipsis">
+    2023 09 07
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_2_11_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_2_2_11">
+<span class="md-nav__icon md-icon"></span>
+            2023 09 07
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-09-07/2023-09-07-Rutas/">
+<span class="md-ellipsis">
+    2023 09 07 Rutas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/IO-1/2023-09-07/2023-09-07-ejercicios/">
+<span class="md-ellipsis">
+    QUÉ PASA SI
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    arquitectura computador II
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+            arquitectura computador II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-10-Notas/">
+<span class="md-ellipsis">
+    2023 08 10 Notas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-14-Proteus/">
+<span class="md-ellipsis">
+    2023 08 14 Proteus
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-18-MPXLAB/">
+<span class="md-ellipsis">
+    2023 08 18 MPXLAB
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-08-28-Formulas/">
+<span class="md-ellipsis">
+    2023 08 28 Formulas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-09-04-MikroC/">
+<span class="md-ellipsis">
+    2023 09 04 MikroC
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-09-25-ARDUINO/">
+<span class="md-ellipsis">
+    Arduino
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/arquitectura-computador-II/2023-10-27-IoT-Ardunio/">
+<span class="md-ellipsis">
+    2023 10 27 IoT Ardunio
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4" id="__nav_3_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    base de datos II
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_4">
+<span class="md-nav__icon md-icon"></span>
+            base de datos II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-14-Transacciones/">
+<span class="md-ellipsis">
+    2023 08 14 Transacciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-16-Errores-transacciones/">
+<span class="md-ellipsis">
+    Niveles de aislamiento en la BD
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-16-Transacciones/">
+<span class="md-ellipsis">
+    2023 08 16 Transacciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-08-23-Aislamiento/">
+<span class="md-ellipsis">
+    2023 08 23 Aislamiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-09-06-Alta-Disponiblidad/">
+<span class="md-ellipsis">
+    2023 09 06 Alta Disponiblidad
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/2023-09-25-BD-Alta-Disponibilidad/">
+<span class="md-ellipsis">
+    Bases de datos en espera
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4_7" id="__nav_3_2_4_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Cluster
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_4_7_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_2_4_7">
+<span class="md-nav__icon md-icon"></span>
+            Cluster
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/cluster/2023-10-16-Galera/">
+<span class="md-ellipsis">
+    Galera
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/base-de-datos-II/cluster/2023-10-19-pasos-AWS/">
+<span class="md-ellipsis">
+    Pasos
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_5" id="__nav_3_2_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Compiladores
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_5">
+<span class="md-nav__icon md-icon"></span>
+            Compiladores
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-11%20An%C3%A1lisis/">
+<span class="md-ellipsis">
+    2023 08 11 Análisis
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-16-MIPS/">
+<span class="md-ellipsis">
+    2023 08 16 MIPS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-16-Resumen/">
+<span class="md-ellipsis">
+    2023 08 16 Resumen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-24-Investigacion-casa/">
+<span class="md-ellipsis">
+    2023 08 24 Investigacion casa
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-08-25-Economia-lenguajes-programacion/">
+<span class="md-ellipsis">
+    2023 08 25 Economia lenguajes programacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-06-An%C3%A1lisis-L%C3%A9xico/">
+<span class="md-ellipsis">
+    2023 09 06 Análisis Léxico
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-10-S5.2/">
+<span class="md-ellipsis">
+    2023 09 10 S5.2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-20-Lex/">
+<span class="md-ellipsis">
+    2023 09 20 Lex
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-09-29-FreePascal/">
+<span class="md-ellipsis">
+    2023 09 29 FreePascal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-10-04-Ej.-gramaticas/">
+<span class="md-ellipsis">
+    DATOS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-10-13-TAREA-gramaticas/">
+<span class="md-ellipsis">
+    2023 10 13 TAREA gramaticas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-10-26-GIC-aritmeticas-free-pascal/">
+<span class="md-ellipsis">
+    2023 10 26 GIC aritmeticas free pascal
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/2023-11-08-YAC/">
+<span class="md-ellipsis">
+    2023 11 08 YAC
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/compiladores/Errores-en-Go/">
+<span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_6" id="__nav_3_2_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Microprogramacion
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_6_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_6">
+<span class="md-nav__icon md-icon"></span>
+            Microprogramacion
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-09-Von-Neumann/">
+<span class="md-ellipsis">
+    2023 08 09 Von Neumann
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-15-ALU/">
+<span class="md-ellipsis">
+    2023 08 15 ALU
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-15-Cuestionario/">
+<span class="md-ellipsis">
+    2023 08 15 Cuestionario
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-22-ARQUITECTURAS/">
+<span class="md-ellipsis">
+    CISC y RISC
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-22-Cuestionario-Cach%C3%A9/">
+<span class="md-ellipsis">
+    2023 08 22 Cuestionario Caché
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-08-24-UCP/">
+<span class="md-ellipsis">
+    2023 08 24 UCP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-09-05-Programas-en-ensamblador/">
+<span class="md-ellipsis">
+    Programas en ensamblador
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-09-19-INMB/">
+<span class="md-ellipsis">
+    2023 09 19 INMB
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-10-05-Pr%C3%A1ctica-3/">
+<span class="md-ellipsis">
+    2023 10 05 Práctica 3
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-10-19-Practica-4/">
+<span class="md-ellipsis">
+    2023 10 19 Practica 4
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-10-26-Segunda-hoja-trabajo/">
+<span class="md-ellipsis">
+    Ejercicio 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/2023-11-09-Contenido-FINAL/">
+<span class="md-ellipsis">
+    2023 11 09 Contenido FINAL
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../6-ciclo/microprogramacion/Cuesionario-segmentacion-cache-viode/">
+<span class="md-ellipsis">
+    Cuesionario segmentacion cache viode
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    7 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            7 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Analisis diseno
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Analisis diseno
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/Analisis-diseno/Modelos%20de%20desarrollo/">
+<span class="md-ellipsis">
+    Comparación entre distintos modelos de desarrollo
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Analisis y diseño
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Analisis y diseño
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/analisis%20y%20dise%C3%B1o/2024-03-22%20Repaso%20en%20clase/">
+<span class="md-ellipsis">
+    Repaso en clase
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Costos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Costos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/costos/Libro-Mayor-Inventario-Libro-caja/">
+<span class="md-ellipsis">
+    Libro Mayor Inventario Libro caja
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../7-ciclo/costos/Resumen-de-Ecuaciones-patrimoniales-y-Libro-contable/">
+<span class="md-ellipsis">
+    Resumen de Ecuaciones Patrimoniales y Libros Contables
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    8 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            8 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RESUMEN-SAM/">
+<span class="md-ellipsis">
+    Sondeo eléctrico vertical
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Ingenieria economica
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_4_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Ingenieria economica
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-07-24-Diagrama-de-flujo-efectivo/">
+<span class="md-ellipsis">
+    2024 07 24 Diagrama de flujo efectivo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-07-26-Inversiones/">
+<span class="md-ellipsis">
+    2024 07 26 Inversiones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-02-Soluciones-tarea/">
+<span class="md-ellipsis">
+    2024 08 02 Soluciones tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-07-Factores-de-gradiente-aritmentico-y-geometrico/">
+<span class="md-ellipsis">
+    2024 08 07 Factores de gradiente aritmentico y geometrico
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-09-Este-dia-llegue-tarde./">
+<span class="md-ellipsis">
+    2024 08 09 Este dia llegue tarde.
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-14-Intereses/">
+<span class="md-ellipsis">
+    Soluciones de tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-16-Ejercicios-interes/">
+<span class="md-ellipsis">
+    2024 08 16 Ejercicios interes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-21-Valores-usuales-repaso/">
+<span class="md-ellipsis">
+    2024 08 21 Valores usuales repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-08-28-An%C3%A1lisis-valor-presente/">
+<span class="md-ellipsis">
+    2024 08 28 Análisis valor presente
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-04-Ejemplos/">
+<span class="md-ellipsis">
+    2024 09 04 Ejemplos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-10-Comparacion-valor-de-alternativas-como-vidas-utiles-diferentes/">
+<span class="md-ellipsis">
+    2024 09 10 Comparacion valor de alternativas como vidas utiles diferentes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-11-Repaso/">
+<span class="md-ellipsis">
+    2024 09 11 Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-20-Recuperaci%C3%B3n-Capital-valores-anuales/">
+<span class="md-ellipsis">
+    2024 09 20 Recuperación Capital valores anuales
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-24-PRI/">
+<span class="md-ellipsis">
+    Periodo de recuperacion de la inversión (PRI)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-24-Solucion-tarea/">
+<span class="md-ellipsis">
+    2024 09 24 Solucion tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-25-flujo-caja-vpn/">
+<span class="md-ellipsis">
+    2024 09 25 flujo caja vpn
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-09-27-Ejemplos-VAN/">
+<span class="md-ellipsis">
+    2024 09 27 Ejemplos VAN
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-10-02-Calcular-flujo-caja/">
+<span class="md-ellipsis">
+    2024 10 02 Calcular flujo caja
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2024-10-11-Simposio/">
+<span class="md-ellipsis">
+    2024 10 11 Simposio
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    2024 10 17 COSTO BENEFICIO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2028-10-09-Calculo-Flujos-Caja/">
+<span class="md-ellipsis">
+    2028 10 09 Calculo Flujos Caja
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Manejo e implementacion archivos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Manejo e implementacion archivos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-07-13-Introduccion-archivos/">
+<span class="md-ellipsis">
+    2024 07 13 Introduccion archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-07-17-conversiones/">
+<span class="md-ellipsis">
+    2024 07 17 conversiones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-07-24-archivos-python/">
+<span class="md-ellipsis">
+    2024 07 24 archivos python
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-07-26-binario/">
+<span class="md-ellipsis">
+    2024 07 26 binario
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-07-31-Archivos-CSV/">
+<span class="md-ellipsis">
+    2024 07 31 Archivos CSV
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-02-Jerarquia-Memoria/">
+<span class="md-ellipsis">
+    2024 08 02 Jerarquia Memoria
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-07-Administraci%C3%B3n-del-almacenamiento/">
+<span class="md-ellipsis">
+    2024 08 07 Administración del almacenamiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-09-Organizaci%C3%B3n-de-archivos/">
+<span class="md-ellipsis">
+    2024 08 09 Organización de archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-14-Ram-vs-archivos/">
+<span class="md-ellipsis">
+    Estructura de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-21-Sistemas-de-archivos/">
+<span class="md-ellipsis">
+    2024 08 21 Sistemas de archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-23-Tablas-particiones/">
+<span class="md-ellipsis">
+    2024 08 23 Tablas particiones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-28-Based-de-datos/">
+<span class="md-ellipsis">
+    2024 08 28 Based de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-08-30-Archivos-Apilado/">
+<span class="md-ellipsis">
+    2024 08 30 Archivos Apilado
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-09-04-Archivos-secuenciales/">
+<span class="md-ellipsis">
+    2024 09 04 Archivos secuenciales
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-09-18-Repaso/">
+<span class="md-ellipsis">
+    2024 09 18 Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-09-20-Indice-Invertido/">
+<span class="md-ellipsis">
+    2024 09 20 Indice Invertido
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-09-27-Archivo-Multillave/">
+<span class="md-ellipsis">
+    Archivo Multi Llave
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-10-09-BACKUP/">
+<span class="md-ellipsis">
+    2024 10 09 BACKUP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/2024-10-16-Almacenamiento%20en%20la%20nube/">
+<span class="md-ellipsis">
+    2024 10 16 Almacenamiento en la nube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Manejo-e-implementacion-archivos/T1-archivos-programas/">
+<span class="md-ellipsis">
+    T1 archivos programas
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Ingenieria software i
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Ingenieria software i
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-07-18-Introduccion-desarrollo-software/">
+<span class="md-ellipsis">
+    2024 07 18 Introduccion desarrollo software
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-08-20-Trabajo-parejas-pruebas/">
+<span class="md-ellipsis">
+    2024 08 20 Trabajo parejas pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-08-22-Repaso/">
+<span class="md-ellipsis">
+    2024 08 22 Repaso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-08-29-Preguntas/">
+<span class="md-ellipsis">
+    2024 08 29 Preguntas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-03-Tecnias-de-revisi%C3%B3n/">
+<span class="md-ellipsis">
+    2024 09 03 Tecnias de revisión
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-05-NIST/">
+<span class="md-ellipsis">
+    2024 09 05 NIST
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-09-Resumen-Examen-2/">
+<span class="md-ellipsis">
+    Administración de la calidad
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-17-Resumen/">
+<span class="md-ellipsis">
+    Actividades sombrilla
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-17-Tarea-Pruebas/">
+<span class="md-ellipsis">
+    2024 09 17 Tarea Pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-19-Pruebas/">
+<span class="md-ellipsis">
+    2024 09 19 Pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-19-Resumen-video/">
+<span class="md-ellipsis">
+    2024 09 19 Resumen video
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-26-Estrategias-Prueba/">
+<span class="md-ellipsis">
+    2024 09 26 Estrategias Prueba
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-09-26-Pruebas-curso/">
+<span class="md-ellipsis">
+    2024 09 26 Pruebas curso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-10-03-Investigacion/">
+<span class="md-ellipsis">
+    CASO DE PRUEBA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-10-08-Investigacion/">
+<span class="md-ellipsis">
+    2024 10 08 Investigacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-10-10-Clase-Discusion/">
+<span class="md-ellipsis">
+    2024 10 10 Clase Discusion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-10-10-Pruebas/">
+<span class="md-ellipsis">
+    2024 10 10 Pruebas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-10-15-Lehman/">
+<span class="md-ellipsis">
+    Lehman
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/2024-10-17-Temas/">
+<span class="md-ellipsis">
+    Resumen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/Herramientas-para-el-desarrollo-completo-de-software./">
+<span class="md-ellipsis">
+    Herramientas para el desarrollo completo de software.
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ingenieria-software-i/Resumen-Examen-1/">
+<span class="md-ellipsis">
+    ERP
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Simposio
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_5">
+<span class="md-nav__icon md-icon"></span>
+            Simposio
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../simposio/resumen-economicas/">
+<span class="md-ellipsis">
+    Resumen economicas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../simposio/resumen/">
+<span class="md-ellipsis">
+    Resumen
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    9 ciclo
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            9 ciclo
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/Untitled/">
+<span class="md-ellipsis">
+    Proveedores de Internet en Quetzaltenango
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Comportamiento organizacional
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_2">
+<span class="md-nav__icon md-icon"></span>
+            Comportamiento organizacional
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-14-Introduccion/">
+<span class="md-ellipsis">
+    2025 01 14 Introduccion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-17-Habilidades/">
+<span class="md-ellipsis">
+    2025 01 17 Habilidades
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-20-Tarea/">
+<span class="md-ellipsis">
+    2025 01 20 Tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-22-Cultura-irtra-investigacion/">
+<span class="md-ellipsis">
+    2025 01 22 Cultura irtra investigacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-25-Clase/">
+<span class="md-ellipsis">
+    Presiones económicas y globallización
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-29-Fuerzas-tarea/">
+<span class="md-ellipsis">
+    2025 01 29 Fuerzas tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-29-Informe-irtra/">
+<span class="md-ellipsis">
+    2025 01 29 Informe irtra
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-29-Modelo-tarea/">
+<span class="md-ellipsis">
+    2025 01 29 Modelo tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-29-Temas-cambio/">
+<span class="md-ellipsis">
+    El Modelo de Cambio Según Kurt Lewin
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-01-31-Estres-laboral/">
+<span class="md-ellipsis">
+    2025 01 31 Estres laboral
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-05-EL-INDIVIDUO/">
+<span class="md-ellipsis">
+    2025 02 05 EL INDIVIDUO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-07-Tarea/">
+<span class="md-ellipsis">
+    2025 02 07 Tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-09-Guia-Inclusion/">
+<span class="md-ellipsis">
+    Guía de Inclusión Laboral de Personas con Discapacidad para Empresas: Síntesis Detallada
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-12-Factores-satisfaccion/">
+<span class="md-ellipsis">
+    2025 02 12 Factores satisfaccion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-12-Satisfacci%C3%B3n-laboral/">
+<span class="md-ellipsis">
+    Satisfacción Laboral
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-14-Motivacion/">
+<span class="md-ellipsis">
+    Motivación
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-18-Resumen-examen/">
+<span class="md-ellipsis">
+    2025 02 18 Resumen examen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-19-Participacion-trabajadores/">
+<span class="md-ellipsis">
+    2025 02 19 Participacion trabajadores
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-26-Organizacion/">
+<span class="md-ellipsis">
+    2025 02 26 Organizacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-28-Teorias-contemporaneas-de-la-motivacion/">
+<span class="md-ellipsis">
+    2025 02 28 Teorias contemporaneas de la motivacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-02-28-tarea/">
+<span class="md-ellipsis">
+    2025 02 28 tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-05-EL-GRUPO/">
+<span class="md-ellipsis">
+    2025 03 05 EL GRUPO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-12-Tipos-de-papeles/">
+<span class="md-ellipsis">
+    2025 03 12 Tipos de papeles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-14-Estructura-organizacional/">
+<span class="md-ellipsis">
+    2025 03 14 Estructura organizacional
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-19-la-comunicacion/">
+<span class="md-ellipsis">
+    Comunicación.
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-21-comunicaci%C3%B3n-acertiva/">
+<span class="md-ellipsis">
+    2025 03 21 comunicación acertiva
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-26-liderazgo/">
+<span class="md-ellipsis">
+    2025 03 26 liderazgo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-03-26-tarea/">
+<span class="md-ellipsis">
+    Positivo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-04-01-grupo/">
+<span class="md-ellipsis">
+    2025 04 01 grupo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-04-02-Temperamento/">
+<span class="md-ellipsis">
+    2025 04 02 Temperamento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-04-23-gerencia-integral/">
+<span class="md-ellipsis">
+    2025 04 23 gerencia integral
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-04-25-ejercicio-clase/">
+<span class="md-ellipsis">
+    2025 04 25 ejercicio clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-04-30-encuesta/">
+<span class="md-ellipsis">
+    2025 04 30 encuesta
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-04-30-endomarketing/">
+<span class="md-ellipsis">
+    2025 04 30 endomarketing
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-05-02-Clase%2Btarea/">
+<span class="md-ellipsis">
+    2025 05 02 Clase+tarea
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-05-09-empoderamiento/">
+<span class="md-ellipsis">
+    2025 05 09 empoderamiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/comportamiento-organizacional/2025-05-14-investigacion/">
+<span class="md-ellipsis">
+    2025 05 14 investigacion
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Etica social
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_3">
+<span class="md-nav__icon md-icon"></span>
+            Etica social
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/etica-social/2025-02-01-Cancion-mana/">
+<span class="md-ellipsis">
+    1. Análisis de la canción "Me Vale"
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/etica-social/2025-03-24-violencia-y-conflictividad/">
+<span class="md-ellipsis">
+    2025 03 24 violencia y conflictividad
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_4" id="__nav_3_5_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Gestion negocios
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_4">
+<span class="md-nav__icon md-icon"></span>
+            Gestion negocios
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-01-14-Introduccion/">
+<span class="md-ellipsis">
+    2025 01 14 Introduccion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-01-14-Tarea/">
+<span class="md-ellipsis">
+    Administración
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-01-16-Clase/">
+<span class="md-ellipsis">
+    2025 01 16 Clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-01-21-Emprendimiento/">
+<span class="md-ellipsis">
+    2025 01 21 Emprendimiento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-01-28-Estructuar-de-un-plan/">
+<span class="md-ellipsis">
+    2025 01 28 Estructuar de un plan
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-02-11-Plan-Estrategico/">
+<span class="md-ellipsis">
+    2025 02 11 Plan Estrategico
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-02-13-Resumen-lectura/">
+<span class="md-ellipsis">
+    2025 02 13 Resumen lectura
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-02-18-Planifiacion/">
+<span class="md-ellipsis">
+    2025 02 18 Planifiacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-02-27-Branding/">
+<span class="md-ellipsis">
+    Brand
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-06-Marketing-empresas/">
+<span class="md-ellipsis">
+    2025 03 06 Marketing empresas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-06-Tarea-clase/">
+<span class="md-ellipsis">
+    2025 03 06 Tarea clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-11-Mezcla-promocional/">
+<span class="md-ellipsis">
+    2025 03 11 Mezcla promocional
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-13-Proceso-de-ventas/">
+<span class="md-ellipsis">
+    2025 03 13 Proceso de ventas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-18-AIDA/">
+<span class="md-ellipsis">
+    2025 03 18 AIDA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-20-liderazgo/">
+<span class="md-ellipsis">
+    2025 03 20 liderazgo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-03-23-clase-cuestionario/">
+<span class="md-ellipsis">
+    2025 03 23 clase cuestionario
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-04-03-Organizacion/">
+<span class="md-ellipsis">
+    2025 04 03 Organizacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-04-08-Descriptor-de-puesto/">
+<span class="md-ellipsis">
+    2025 04 08 Descriptor de puesto
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/gestion-negocios/2025-04-24-exposiciones/">
+<span class="md-ellipsis">
+    2025 04 24 exposiciones
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_5">
+<span class="md-nav__icon md-icon"></span>
+            Sistemas operativos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-01-14-Sistema-operativo/">
+<span class="md-ellipsis">
+    Sistema operativo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-01-16-Historia-SO/">
+<span class="md-ellipsis">
+    Historia de los sistemas operativos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-01-21-Clase/">
+<span class="md-ellipsis">
+    Procesadores
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-01-23-Conceptos-basicos-SO/">
+<span class="md-ellipsis">
+    Conceptos basicos de Sistemas Operativos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-01-28-llamadas-de-sistema/">
+<span class="md-ellipsis">
+    2025 01 28 llamadas de sistema
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-01-30-comandos/">
+<span class="md-ellipsis">
+    2025 01 30 comandos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-02-04-Servidor-web/">
+<span class="md-ellipsis">
+    2025 02 04 Servidor web
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-02-11-FTP/">
+<span class="md-ellipsis">
+    2025 02 11 FTP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-02-12-FTP/">
+<span class="md-ellipsis">
+    2025 02 12 FTP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-02-13-redes/">
+<span class="md-ellipsis">
+    2025 02 13 redes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-02-19-Pre-examen/">
+<span class="md-ellipsis">
+    Sistemas operativos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-03-practica/">
+<span class="md-ellipsis">
+    2025 03 03 practica
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-04-exclusion-mutua/">
+<span class="md-ellipsis">
+    2025 03 04 exclusion mutua
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-11-subllamadas/">
+<span class="md-ellipsis">
+    2025 03 11 subllamadas
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-13-Laboratorio-semaforos/">
+<span class="md-ellipsis">
+    Informe de Experimentos sobre Interbloqueo y Semáforos en Linux
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-18-Laboratorio-interbloqueos/">
+<span class="md-ellipsis">
+    2025 03 18 Laboratorio interbloqueos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-25-laboratorio-3/">
+<span class="md-ellipsis">
+    2025 03 25 laboratorio 3
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-03-27-PRACTICA-cpu/">
+<span class="md-ellipsis">
+    INFORMACION CPU
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-04-01-Preguntas-interbloqueo/">
+<span class="md-ellipsis">
+    Preguntas y Respuestas sobre Interbloqueos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-04-29-Exposicion/">
+<span class="md-ellipsis">
+    2025 04 29 Exposicion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/sistemas-operativos/2025-05-14-informe-final/">
+<span class="md-ellipsis">
+    2025 05 14 informe final
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_6" id="__nav_3_5_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Tecnologias emergentes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_6_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_6">
+<span class="md-nav__icon md-icon"></span>
+            Tecnologias emergentes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-16-Clase-2/">
+<span class="md-ellipsis">
+    2025 01 16 Clase 2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-21-Investigaciones/">
+<span class="md-ellipsis">
+    IoT
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-21-Resumen-clase-1/">
+<span class="md-ellipsis">
+    2025 01 21 Resumen clase 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-21-Resumen-clase-2/">
+<span class="md-ellipsis">
+    2025 01 21 Resumen clase 2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-23-Clase/">
+<span class="md-ellipsis">
+    2025 01 23 Clase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-28-Resumenes/">
+<span class="md-ellipsis">
+    Grupo 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-01-30-Resumen-exposicion/">
+<span class="md-ellipsis">
+    2025 01 30 Resumen exposicion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-02-04-IA/">
+<span class="md-ellipsis">
+    Tendencias de la IA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-02-06-Continuacion-IA/">
+<span class="md-ellipsis">
+    2025 02 06 Continuacion IA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-02-13-IA/">
+<span class="md-ellipsis">
+    2025 02 13 IA
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-02-13-Tarea/">
+<span class="md-ellipsis">
+    IA en la vida cotidiana
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-02-27-Blockchain/">
+<span class="md-ellipsis">
+    2025 02 27 Blockchain
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-03-11-mecanismos-concenso/">
+<span class="md-ellipsis">
+    2025 03 11 mecanismos concenso
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-03-20-Investigacion-IoT/">
+<span class="md-ellipsis">
+    2025 03 20 Investigacion IoT
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-03-20-IoT/">
+<span class="md-ellipsis">
+    2025 03 20 IoT
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-04-08-investigacion/">
+<span class="md-ellipsis">
+    2025 04 08 investigacion
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../9-ciclo/tecnologias-emergentes/2025-04-21-ARCORE-google/">
+<span class="md-ellipsis">
+    2025 04 21 ARCORE google
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Angular
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Angular
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/0-dependencias/">
+<span class="md-ellipsis">
+    0 dependencias
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/1-primeros-pasos/">
+<span class="md-ellipsis">
+    1 primeros pasos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/1.2.-Notas/">
+<span class="md-ellipsis">
+    Primeros pasos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/2-Routing/">
+<span class="md-ellipsis">
+    2 Routing
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Angular/3-HTTP/">
+<span class="md-ellipsis">
+    3 HTTP
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+<span class="md-ellipsis">
+    ONE
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+            ONE
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
+<span class="md-ellipsis">
+    ORACLE University
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_7_1">
+<span class="md-nav__icon md-icon"></span>
+            ORACLE University
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7_1_1" id="__nav_3_7_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Java
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_1_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_7_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Java
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7_1_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_7_1_1_1" id="__nav_3_7_1_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Fundamentals
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_1_1_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_3_7_1_1_1">
+<span class="md-nav__icon md-icon"></span>
+            Fundamentals
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ONE/ORACLE-University/Java/Fundamentals/1-Principios%20de%20programaci%C3%B3n/">
+<span class="md-ellipsis">
+    1 Principios de programación
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ONE/ORACLE-University/Java/Fundamentals/2-Estructura-de-sintaxis-de-un-programa/">
+<span class="md-ellipsis">
+    2 Estructura de sintaxis de un programa
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ONE/ORACLE-University/Java/Fundamentals/3-Organizando-un-programa-en-componentes/">
+<span class="md-ellipsis">
+    3 Organizando un programa en componentes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Proyectos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_8">
+<span class="md-nav__icon md-icon"></span>
+            Proyectos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8_1" id="__nav_3_8_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Farmacia chiquirichap
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_8_1">
+<span class="md-nav__icon md-icon"></span>
+            Farmacia chiquirichap
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Proyectos/farmacia-chiquirichap/Producto/">
+<span class="md-ellipsis">
+    Farmacia
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Proyectos/farmacia-chiquirichap/Propuesta/">
+<span class="md-ellipsis">
+    Informe de Requisitos del Sistema para la Gestión de Farmacia
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>2024 10 17 COSTO BENEFICIO</h1>
+<ul>
+<li>Elaborar cuadro sinoptico donde se observe qué es un análisis costo - beneficio, sus diferentes elementos y pasos para realiar este tipo de análisis financiero.</li>
+<li>Exxplicar los beneficios de utilizar este tipo de análisis.</li>
+</ul>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

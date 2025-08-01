@@ -1,0 +1,316 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/tmpr0-count.o
+inicio CODE 0 7F9E 7F9E 62 1 2
+resetVec CODE 0 4 4 4 1 2
+hi_int_vec CODE 0 C C C 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+init CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 18-1F 1
+CONST 62-7F9D 1
+IDLOC 200000-200007 1
+SMALLCONST 800-7F9D 1
+CODE 18-1F 1
+CODE 62-7F9D 1
+BIGRAM 1-7FF 1
+BIGSFR F60-FFF 1
+COMRAM 1-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-7F9D 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/tmpr0-count.o
+7FBE inicio CODE >24:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FC0 inicio CODE >25:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FC2 inicio CODE >26:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FC4 inicio CODE >27:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FC6 inicio CODE >28:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FC8 inicio CODE >29:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FCA inicio CODE >31:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FCC inicio CODE >32:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FCE inicio CODE >33:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FD0 inicio CODE >35:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FD2 inicio CODE >36:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FD4 inicio CODE >37:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FD6 inicio CODE >38:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FD8 inicio CODE >39:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FDA inicio CODE >40:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FDC inicio CODE >43:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FDE inicio CODE >46:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FE0 inicio CODE >47:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FE2 inicio CODE >48:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FE4 inicio CODE >49:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FE6 inicio CODE >50:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FE8 inicio CODE >51:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FEA inicio CODE >52:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FEC inicio CODE >53:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FEE inicio CODE >54:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FF0 inicio CODE >55:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FF2 inicio CODE >56:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FF4 inicio CODE >57:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FF6 inicio CODE >58:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FF8 inicio CODE >59:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FFA inicio CODE >60:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FFC inicio CODE >61:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+7FFE inicio CODE >62:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+14 hi_int_vec CODE >17:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+4 resetVec CODE >14:C:\Users\danib\OneDrive - Universidad Rafael Landivar\Documentos\Obsidian\url-notas\docs\0-RES\arqui\2\clases\tmr0-count03.X\tmpr0-count.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst -
+__Hspace_0 8000 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000E 0 ABS 0 - -
+__Hibigdata 0 0 CODE 0 ibigdata -
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Lsmallconst 0 0 SMALLCONST 0 smallconst -
+___sp 0 0 STACK 2 stack C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+_main 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+start 0 0 CODE 0 init C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Hpowerup 0 0 CODE 0 powerup -
+__accesstop 60 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+intlevel0 0 0 CODE 0 text C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+intlevel1 0 0 CODE 0 text C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+intlevel2 0 0 CODE 0 text C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+intlevel3 0 0 CODE 0 text C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__LresetVec 0 0 ABS 0 resetVec -
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM -
+__Hifardata 0 0 CODE 0 ifardata -
+__Hclrtext 0 0 ABS 0 clrtext -
+___inthi_sp 0 0 STACK 2 stack C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Hintcode_body 0 0 ABS 0 intcode_body -
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs -
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst -
+__Hintcodelo 0 0 CODE 0 intcodelo -
+__Hhi_int_vec 0 0 ABS 0 hi_int_vec -
+__Lintcodelo 0 0 CODE 0 intcodelo -
+start_initialization 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__HresetVec 0 0 ABS 0 resetVec -
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM -
+__Lhi_int_vec 0 0 ABS 0 hi_int_vec -
+isa$xinst 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hconst 0 0 CONST 0 const -
+__Hedata 0 0 ABS 0 edata -
+__Hidata 0 0 CODE 0 idata -
+__Hidloc 0 0 ABS 0 idloc -
+__Hnvbit 0 0 COMRAM 1 nvbit -
+__Hrdata 0 0 COMRAM 1 rdata -
+__Hstack 0 0 STACK 2 stack -
+__Hudata 0 0 ABS 0 udata -
+__Hbigbss 0 0 BIGRAM 1 bigbss -
+__Hbigram 0 0 ABS 0 bigram -
+__Hbigsfr 0 0 ABS 0 bigsfr -
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Hcomram 0 0 ABS 0 comram -
+__Hconfig 30000E 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lconst 0 0 CONST 0 const -
+__Ledata 0 0 ABS 0 edata -
+__Lidata 0 0 CODE 0 idata -
+__Lidloc 0 0 ABS 0 idloc -
+__Lnvbit 0 0 COMRAM 1 nvbit -
+__Lrdata 0 0 COMRAM 1 rdata -
+__Lstack 0 0 STACK 2 stack -
+__Ludata 0 0 ABS 0 udata -
+__Hfarbss 0 0 FARRAM 0 farbss -
+__Lintcode_body 0 0 ABS 0 intcode_body -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 4 0 CODE 0 init -
+__Hrbit 0 0 COMRAM 1 rbit -
+__Hrbss 0 0 COMRAM 1 rbss -
+__Htemp 0 0 COMRAM 1 temp -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lrbit 0 0 COMRAM 1 rbit -
+__Lrbss 0 0 COMRAM 1 rbss -
+__Ltemp 0 0 COMRAM 1 temp -
+__Ltext 0 0 ABS 0 text -
+__Hinicio 0 0 ABS 0 inicio -
+__Hintret 0 0 ABS 0 intret -
+__Hirdata 0 0 CODE 0 irdata -
+__S0 8000 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__S5 0 0 ABS 0 - -
+__Lbigdata 0 0 BIGRAM 1 bigdata -
+__Hnvrram 0 0 COMRAM 1 nvrram -
+__Lintentry 0 0 ABS 0 intentry -
+__Hramtop 800 0 RAM 0 ramtop -
+__Hstruct 0 0 COMRAM 1 struct -
+__Lbigbss 0 0 BIGRAM 1 bigbss -
+__Lbigram 0 0 ABS 0 bigram -
+__Lbigsfr 0 0 ABS 0 bigsfr -
+__Lcomram 0 0 ABS 0 comram -
+__Lconfig 0 0 CONFIG 4 config -
+__Lfarbss 0 0 FARRAM 0 farbss -
+__Lfardata 0 0 FARRAM 0 fardata -
+isa$std 1 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+stackhi 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+stacklo 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Lintcode 0 0 CODE 0 intcode -
+__Linicio 0 0 ABS 0 inicio -
+__Lintret 0 0 ABS 0 intret -
+__Lirdata 0 0 CODE 0 irdata -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Lnvrram 0 0 COMRAM 1 nvrram -
+__Hintentry 0 0 ABS 0 intentry -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lramtop 800 0 RAM 0 ramtop -
+__Lstruct 0 0 COMRAM 1 struct -
+__ramtop 800 0 RAM 0 ramtop C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 0 eeprom_data -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+___heap_lo 0 0 ABS 0 - C:\Users\danib\AppData\Local\Temp\xcAs4es.\driver_tmp_6.o
+__Hbigdata 0 0 BIGRAM 1 bigdata -
+__Libigdata 0 0 CODE 0 ibigdata -
+__Lclrtext 0 0 ABS 0 clrtext -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__HRAM 0 0 ABS 0 - -
+__Hbss 0 0 RAM 1 bss -
+__Hram 0 0 ABS 0 ram -
+__Hsfr 0 0 ABS 0 sfr -
+__LRAM 1 0 ABS 0 - -
+__Lbss 0 0 RAM 1 bss -
+__Lram 0 0 ABS 0 ram -
+__Lsfr 0 0 ABS 0 sfr -
+__Hfardata 0 0 FARRAM 0 fardata -
+__Hsmallconst 0 0 SMALLCONST 0 smallconst -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+__Lifardata 0 0 CODE 0 ifardata -
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs -
+__Hintcode 0 0 CODE 0 intcode -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+inicio 0 7F9E 7F9E 62 1
+reset_vec 0 0 0 8 1
+hi_int_vec 0 C C C 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
