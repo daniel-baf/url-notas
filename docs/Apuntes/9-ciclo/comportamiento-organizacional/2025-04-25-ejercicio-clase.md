@@ -1,4 +1,4 @@
-| NOMBRE                          | CARNE   |
+| **NOMBRE**                      | CARNE   |
 | ------------------------------- | ------- |
 | Daniel Eduardo Bautista Fuentes | 2121323 |
 | Emilio Xavier Medina Mencos     | 1510920 |
